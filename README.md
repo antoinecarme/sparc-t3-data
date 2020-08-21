@@ -11,5 +11,5 @@ Server Documentation By Oracle :
 
          https://docs.oracle.com/cd/E19836-01/index.html
         
-;
+It is running flwlessly a set of machine learning and big data software under debian-sparc64 (unofficial).
 
