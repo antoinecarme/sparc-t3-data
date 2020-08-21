@@ -9,7 +9,10 @@ I will add here the info used to configure this server when installing debian an
 
 Server Documentation By Oracle : 
 
-         https://docs.oracle.com/cd/E19836-01/index.html
+https://docs.oracle.com/cd/E19836-01/index.html
         
-It is running flwlessly a set of machine learning and big data software under debian-sparc64 (unofficial).
+This server has gone End Of Life (EOL) by Oracle on 2017-08-01. 
 
+It is running flawlessly a set of machine learning and big data software packages under debian-sparc64 (unofficial).
+
+https://wiki.debian.org/Sparc64
