@@ -1,0 +1,423 @@
+00:01.0 PCI bridge: Oracle/SUN Device 8186 (rev 01) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@1
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=01, subordinate=06, sec-latency=0
+	I/O behind bridge: 00000000-00000fff [size=4K]
+	Memory behind bridge: 00100000-001fffff [size=1M]
+	Prefetchable memory behind bridge: 0000004100000000-000000410fffffff [size=256M]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [60] Express Root Port (Slot-), MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [138] Vendor Specific Information: ID=1112 Rev=1 Len=014 <?>
+	Capabilities: [14c] Access Control Services
+
+00:02.0 PCI bridge: Oracle/SUN Device 8186 (rev 01) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=00, secondary=07, subordinate=12, sec-latency=0
+	I/O behind bridge: 00001000-00004fff [size=16K]
+	Memory behind bridge: 00200000-015fffff [size=20M]
+	Prefetchable memory behind bridge: 0000004110000000-000000411fffffff [size=256M]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [60] Express Root Port (Slot-), MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [138] Vendor Specific Information: ID=1112 Rev=1 Len=014 <?>
+	Capabilities: [14c] Access Control Services
+
+01:00.0 PCI bridge: Microsemi / PMC / IDT Device 807a (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@1/pci@0
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=01, secondary=02, subordinate=06, sec-latency=0
+	I/O behind bridge: 00000000-00000fff [size=4K]
+	Memory behind bridge: 00100000-001fffff [size=1M]
+	Prefetchable memory behind bridge: 0000004100000000-000000410fffffff [size=256M]
+	Capabilities: [40] Express Upstream Port, MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [330] Multicast
+
+02:00.0 PCI bridge: Microsemi / PMC / IDT Device 807a (rev 02) (prog-if 00 [Normal decode])
+	Physical Slot: 0
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@1/pci@0/pci@0
+	Flags: bus master, fast devsel, latency 0, IRQ 00000064
+	Bus: primary=02, secondary=03, subordinate=03, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: [disabled]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+02:04.0 PCI bridge: Microsemi / PMC / IDT Device 807a (rev 02) (prog-if 00 [Normal decode])
+	Physical Slot: 4
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@1/pci@0/pci@4
+	Flags: bus master, fast devsel, latency 0, IRQ 00000065
+	Bus: primary=02, secondary=04, subordinate=04, sec-latency=0
+	I/O behind bridge: 00000000-00000fff [size=4K]
+	Memory behind bridge: 00100000-001fffff [size=1M]
+	Prefetchable memory behind bridge: 0000004100000000-000000410fffffff [size=256M]
+	Capabilities: [40] Express Downstream Port (Slot-), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+02:06.0 PCI bridge: Microsemi / PMC / IDT Device 807a (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@1/pci@0/pci@6
+	Flags: bus master, fast devsel, latency 0, IRQ 00000066
+	Bus: primary=02, secondary=05, subordinate=05, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: [disabled]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+02:08.0 PCI bridge: Microsemi / PMC / IDT Device 807a (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@1/pci@0/pci@8
+	Flags: bus master, fast devsel, latency 0, IRQ 00000067
+	Bus: primary=02, secondary=06, subordinate=06, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: [disabled]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+04:00.0 Serial Attached SCSI controller: Broadcom / LSI SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] (rev 03)
+	Subsystem: Broadcom / LSI SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon]
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@1/pci@0/pci@4/scsi@0
+	Flags: bus master, fast devsel, latency 0, IRQ 00000024
+	I/O ports at <unassigned> [virtual] [size=256]
+	Memory at 84100000000 (64-bit, non-prefetchable) [virtual] [size=16K]
+	Memory at 84100040000 (64-bit, non-prefetchable) [virtual] [size=256K]
+	Expansion ROM at 00100000 [disabled] [size=512K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [68] Express Endpoint, MSI 00
+	Capabilities: [d0] Vital Product Data
+	Capabilities: [a8] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [c0] MSI-X: Enable- Count=15 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [138] Power Budgeting <?>
+	Kernel driver in use: mpt3sas
+	Kernel modules: mpt3sas
+
+07:00.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=07, secondary=08, subordinate=12, sec-latency=0
+	I/O behind bridge: 00001000-00004fff [size=16K]
+	Memory behind bridge: 00200000-015fffff [size=20M]
+	Prefetchable memory behind bridge: 0000004110000000-000000411fffffff [size=256M]
+	Capabilities: [40] Express Upstream Port, MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [330] Multicast
+
+08:00.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@0
+	Flags: bus master, fast devsel, latency 0, IRQ 00000068
+	Bus: primary=08, secondary=09, subordinate=0a, sec-latency=0
+	I/O behind bridge: 00001000-00001fff [size=4K]
+	Memory behind bridge: 00200000-00ffffff [size=14M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot-), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+08:04.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@4
+	Flags: bus master, fast devsel, latency 0, IRQ 00000069
+	Bus: primary=08, secondary=0b, subordinate=0b, sec-latency=0
+	I/O behind bridge: 00002000-00002fff [size=4K]
+	Memory behind bridge: 01000000-010fffff [size=1M]
+	Prefetchable memory behind bridge: 0000004110000000-000000411fffffff [size=256M]
+	Capabilities: [40] Express Downstream Port (Slot-), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+08:06.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@6
+	Flags: bus master, fast devsel, latency 0, IRQ 0000006a
+	Bus: primary=08, secondary=0c, subordinate=0c, sec-latency=0
+	I/O behind bridge: 00003000-00003fff [size=4K]
+	Memory behind bridge: 01100000-012fffff [size=2M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot-), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+08:07.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@7
+	Flags: bus master, fast devsel, latency 0, IRQ 0000006b
+	Bus: primary=08, secondary=0d, subordinate=0d, sec-latency=0
+	I/O behind bridge: 00004000-00004fff [size=4K]
+	Memory behind bridge: 01300000-014fffff [size=2M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot-), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+08:08.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@8
+	Flags: bus master, fast devsel, latency 0, IRQ 0000006c
+	Bus: primary=08, secondary=0e, subordinate=0e, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: [disabled]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+08:0a.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@a
+	Flags: bus master, fast devsel, latency 0, IRQ 0000006d
+	Bus: primary=08, secondary=0f, subordinate=0f, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: [disabled]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+08:0c.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@c
+	Flags: bus master, fast devsel, latency 0, IRQ 0000006e
+	Bus: primary=08, secondary=10, subordinate=10, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: [disabled]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+08:0f.0 PCI bridge: Microsemi / PMC / IDT 89HPES64H16G2 64-Lane 16-Port PCIe Gen2 System Interconnect Switch (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@f
+	Flags: bus master, fast devsel, latency 0, IRQ 0000006f
+	Bus: primary=08, secondary=11, subordinate=12, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 01500000-015fffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Downstream Port (Slot-), MSI 00
+	Capabilities: [c0] Power Management version 3
+	Capabilities: [d0] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [200] Virtual Channel
+	Capabilities: [320] Null
+	Capabilities: [330] Multicast
+	Kernel driver in use: pcieport
+
+09:00.0 PCI bridge: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge (rev 02) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@0/pci@0
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=09, secondary=0a, subordinate=0a, sec-latency=0
+	I/O behind bridge: 00001000-00001fff [size=4K]
+	Memory behind bridge: 00200000-00ffffff [size=14M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Power Management version 3
+	Capabilities: [80] Express PCI-Express to PCI/PCI-X Bridge, MSI 00
+	Capabilities: [a4] Subsystem: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge
+	Capabilities: [100] Virtual Channel
+
+0a:00.0 VGA compatible controller: ASPEED Technology, Inc. ASPEED Graphics Family (rev 10) (prog-if 00 [VGA controller])
+	Subsystem: ASPEED Technology, Inc. ASPEED Graphics Family
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@0/pci@0/display@0
+	Flags: medium devsel, IRQ 00000025
+	Memory at 00800000 (32-bit, non-prefetchable) [size=8M]
+	Memory at 00200000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at 00001000 [size=128]
+	Capabilities: [40] Power Management version 3
+
+0b:00.0 Serial Attached SCSI controller: Broadcom / LSI SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] (rev 03)
+	Subsystem: Broadcom / LSI SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon]
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@4/scsi@0
+	Flags: bus master, fast devsel, latency 0, IRQ 00000025
+	I/O ports at 00002000 [disabled] [size=256]
+	Memory at 84110000000 (64-bit, non-prefetchable) [size=16K]
+	Memory at 84110040000 (64-bit, non-prefetchable) [size=256K]
+	Expansion ROM at 01000000 [disabled] [size=512K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [68] Express Endpoint, MSI 00
+	Capabilities: [d0] Vital Product Data
+	Capabilities: [a8] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [c0] MSI-X: Enable- Count=15 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [138] Power Budgeting <?>
+	Kernel driver in use: mpt3sas
+	Kernel modules: mpt3sas
+
+0c:00.0 Ethernet controller: Intel Corporation 82576 Gigabit Network Connection (rev 01)
+	Subsystem: Oracle/SUN 82576 Gigabit Network Connection
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@6/network@0
+	Flags: bus master, fast devsel, latency 0, IRQ 00000026
+	Memory at 01100000 (32-bit, non-prefetchable) [size=128K]
+	Memory at 01120000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at 00003000 [disabled] [size=32]
+	Memory at 01140000 (32-bit, non-prefetchable) [size=16K]
+	Expansion ROM at 01160000 [disabled] [size=128K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [70] MSI-X: Enable+ Count=10 Masked-
+	Capabilities: [a0] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number 00-21-28-ff-ff-d2-33-64
+	Capabilities: [150] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [160] Single Root I/O Virtualization (SR-IOV)
+	Kernel driver in use: igb
+	Kernel modules: igb
+
+0c:00.1 Ethernet controller: Intel Corporation 82576 Gigabit Network Connection (rev 01)
+	Subsystem: Oracle/SUN 82576 Gigabit Network Connection
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@6/network@0,1
+	Flags: bus master, fast devsel, latency 0, IRQ 00000024
+	Memory at 011c0000 (32-bit, non-prefetchable) [size=128K]
+	Memory at 011e0000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at 00003020 [disabled] [size=32]
+	Memory at 01144000 (32-bit, non-prefetchable) [size=16K]
+	Expansion ROM at 01200000 [disabled] [size=128K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [70] MSI-X: Enable+ Count=10 Masked-
+	Capabilities: [a0] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number 00-21-28-ff-ff-d2-33-64
+	Capabilities: [150] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [160] Single Root I/O Virtualization (SR-IOV)
+	Kernel driver in use: igb
+	Kernel modules: igb
+
+0d:00.0 Ethernet controller: Intel Corporation 82576 Gigabit Network Connection (rev 01)
+	Subsystem: Oracle/SUN 82576 Gigabit Network Connection
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@7/network@0
+	Flags: bus master, fast devsel, latency 0, IRQ 00000024
+	Memory at 01300000 (32-bit, non-prefetchable) [size=128K]
+	Memory at 01320000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at 00004000 [disabled] [size=32]
+	Memory at 01340000 (32-bit, non-prefetchable) [size=16K]
+	Expansion ROM at 01360000 [disabled] [size=128K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [70] MSI-X: Enable+ Count=10 Masked-
+	Capabilities: [a0] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number 00-21-28-ff-ff-d2-33-66
+	Capabilities: [150] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [160] Single Root I/O Virtualization (SR-IOV)
+	Kernel driver in use: igb
+	Kernel modules: igb
+
+0d:00.1 Ethernet controller: Intel Corporation 82576 Gigabit Network Connection (rev 01)
+	Subsystem: Oracle/SUN 82576 Gigabit Network Connection
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@7/network@0,1
+	Flags: bus master, fast devsel, latency 0, IRQ 00000025
+	Memory at 013c0000 (32-bit, non-prefetchable) [size=128K]
+	Memory at 013e0000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at 00004020 [disabled] [size=32]
+	Memory at 01344000 (32-bit, non-prefetchable) [size=16K]
+	Expansion ROM at 01400000 [disabled] [size=128K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [70] MSI-X: Enable+ Count=10 Masked-
+	Capabilities: [a0] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number 00-21-28-ff-ff-d2-33-66
+	Capabilities: [150] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [160] Single Root I/O Virtualization (SR-IOV)
+	Kernel driver in use: igb
+	Kernel modules: igb
+
+11:00.0 PCI bridge: PLX Technology, Inc. PEX8112 x1 Lane PCI Express-to-PCI Bridge (rev aa) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@f/pci@0
+	Flags: bus master, fast devsel, latency 0
+	Bus: primary=11, secondary=12, subordinate=12, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 01500000-015fffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Power Management version 2
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [60] Express PCI-Express to PCI/PCI-X Bridge, MSI 00
+	Capabilities: [100] Power Budgeting <?>
+
+12:00.0 USB controller: NEC Corporation OHCI USB Controller (rev 43) (prog-if 10 [OHCI])
+	Subsystem: NEC Corporation USB Controller
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@f/pci@0/usb@0
+	Flags: bus master, medium devsel, latency 64, IRQ 00000024
+	Memory at 01500000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: [40] Power Management version 2
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+12:00.1 USB controller: NEC Corporation OHCI USB Controller (rev 43) (prog-if 10 [OHCI])
+	Subsystem: NEC Corporation USB Controller
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@f/pci@0/usb@0,1
+	Flags: bus master, medium devsel, latency 64, IRQ 00000025
+	Memory at 01502000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: [40] Power Management version 2
+	Kernel driver in use: ohci-pci
+	Kernel modules: ohci_pci
+
+12:00.2 USB controller: NEC Corporation uPD72010x USB 2.0 Controller (rev 04) (prog-if 20 [EHCI])
+	Subsystem: NEC Corporation uPD72010x USB 2.0 Controller
+	Device tree node: /sys/firmware/devicetree/base/pci@400/pci@2/pci@0/pci@f/pci@0/usb@0,2
+	Flags: bus master, medium devsel, latency 64, IRQ 00000027
+	Memory at 01504000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: [40] Power Management version 2
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+

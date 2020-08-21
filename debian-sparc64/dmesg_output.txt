@@ -1,0 +1,1815 @@
+[    0.000025] PROMLIB: Sun IEEE Boot Prom 'OBP 4.34.6.c 2017/03/22 13:55'
+[    0.000032] PROMLIB: Root node compatible: sun4v
+[    0.000088] Linux version 5.7.0-2-sparc64-smp (debian-kernel@lists.debian.org) (gcc version 9.3.0 (Debian 9.3.0-16), GNU ld (GNU Binutils for Debian) 2.34.90.20200706) #1 SMP Debian 5.7.10-1 (2020-07-26)
+[    0.000257] printk: bootconsole [earlyprom0] enabled
+[    0.000261] ARCH: SUN4V
+[    0.000324] Ethernet address: 00:21:28:d2:33:64
+[    0.000336] MM: PAGE_OFFSET is 0xffff800000000000 (max_phys_bits == 43)
+[    0.000342] MM: VMALLOC [0x0000000100000000 --> 0x0000600000000000]
+[    0.000347] MM: VMEMMAP [0x0000600000000000 --> 0x0000c00000000000]
+[    0.066661] Kernel: Using 3 locked TLB entries for main kernel image.
+[    0.066671] Remapping the kernel... 
+[    0.066698] done.
+[    4.214509] OF stdout device is: /virtual-devices@100/console@1
+[    4.214516] PROM: Built device tree with 307139 bytes of memory.
+[    4.214523] MDESC: Size is 110144 bytes.
+[    4.216984] PLATFORM: banner-name [SPARC T3-1]
+[    4.216989] PLATFORM: name [ORCL,SPARC-T3-1]
+[    4.216995] PLATFORM: hostid [85d23364]
+[    4.217001] PLATFORM: serial# [00d23364]
+[    4.217005] PLATFORM: stick-frequency [0575ac5c]
+[    4.217009] PLATFORM: mac-address [2128d23364]
+[    4.217013] PLATFORM: watchdog-resolution [1000 ms]
+[    4.217019] PLATFORM: watchdog-max-timeout [31536000000 ms]
+[    4.217023] PLATFORM: max-cpus [128]
+[    4.217620] Top of RAM: 0xfff6e4000, Total RAM: 0xfdf204000
+[    4.217624] Memory hole size: 516MB
+[    4.506057] Allocated 16384 bytes for kernel page tables.
+[    4.506110] Zone ranges:
+[    4.506115]   Normal   [mem 0x0000000020400000-0x0000000fff6e3fff]
+[    4.506123] Movable zone start for each node
+[    4.506126] Early memory node ranges
+[    4.506131]   node   0: [mem 0x0000000020400000-0x0000000fff5fbfff]
+[    4.506154]   node   0: [mem 0x0000000fff608000-0x0000000fff60bfff]
+[    4.506159]   node   0: [mem 0x0000000fff6e0000-0x0000000fff6e3fff]
+[    4.524613] Zeroed struct page in unavailable ranges: 67326 pages
+[    4.524624] Initmem setup node 0 [mem 0x0000000020400000-0x0000000fff6e3fff]
+[    4.524634] On node 0 totalpages: 8321282
+[    4.524641]   Normal zone: 73138 pages used for memmap
+[    4.524647]   Normal zone: 0 pages reserved
+[    4.524652]   Normal zone: 8321282 pages, LIFO batch:31
+[    4.578100] Booting Linux...
+[    4.578130] CPU CAPS: [flush,stbar,swap,muldiv,v9,blkinit,n2,mul32]
+[    4.578156] CPU CAPS: [div32,v8plus,popc,vis,vis2,ASIBlkInit,fmaf,vis3]
+[    4.578176] CPU CAPS: [hpc]
+[    5.459042] percpu: Embedded 19 pages/cpu s115480 r8192 d31976 u262144
+[    5.465914] pcpu-alloc: s115480 r8192 d31976 u262144 alloc=1*4194304
+[    5.465923] pcpu-alloc: [0] 000 001 002 003 004 005 006 007 008 009 010 011 012 013 014 015 
+[    5.465956] pcpu-alloc: [0] 016 017 018 019 020 021 022 023 024 025 026 027 028 029 030 031 
+[    5.465991] pcpu-alloc: [0] 032 033 034 035 036 037 038 039 040 041 042 043 044 045 046 047 
+[    5.466025] pcpu-alloc: [0] 048 049 050 051 052 053 054 055 056 057 058 059 060 061 062 063 
+[    5.466060] pcpu-alloc: [0] 064 065 066 067 068 069 070 071 072 073 074 075 076 077 078 079 
+[    5.466093] pcpu-alloc: [0] 080 081 082 083 084 085 086 087 088 089 090 091 092 093 094 095 
+[    5.466128] pcpu-alloc: [0] 096 097 098 099 100 101 102 103 104 105 106 107 108 109 110 111 
+[    5.466162] pcpu-alloc: [0] 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 
+[    5.485153] SUN4V: Mondo queue sizes [cpu(16384) dev(16384) r(8192) nr(256)]
+[    5.506345] Built 1 zonelists, mobility grouping on.  Total pages: 8248144
+[    5.506357] Kernel command line: BOOT_IMAGE=/vmlinux-5.7.0-2-sparc64-smp root=UUID=05d09902-14c8-4f13-b417-b4579e39bbe8 ro quiet
+[    5.511042] printk: log_buf_len individual max cpu contribution: 4096 bytes
+[    5.511048] printk: log_buf_len total cpu_extra contributions: 520192 bytes
+[    5.511054] printk: log_buf_len min size: 131072 bytes
+[    5.514006] printk: log_buf_len: 1048576 bytes
+[    5.514012] printk: early log buf free: 126944(96%)
+[    5.550564] Dentry cache hash table entries: 8388608 (order: 13, 67108864 bytes, linear)
+[    5.570269] Inode-cache hash table entries: 4194304 (order: 12, 33554432 bytes, linear)
+[    5.570283] Sorting __ex_table...
+[    5.571701] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    5.654046] Memory: 1531504K/66570256K available (7685K kernel code, 895K rwdata, 2088K rodata, 632K init, 491K bss, 751096K reserved, 0K cma-reserved)
+[    5.654090] random: get_random_u64 called from __kmem_cache_create+0x20/0x560 with crng_init=0
+[    5.657018] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=128, Nodes=1
+[    5.657936] ftrace: allocating 25682 entries in 51 pages
+[    5.693562] ftrace: allocated 51 pages with 4 groups
+[    5.698458] rcu: Hierarchical RCU implementation.
+[    5.698467] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=128.
+[    5.698474] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    5.698479] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=128
+[    5.713992] NR_IRQS: 2048, nr_irqs: 2048, preallocated irqs: 1
+[    5.714075] SUN4V: Using IRQ API major 1, cookie only virqs disabled
+[    5.720607] clocksource: stick: mask: 0xffffffffffffffff max_cycles: 0x152012b015, max_idle_ns: 440795202953 ns
+[    5.720621] clocksource: mult[aead2cb] shift[24]
+[    5.720628] clockevent: mult[1772f606] shift[32]
+[    5.721600] Console: colour dummy device 80x25
+[    5.721612] printk: console [tty0] enabled
+[    5.721619] printk: bootconsole [earlyprom0] disabled
+[    5.764778] Calibrating delay using timer specific routine.. 92.10 BogoMIPS (lpj=184217)
+[    5.764792] pid_max: default: 131072 minimum: 1024
+[    5.766172] LSM: Security Framework initializing
+[    5.766341] Yama: disabled by default; enable with sysctl kernel.yama.*
+[    5.766544] AppArmor: AppArmor initialized
+[    5.766558] TOMOYO Linux initialized
+[    5.767634] Mount-cache hash table entries: 131072 (order: 7, 1048576 bytes, linear)
+[    5.768193] Mountpoint-cache hash table entries: 131072 (order: 7, 1048576 bytes, linear)
+[    5.773358] rcu: Hierarchical SRCU implementation.
+[    5.780725] smp: Bringing up secondary CPUs ...
+[    5.938449] smp: Brought up 1 node, 128 CPUs
+[    8.909966] node 0 initialised, 8035957 pages in 5856ms
+[    8.915311] devtmpfs: initialized
+[    8.926287] Performance events: 
+[    8.926499] Testing NMI watchdog ... 
+[    9.006181] OK.
+[    9.006271] Supported PMU type is 'niagara3'
+[    9.007586] ldc.c:v1.1 (July 22, 2008)
+[    9.010417] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    9.010503] futex hash table entries: 32768 (order: 8, 2097152 bytes, linear)
+[    9.020627] thermal_sys: Registered thermal governor 'fair_share'
+[    9.020632] thermal_sys: Registered thermal governor 'step_wise'
+[    9.021800] NET: Registered protocol family 16
+[    9.051099] VIO: Adding device channel-devices (tx_ino = ffffffffffffffff, rx_ino = ffffffffffffffff)
+[    9.051238] VIO: Adding device vldc-port-0-0 (tx_ino = 0, rx_ino = 1)
+[    9.051348] VIO: Adding device vldc-port-0-1 (tx_ino = 2, rx_ino = 3)
+[    9.051444] VIO: Adding device vldc-port-0-2 (tx_ino = 6, rx_ino = 7)
+[    9.051544] VIO: Adding device vldc-port-1-0 (tx_ino = 8, rx_ino = 9)
+[    9.051641] VIO: Adding device vldc-port-2-0 (tx_ino = a, rx_ino = b)
+[    9.051752] VIO: Adding device vldc-port-3-0 (tx_ino = 28, rx_ino = 29)
+[    9.051850] VIO: Adding device vldc-port-3-1 (tx_ino = c, rx_ino = d)
+[    9.051947] VIO: Adding device vldc-port-3-2 (tx_ino = e, rx_ino = f)
+[    9.052045] VIO: Adding device vldc-port-3-3 (tx_ino = 10, rx_ino = 11)
+[    9.052154] VIO: Adding device vldc-port-3-4 (tx_ino = 12, rx_ino = 13)
+[    9.052258] VIO: Adding device vldc-port-3-6 (tx_ino = 16, rx_ino = 17)
+[    9.052364] VIO: Adding device vlds-port-0-0 (tx_ino = 4, rx_ino = 5)
+[    9.052499] VIO: Adding device domain-services-port-0 (tx_ino = 4, rx_ino = 5)
+[    9.052599] VIO: Adding device domain-services-port-1 (tx_ino = 2c, rx_ino = 2d)
+[    9.053835] audit: initializing netlink subsys (disabled)
+[    9.054252] audit: type=2000 audit(6.584:1): state=initialized audit_enabled=0 res=1
+[    9.089284] pci_sun4v: Registered hvapi major[2] minor[0]
+[    9.089298] pci_sun4v: Registered hvapi ATU major[1] minor[0]
+[    9.089980] pci@400: SUN4V PCI Bus Module
+[    9.089985] pci@400: On NUMA node -1
+[    9.089999] pci@400: PCI IO [io  0x85100000000-0x8510fffffff] offset 85100000000
+[    9.090008] pci@400: PCI MEM [mem 0x84000000000-0x8407f7fffff] offset 84000000000
+[    9.090015] pci@400: PCI MEM64 [mem 0x84100000000-0x847ffffffff] offset 80000000000
+[    9.090026] pci@400: Unable to request IOMMU resource.
+[    9.124141] pci@400: Imported 24 TSB entries from OBP
+[    9.133089] pci@400: MSI Queue first[0] num[56] count[512] devino[0x6]
+[    9.133096] pci@400: MSI first[0] num[512] mask[0x3ff] width[32]
+[    9.133103] pci@400: MSI addr32[0x7f800000:0x800000] addr64[0xe00000003f800000:0x800000]
+[    9.133108] pci@400: MSI queues at RA [000000007be00000]
+[    9.133129] PCI: Scanning PBM /pci@400
+[    9.133356] pci_sun4v f0291370: PCI host bridge to bus 0000:00
+[    9.133374] pci_bus 0000:00: root bus resource [io  0x85100000000-0x8510fffffff] (bus address [0x0000-0xfffffff])
+[    9.133388] pci_bus 0000:00: root bus resource [mem 0x84000000000-0x8407f7fffff] (bus address [0x00000000-0x7f7fffff])
+[    9.133400] pci_bus 0000:00: root bus resource [mem 0x84100000000-0x847ffffffff] (bus address [0x4100000000-0x47ffffffff])
+[    9.133412] pci_bus 0000:00: root bus resource [bus 00-12]
+[    9.133637] pci 0000:00:01.0: [108e:8186] type 01 class 0x060400
+[    9.133884] pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+[    9.134651] pci 0000:01:00.0: [111d:807a] type 01 class 0x060400
+[    9.134687] pci 0000:01:00.0: enabling Extended Tags
+[    9.134995] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[    9.135856] pci 0000:02:00.0: [111d:807a] type 01 class 0x060400
+[    9.135892] pci 0000:02:00.0: enabling Extended Tags
+[    9.136252] pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+[    9.137123] pci 0000:02:04.0: [111d:807a] type 01 class 0x060400
+[    9.137159] pci 0000:02:04.0: enabling Extended Tags
+[    9.137520] pci 0000:02:04.0: PME# supported from D0 D3hot D3cold
+[    9.138379] pci 0000:04:00.0: [1000:0072] type 00 class 0x010700
+[    9.138393] pci 0000:04:00.0: reg 0x10: [io  0x85100000000-0x851000000ff]
+[    9.138404] pci 0000:04:00.0: reg 0x14: [mem 0x84100000000-0x84100003fff 64bit]
+[    9.138414] pci 0000:04:00.0: reg 0x1c: [mem 0x84100040000-0x8410007ffff 64bit]
+[    9.138424] pci 0000:04:00.0: reg 0x30: [mem 0x84000100000-0x8400017ffff]
+[    9.138460] pci 0000:04:00.0: enabling Extended Tags
+[    9.138819] pci 0000:04:00.0: supports D1 D2
+[    9.139377] pci 0000:02:06.0: [111d:807a] type 01 class 0x060400
+[    9.139415] pci 0000:02:06.0: enabling Extended Tags
+[    9.139775] pci 0000:02:06.0: PME# supported from D0 D3hot D3cold
+[    9.140646] pci 0000:02:08.0: [111d:807a] type 01 class 0x060400
+[    9.140684] pci 0000:02:08.0: enabling Extended Tags
+[    9.141051] pci 0000:02:08.0: PME# supported from D0 D3hot D3cold
+[    9.141901] pci 0000:00:02.0: [108e:8186] type 01 class 0x060400
+[    9.142114] pci 0000:00:02.0: PME# supported from D0 D3hot D3cold
+[    9.142879] pci 0000:07:00.0: [111d:8077] type 01 class 0x060400
+[    9.142914] pci 0000:07:00.0: enabling Extended Tags
+[    9.143230] pci 0000:07:00.0: PME# supported from D0 D3hot D3cold
+[    9.144102] pci 0000:08:00.0: [111d:8077] type 01 class 0x060400
+[    9.144139] pci 0000:08:00.0: enabling Extended Tags
+[    9.144514] pci 0000:08:00.0: PME# supported from D0 D3hot D3cold
+[    9.145415] pci 0000:09:00.0: [1a03:1150] type 01 class 0x060400
+[    9.145755] pci 0000:09:00.0: supports D1 D2
+[    9.145764] pci 0000:09:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    9.146365] pci_bus 0000:0a: extended config space not accessible
+[    9.146628] pci 0000:0a:00.0: [1a03:2000] type 00 class 0x030000
+[    9.146642] pci 0000:0a:00.0: reg 0x10: [mem 0x84000800000-0x84000ffffff]
+[    9.146652] pci 0000:0a:00.0: reg 0x14: [mem 0x84000200000-0x8400021ffff]
+[    9.146661] pci 0000:0a:00.0: reg 0x18: [io  0x85100001000-0x8510000107f]
+[    9.146671] pci 0000:0a:00.0: reg 0x30: [mem 0x00000000]
+[    9.146829] pci 0000:0a:00.0: supports D1 D2
+[    9.146839] pci 0000:0a:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    9.147297] pci 0000:08:04.0: [111d:8077] type 01 class 0x060400
+[    9.147336] pci 0000:08:04.0: enabling Extended Tags
+[    9.147710] pci 0000:08:04.0: PME# supported from D0 D3hot D3cold
+[    9.148584] pci 0000:0b:00.0: [1000:0072] type 00 class 0x010700
+[    9.148597] pci 0000:0b:00.0: reg 0x10: [io  0x85100002000-0x851000020ff]
+[    9.148608] pci 0000:0b:00.0: reg 0x14: [mem 0x84110000000-0x84110003fff 64bit]
+[    9.148618] pci 0000:0b:00.0: reg 0x1c: [mem 0x84110040000-0x8411007ffff 64bit]
+[    9.148628] pci 0000:0b:00.0: reg 0x30: [mem 0x84001000000-0x8400107ffff]
+[    9.148663] pci 0000:0b:00.0: enabling Extended Tags
+[    9.148987] pci 0000:0b:00.0: supports D1 D2
+[    9.149560] pci 0000:08:06.0: [111d:8077] type 01 class 0x060400
+[    9.149597] pci 0000:08:06.0: enabling Extended Tags
+[    9.149972] pci 0000:08:06.0: PME# supported from D0 D3hot D3cold
+[    9.150929] pci 0000:0c:00.0: [8086:10c9] type 00 class 0x020000
+[    9.150942] pci 0000:0c:00.0: reg 0x10: [mem 0x84001100000-0x8400111ffff]
+[    9.150951] pci 0000:0c:00.0: reg 0x14: [mem 0x84001120000-0x8400113ffff]
+[    9.150961] pci 0000:0c:00.0: reg 0x18: [io  0x85100003000-0x8510000301f]
+[    9.150971] pci 0000:0c:00.0: reg 0x1c: [mem 0x84001140000-0x84001143fff]
+[    9.150981] pci 0000:0c:00.0: reg 0x30: [mem 0x84001160000-0x8400117ffff]
+[    9.151366] pci 0000:0c:00.0: PME# supported from D0 D3hot D3cold
+[    9.151577] pci 0000:0c:00.0: reg 0x184: [mem 0x84001180000-0x84001183fff]
+[    9.151590] pci 0000:0c:00.0: VF(n) BAR0 space: [mem 0x84001180000-0x8400119ffff] (contains BAR0 for 8 VFs)
+[    9.151692] pci 0000:0c:00.0: reg 0x190: [mem 0x840011a0000-0x840011a3fff]
+[    9.151705] pci 0000:0c:00.0: VF(n) BAR3 space: [mem 0x840011a0000-0x840011bffff] (contains BAR3 for 8 VFs)
+[    9.152565] pci 0000:0c:00.1: [8086:10c9] type 00 class 0x020000
+[    9.152578] pci 0000:0c:00.1: reg 0x10: [mem 0x840011c0000-0x840011dffff]
+[    9.152588] pci 0000:0c:00.1: reg 0x14: [mem 0x840011e0000-0x840011fffff]
+[    9.152598] pci 0000:0c:00.1: reg 0x18: [io  0x85100003020-0x8510000303f]
+[    9.152607] pci 0000:0c:00.1: reg 0x1c: [mem 0x84001144000-0x84001147fff]
+[    9.152617] pci 0000:0c:00.1: reg 0x30: [mem 0x84001200000-0x8400121ffff]
+[    9.153010] pci 0000:0c:00.1: PME# supported from D0 D3hot D3cold
+[    9.153173] pci 0000:0c:00.1: reg 0x184: [mem 0x84001220000-0x84001223fff]
+[    9.153184] pci 0000:0c:00.1: VF(n) BAR0 space: [mem 0x84001220000-0x8400123ffff] (contains BAR0 for 8 VFs)
+[    9.153288] pci 0000:0c:00.1: reg 0x190: [mem 0x84001240000-0x84001243fff]
+[    9.153299] pci 0000:0c:00.1: VF(n) BAR3 space: [mem 0x84001240000-0x8400125ffff] (contains BAR3 for 8 VFs)
+[    9.154084] pci 0000:08:07.0: [111d:8077] type 01 class 0x060400
+[    9.154123] pci 0000:08:07.0: enabling Extended Tags
+[    9.154499] pci 0000:08:07.0: PME# supported from D0 D3hot D3cold
+[    9.155422] pci 0000:0d:00.0: [8086:10c9] type 00 class 0x020000
+[    9.155434] pci 0000:0d:00.0: reg 0x10: [mem 0x84001300000-0x8400131ffff]
+[    9.155444] pci 0000:0d:00.0: reg 0x14: [mem 0x84001320000-0x8400133ffff]
+[    9.155454] pci 0000:0d:00.0: reg 0x18: [io  0x85100004000-0x8510000401f]
+[    9.155464] pci 0000:0d:00.0: reg 0x1c: [mem 0x84001340000-0x84001343fff]
+[    9.155473] pci 0000:0d:00.0: reg 0x30: [mem 0x84001360000-0x8400137ffff]
+[    9.155858] pci 0000:0d:00.0: PME# supported from D0 D3hot D3cold
+[    9.156063] pci 0000:0d:00.0: reg 0x184: [mem 0x84001380000-0x84001383fff]
+[    9.156076] pci 0000:0d:00.0: VF(n) BAR0 space: [mem 0x84001380000-0x8400139ffff] (contains BAR0 for 8 VFs)
+[    9.156179] pci 0000:0d:00.0: reg 0x190: [mem 0x840013a0000-0x840013a3fff]
+[    9.156190] pci 0000:0d:00.0: VF(n) BAR3 space: [mem 0x840013a0000-0x840013bffff] (contains BAR3 for 8 VFs)
+[    9.157065] pci 0000:0d:00.1: [8086:10c9] type 00 class 0x020000
+[    9.157078] pci 0000:0d:00.1: reg 0x10: [mem 0x840013c0000-0x840013dffff]
+[    9.157087] pci 0000:0d:00.1: reg 0x14: [mem 0x840013e0000-0x840013fffff]
+[    9.157097] pci 0000:0d:00.1: reg 0x18: [io  0x85100004020-0x8510000403f]
+[    9.157107] pci 0000:0d:00.1: reg 0x1c: [mem 0x84001344000-0x84001347fff]
+[    9.157117] pci 0000:0d:00.1: reg 0x30: [mem 0x84001400000-0x8400141ffff]
+[    9.157502] pci 0000:0d:00.1: PME# supported from D0 D3hot D3cold
+[    9.157666] pci 0000:0d:00.1: reg 0x184: [mem 0x84001420000-0x84001423fff]
+[    9.157677] pci 0000:0d:00.1: VF(n) BAR0 space: [mem 0x84001420000-0x8400143ffff] (contains BAR0 for 8 VFs)
+[    9.157779] pci 0000:0d:00.1: reg 0x190: [mem 0x84001440000-0x84001443fff]
+[    9.157792] pci 0000:0d:00.1: VF(n) BAR3 space: [mem 0x84001440000-0x8400145ffff] (contains BAR3 for 8 VFs)
+[    9.158580] pci 0000:08:08.0: [111d:8077] type 01 class 0x060400
+[    9.158619] pci 0000:08:08.0: enabling Extended Tags
+[    9.159014] pci 0000:08:08.0: PME# supported from D0 D3hot D3cold
+[    9.159892] pci 0000:08:0a.0: [111d:8077] type 01 class 0x060400
+[    9.159930] pci 0000:08:0a.0: enabling Extended Tags
+[    9.160305] pci 0000:08:0a.0: PME# supported from D0 D3hot D3cold
+[    9.161190] pci 0000:08:0c.0: [111d:8077] type 01 class 0x060400
+[    9.161228] pci 0000:08:0c.0: enabling Extended Tags
+[    9.161602] pci 0000:08:0c.0: PME# supported from D0 D3hot D3cold
+[    9.162480] pci 0000:08:0f.0: [111d:8077] type 01 class 0x060400
+[    9.162519] pci 0000:08:0f.0: enabling Extended Tags
+[    9.162923] pci 0000:08:0f.0: PME# supported from D0 D3hot D3cold
+[    9.163846] pci 0000:11:00.0: [10b5:8112] type 01 class 0x060400
+[    9.163890] pci 0000:11:00.0: enabling Extended Tags
+[    9.164215] pci 0000:11:00.0: supports D1
+[    9.164226] pci 0000:11:00.0: PME# supported from D0 D1 D3hot
+[    9.164825] pci_bus 0000:12: extended config space not accessible
+[    9.165110] pci 0000:12:00.0: [1033:0035] type 00 class 0x0c0310
+[    9.165124] pci 0000:12:00.0: reg 0x10: [mem 0x84001500000-0x84001501fff]
+[    9.165301] pci 0000:12:00.0: supports D1 D2
+[    9.165311] pci 0000:12:00.0: PME# supported from D0 D1 D2 D3hot
+[    9.165750] pci 0000:12:00.1: [1033:0035] type 00 class 0x0c0310
+[    9.165762] pci 0000:12:00.1: reg 0x10: [mem 0x84001502000-0x84001503fff]
+[    9.165940] pci 0000:12:00.1: supports D1 D2
+[    9.165949] pci 0000:12:00.1: PME# supported from D0 D1 D2 D3hot
+[    9.166399] pci 0000:12:00.2: [1033:00e0] type 00 class 0x0c0320
+[    9.166412] pci 0000:12:00.2: reg 0x10: [mem 0x84001504000-0x84001505fff]
+[    9.166594] pci 0000:12:00.2: supports D1 D2
+[    9.166605] pci 0000:12:00.2: PME# supported from D0 D1 D2 D3hot
+[    9.167053] pci 0000:04:00.0: can't claim BAR 1 [mem 0x84100000000-0x84100003fff 64bit]: no compatible bridge window
+[    9.167066] pci 0000:04:00.0: can't claim BAR 3 [mem 0x84100040000-0x8410007ffff 64bit]: no compatible bridge window
+[    9.167097] pci 0000:0a:00.0: can't claim VGA legacy [mem 0x840000a0000-0x840000bffff]: no compatible bridge window
+[    9.167109] pci 0000:0b:00.0: can't claim BAR 1 [mem 0x84110000000-0x84110003fff 64bit]: no compatible bridge window
+[    9.167119] pci 0000:0b:00.0: can't claim BAR 3 [mem 0x84110040000-0x8411007ffff 64bit]: no compatible bridge window
+[    9.198197] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    9.198213] HugeTLB registered 8.00 MiB page size, pre-allocated 0 pages
+[    9.198223] HugeTLB registered 256 MiB page size, pre-allocated 0 pages
+[    9.198233] HugeTLB registered 2.00 GiB page size, pre-allocated 0 pages
+[   10.407936] iommu: Default domain type: Translated 
+[   10.408351] pci 0000:0a:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+[   10.408389] pci 0000:0a:00.0: vgaarb: bridge control possible
+[   10.408407] pci 0000:0a:00.0: vgaarb: setting as boot device (VGA legacy resources not available)
+[   10.408411] vgaarb: loaded
+[   10.410352] NetLabel: Initializing
+[   10.410358] NetLabel:  domain hash size = 128
+[   10.410362] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[   10.410440] NetLabel:  unlabeled traffic allowed by default
+[   10.411782] SUN4V: Reboot data supported (maj=1,min=0).
+[   10.412323] ds.c:v1.0 (Jul 11, 2007)
+[   10.418707] clocksource: Switched to clocksource stick
+[   10.506352] VFS: Disk quotas dquot_6.6.0
+[   10.506922] VFS: Dquot-cache hash table entries: 1024 (order 0, 8192 bytes)
+[   10.508953] AppArmor: AppArmor Filesystem Enabled
+[   10.521372] NET: Registered protocol family 2
+[   10.524297] tcp_listen_portaddr_hash hash table entries: 32768 (order: 6, 524288 bytes, linear)
+[   10.526421] TCP established hash table entries: 524288 (order: 9, 4194304 bytes, linear)
+[   10.540160] TCP bind hash table entries: 65536 (order: 7, 1048576 bytes, linear)
+[   10.543581] TCP: Hash tables configured (established 524288 bind 65536)
+[   10.544932] UDP hash table entries: 32768 (order: 7, 1048576 bytes, linear)
+[   10.548817] UDP-Lite hash table entries: 32768 (order: 7, 1048576 bytes, linear)
+[   10.554802] NET: Registered protocol family 1
+[   10.554835] NET: Registered protocol family 44
+[   10.555017] pci 0000:04:00.0: CLS mismatch (64 != 512), using 64 bytes
+[   10.556054] Trying to unpack rootfs image as initramfs...
+[   12.310240] Freeing initrd memory: 25400K
+[   12.324653] Initialise system trusted keyrings
+[   12.324704] Key type blacklist registered
+[   12.325146] workingset: timestamp_bits=46 max_order=23 bucket_order=0
+[   12.336097] zbud: loaded
+[   12.337615] integrity: Platform Keyring initialized
+[   12.337627] Key type asymmetric registered
+[   12.337634] Asymmetric key parser 'x509' registered
+[   12.337676] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[   12.339697] io scheduler mq-deadline registered
+[   12.358585] f0286dd8: ttyHV0 at I/O 0x0 (irq = 33, base_baud = 115200) is a SUN4V HCONS
+[   12.358672] printk: console [ttyHV0] enabled
+[   12.368674] mousedev: PS/2 mouse device common for all mice
+[   12.370277] rtc-sun4v rtc-sun4v: registered as rtc0
+[   12.370475] rtc-sun4v rtc-sun4v: setting system clock to 2020-08-19T19:21:38 UTC (1597864898)
+[   12.377908] ledtrig-cpu: registered to indicate activity on CPUs
+[   12.380653] NET: Registered protocol family 10
+[   12.436092] Segment Routing with IPv6
+[   12.436183] mip6: Mobile IPv6
+[   12.436193] NET: Registered protocol family 17
+[   12.436518] mpls_gso: MPLS GSO support
+[   12.436852] registered taskstats version 1
+[   12.436884] Loading compiled-in X.509 certificates
+[   12.702833] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[   12.702953] Loaded X.509 cert 'Debian Secure Boot Signer 2020: 00b55eb3b9'
+[   12.704040] zswap: loaded using pool lzo/zbud
+[   12.706641] Key type ._fscrypt registered
+[   12.706648] Key type .fscrypt registered
+[   12.706652] Key type fscrypt-provisioning registered
+[   12.707021] AppArmor: AppArmor sha1 policy hashing enabled
+[   12.713231] This architecture does not have kernel memory protection.
+[   12.713238] Run /init as init process
+[   12.713245]   with arguments:
+[   12.713250]     /init
+[   12.713254]   with environment:
+[   12.713260]     HOME=/
+[   12.713264]     TERM=linux
+[   12.713270]     BOOT_IMAGE=/vmlinux-5.7.0-2-sparc64-smp
+[   13.364831] crc32c_sparc64: module verification failed: signature and/or required key missing - tainting kernel
+[   13.365376] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.487178] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.579345] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.664649] pps_core: LinuxPPS API ver. 1 registered
+[   13.664659] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[   13.665957] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.668373] PTP clock support registered
+[   13.672868] SCSI subsystem initialized
+[   13.680119] usbcore: registered new interface driver usbfs
+[   13.680206] usbcore: registered new interface driver hub
+[   13.683948] usbcore: registered new device driver usb
+[   13.686087] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.6.0-k
+[   13.686094] igb: Copyright (c) 2007-2014 Intel Corporation.
+[   13.686261] igb 0000:0c:00.0: enabling device (0144 -> 0146)
+[   13.687855] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[   13.688554] mpt3sas version 33.100.00.00 loaded
+[   13.689712] ehci-pci: EHCI PCI platform driver
+[   13.689888] mpt2sas_cm0: 64 BIT PCI BUS DMA ADDRESSING SUPPORTED, total mem (65845384 kB)
+[   13.690003] ehci-pci 0000:12:00.2: EHCI Host Controller
+[   13.690038] ehci-pci 0000:12:00.2: new USB bus registered, assigned bus number 1
+[   13.690281] ehci-pci 0000:12:00.2: irq 39, io mem 0x84001504000
+[   13.690683] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[   13.706522] ehci-pci 0000:12:00.2: USB 2.0 started, EHCI 1.00
+[   13.706883] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.07
+[   13.706894] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   13.706903] usb usb1: Product: EHCI Host Controller
+[   13.706911] usb usb1: Manufacturer: Linux 5.7.0-2-sparc64-smp ehci_hcd
+[   13.706918] usb usb1: SerialNumber: 0000:12:00.2
+[   13.707737] hub 1-0:1.0: USB hub found
+[   13.707789] hub 1-0:1.0: 5 ports detected
+[   13.711155] ohci-pci: OHCI PCI platform driver
+[   13.711314] ohci-pci 0000:12:00.0: OHCI PCI host controller
+[   13.711346] ohci-pci 0000:12:00.0: new USB bus registered, assigned bus number 2
+[   13.711524] ohci-pci 0000:12:00.0: irq 36, io mem 0x84001500000
+[   13.740563] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.744857] mpt2sas_cm0: CurrentHostPageSize is 0: Setting default host page size to 4k
+[   13.744911] mpt2sas_cm0: MSI-X vectors supported: 1
+[   13.744917] 	 no of cores: 128, max_msix_vectors: -1
+[   13.744921] mpt2sas_cm0:  0 1
+[   13.744960] mpt2sas_cm0: pci_alloc_irq_vectors failed (r=-28) !!!
+[   13.744964] mpt2sas_cm0: High IOPs queues : disabled
+[   13.744999] mpt2sas0: IO-APIC enabled: IRQ 36
+[   13.745009] mpt2sas_cm0: iomem(0x0000084100000000), mapped(0x(____ptrval____)), size(16384)
+[   13.745015] mpt2sas_cm0: ioport(0x0000085100000000), size(256)
+[   13.772797] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.07
+[   13.772807] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   13.772815] usb usb2: Product: OHCI PCI host controller
+[   13.772824] usb usb2: Manufacturer: Linux 5.7.0-2-sparc64-smp ohci_hcd
+[   13.772831] usb usb2: SerialNumber: 0000:12:00.0
+[   13.773801] hub 2-0:1.0: USB hub found
+[   13.773852] hub 2-0:1.0: 3 ports detected
+[   13.774998] ohci-pci 0000:12:00.1: OHCI PCI host controller
+[   13.775025] ohci-pci 0000:12:00.1: new USB bus registered, assigned bus number 3
+[   13.775125] ohci-pci 0000:12:00.1: irq 37, io mem 0x84001502000
+[   13.784421] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.800747] mpt2sas_cm0: CurrentHostPageSize is 0: Setting default host page size to 4k
+[   13.800754] mpt2sas_cm0: sending diag reset !!
+[   13.824349] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.836777] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.07
+[   13.836787] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   13.836796] usb usb3: Product: OHCI PCI host controller
+[   13.836804] usb usb3: Manufacturer: Linux 5.7.0-2-sparc64-smp ohci_hcd
+[   13.836811] usb usb3: SerialNumber: 0000:12:00.1
+[   13.837575] hub 3-0:1.0: USB hub found
+[   13.837626] hub 3-0:1.0: 2 ports detected
+[   13.869806] igb 0000:0c:00.0: added PHC on eth0
+[   13.869817] igb 0000:0c:00.0: Intel(R) Gigabit Ethernet Network Connection
+[   13.869828] igb 0000:0c:00.0: eth0: (PCIe:2.5Gb/s:Width x4) 00:21:28:d2:33:64
+[   13.869838] igb 0000:0c:00.0: eth0: PBA No: Unknown
+[   13.869848] igb 0000:0c:00.0: Using MSI-X interrupts. 8 rx queue(s), 8 tx queue(s)
+[   13.870027] igb 0000:0c:00.1: enabling device (0144 -> 0146)
+[   13.872213] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.912184] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.948095] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   13.987957] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.027913] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.042520] usb 1-2: new high-speed USB device number 2 using ehci-pci
+[   14.057293] igb 0000:0c:00.1: added PHC on eth1
+[   14.057303] igb 0000:0c:00.1: Intel(R) Gigabit Ethernet Network Connection
+[   14.057313] igb 0000:0c:00.1: eth1: (PCIe:2.5Gb/s:Width x4) 00:21:28:d2:33:65
+[   14.057321] igb 0000:0c:00.1: eth1: PBA No: Unknown
+[   14.057331] igb 0000:0c:00.1: Using MSI-X interrupts. 8 rx queue(s), 8 tx queue(s)
+[   14.057491] igb 0000:0d:00.0: enabling device (0144 -> 0146)
+[   14.079904] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.120027] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.151912] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.199909] usb 1-2: New USB device found, idVendor=04b4, idProduct=6560, bcdDevice= 0.0b
+[   14.199919] usb 1-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[   14.200085] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.200594] hub 1-2:1.0: USB hub found
+[   14.200766] hub 1-2:1.0: 4 ports detected
+[   14.241234] igb 0000:0d:00.0: added PHC on eth2
+[   14.241242] igb 0000:0d:00.0: Intel(R) Gigabit Ethernet Network Connection
+[   14.241252] igb 0000:0d:00.0: eth2: (PCIe:2.5Gb/s:Width x4) 00:21:28:d2:33:66
+[   14.241262] igb 0000:0d:00.0: eth2: PBA No: Unknown
+[   14.241270] igb 0000:0d:00.0: Using MSI-X interrupts. 8 rx queue(s), 8 tx queue(s)
+[   14.241431] igb 0000:0d:00.1: enabling device (0144 -> 0146)
+[   14.264011] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.295858] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.327978] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.330508] usb 1-4: new high-speed USB device number 3 using ehci-pci
+[   14.367966] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.411977] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.425283] igb 0000:0d:00.1: added PHC on eth3
+[   14.425292] igb 0000:0d:00.1: Intel(R) Gigabit Ethernet Network Connection
+[   14.425301] igb 0000:0d:00.1: eth3: (PCIe:2.5Gb/s:Width x4) 00:21:28:d2:33:67
+[   14.425311] igb 0000:0d:00.1: eth3: PBA No: Unknown
+[   14.425321] igb 0000:0d:00.1: Using MSI-X interrupts. 8 rx queue(s), 8 tx queue(s)
+[   14.438539] igb 0000:0c:00.0 enp12s0f0: renamed from eth0
+[   14.455624] igb 0000:0c:00.1 enp12s0f1: renamed from eth1
+[   14.456014] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.487746] usb 1-4: New USB device found, idVendor=04b4, idProduct=6560, bcdDevice= 0.0b
+[   14.487757] usb 1-4: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[   14.488559] hub 1-4:1.0: USB hub found
+[   14.488727] hub 1-4:1.0: 4 ports detected
+[   14.528556] igb 0000:0d:00.0 enp13s0f0: renamed from eth2
+[   14.555991] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.566502] usb 1-2.2: new high-speed USB device number 4 using ehci-pci
+[   14.667511] igb 0000:0d:00.1 enp13s0f1: renamed from eth3
+[   14.676329] usb 1-2.2: New USB device found, idVendor=4146, idProduct=166a, bcdDevice= 0.00
+[   14.676340] usb 1-2.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   14.676347] usb 1-2.2: Product: 32GB
+[   14.676355] usb 1-2.2: Manufacturer: PRETEC
+[   14.676364] usb 1-2.2: SerialNumber: 14060517063401276542
+[   14.752108] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.753353] usb-storage 1-2.2:1.0: USB Mass Storage device detected
+[   14.753373] mpt2sas_cm0: diag reset: SUCCESS
+[   14.754291] scsi host1: usb-storage 1-2.2:1.0
+[   14.754499] usb 1-2.3: new high-speed USB device number 5 using ehci-pci
+[   14.755737] usbcore: registered new interface driver usb-storage
+[   14.759783] usbcore: registered new interface driver uas
+[   14.785845] mpt2sas_cm0: scatter gather: sge_in_main_msg(1), sge_per_chain(9), sge_per_io(128), chains_per_io(15)
+[   14.786140] mpt2sas_cm0: request pool(0x(____ptrval____)) - dma(0xc000000680000000): depth(1966), frame_size(128), pool_size(245 kB)
+[   14.804193] mpt2sas_cm0: sense pool(0x(____ptrval____))- dma(0xc00000068038a000): depth(1771),element_size(96), pool_size(166 kB)
+[   14.804384] mpt2sas_cm0: config page(0x(____ptrval____)) - dma(0xc0000006803f6000): size(512)
+[   14.804390] mpt2sas_cm0: Allocated physical memory: size(926 kB)
+[   14.804395] mpt2sas_cm0: Current Controller Queue Depth(1768),Max Controller Queue Depth(1871)
+[   14.804400] mpt2sas_cm0: Scatter Gather Elements per IO(128)
+[   14.816100] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.850273] mpt2sas_cm0: LSISAS2008: FWVersion(05.00.17.00), ChipRevision(0x03), BiosVersion(00.00.00.00)
+[   14.850278] mpt2sas_cm0: Protocol=(Initiator,Target), Capabilities=(Raid,TLR,EEDP,Snapshot Buffer,Diag Trace Buffer,Task Set Full,NCQ)
+[   14.850468] scsi host0: Fusion MPT SAS Host
+[   14.851970] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.857498] mpt2sas_cm0: sending port enable !!
+[   14.858570] mpt2sas_cm1: 64 BIT PCI BUS DMA ADDRESSING SUPPORTED, total mem (65845384 kB)
+[   14.863932] usb 1-2.3: New USB device found, idVendor=046b, idProduct=ff01, bcdDevice= 1.00
+[   14.863942] usb 1-2.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   14.863950] usb 1-2.3: Product: Generic Hub
+[   14.863958] usb 1-2.3: Manufacturer: American Megatrends Inc.
+[   14.864913] hub 1-2.3:1.0: USB hub found
+[   14.865050] hub 1-2.3:1.0: 3 ports detected
+[   14.895976] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.913991] mpt2sas_cm1: CurrentHostPageSize is 0: Setting default host page size to 4k
+[   14.914045] mpt2sas_cm1: MSI-X vectors supported: 1
+[   14.914050] 	 no of cores: 128, max_msix_vectors: -1
+[   14.914056] mpt2sas_cm1:  0 1
+[   14.914096] mpt2sas_cm1: pci_alloc_irq_vectors failed (r=-28) !!!
+[   14.914102] mpt2sas_cm1: High IOPs queues : disabled
+[   14.914140] mpt2sas1: IO-APIC enabled: IRQ 37
+[   14.914148] mpt2sas_cm1: iomem(0x0000084110000000), mapped(0x(____ptrval____)), size(16384)
+[   14.914155] mpt2sas_cm1: ioport(0x0000085100002000), size(256)
+[   14.935670] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   14.946486] usb 1-2.4: new low-speed USB device number 6 using ehci-pci
+[   14.969762] mpt2sas_cm1: CurrentHostPageSize is 0: Setting default host page size to 4k
+[   14.969772] mpt2sas_cm1: sending diag reset !!
+[   14.975702] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.015856] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.055667] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.060902] usb 1-2.4: New USB device found, idVendor=046b, idProduct=ff10, bcdDevice= 1.00
+[   15.060911] usb 1-2.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   15.060918] usb 1-2.4: Product: Virtual Keyboard and Mouse
+[   15.060927] usb 1-2.4: Manufacturer: American Megatrends Inc.
+[   15.103906] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.105101] hid: raw HID events driver (C) Jiri Kosina
+[   15.112694] usbcore: registered new interface driver usbhid
+[   15.112698] usbhid: USB HID core driver
+[   15.122947] input: American Megatrends Inc. Virtual Keyboard and Mouse as /devices/root/f0291370/pci0000:00/0000:00:02.0/0000:07:00.0/0000:08:0f.0/0000:11:00.0/0000:12:00.2/usb1/1-2/1-2.4/1-2.4:1.0/0003:046B:FF10.0001/input/input0
+[   15.123858] hid-generic 0003:046B:FF10.0001: input,hidraw0: USB HID v1.10 Keyboard [American Megatrends Inc. Virtual Keyboard and Mouse] on usb-0000:12:00.2-2.4/input0
+[   15.124528] input: American Megatrends Inc. Virtual Keyboard and Mouse as /devices/root/f0291370/pci0000:00/0000:00:02.0/0000:07:00.0/0000:08:0f.0/0000:11:00.0/0000:12:00.2/usb1/1-2/1-2.4/1-2.4:1.1/0003:046B:FF10.0002/input/input1
+[   15.124908] hid-generic 0003:046B:FF10.0002: input,hidraw1: USB HID v1.10 Mouse [American Megatrends Inc. Virtual Keyboard and Mouse] on usb-0000:12:00.2-2.4/input1
+[   15.150490] usb 1-2.3.2: new high-speed USB device number 7 using ehci-pci
+[   15.167649] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.215809] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.255810] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.260626] usb 1-2.3.2: New USB device found, idVendor=046b, idProduct=ff20, bcdDevice= 1.00
+[   15.260635] usb 1-2.3.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   15.260644] usb 1-2.3.2: Product: Virtual Cdrom Device
+[   15.260652] usb 1-2.3.2: Manufacturer: American Megatrends Inc.
+[   15.261811] usb-storage 1-2.3.2:1.0: USB Mass Storage device detected
+[   15.262764] scsi host3: usb-storage 1-2.3.2:1.0
+[   15.303802] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.342491] usb 1-2.3.3: new high-speed USB device number 8 using ehci-pci
+[   15.351768] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.391762] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.427760] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.452348] usb 1-2.3.3: New USB device found, idVendor=0430, idProduct=a4a2, bcdDevice= 1.00
+[   15.452358] usb 1-2.3.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   15.452365] usb 1-2.3.3: Product: Virtual Eth Device
+[   15.452373] usb 1-2.3.3: Manufacturer: SunMicro
+[   15.471747] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.503678] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.543737] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.591709] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.623541] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.663696] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.703602] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.742108] random: fast init done
+[   15.751663] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.774941] scsi 1:0:0:0: Direct-Access     Generic  USB Flash Drive  1.00 PQ: 0 ANSI: 4
+[   15.791533] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.847632] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.887628] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.921666] mpt2sas_cm1: diag reset: SUCCESS
+[   15.935605] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   15.953609] mpt2sas_cm1: scatter gather: sge_in_main_msg(1), sge_per_chain(9), sge_per_io(128), chains_per_io(15)
+[   15.953907] mpt2sas_cm1: request pool(0x(____ptrval____)) - dma(0xc0000006803f8000): depth(1966), frame_size(128), pool_size(245 kB)
+[   15.971968] mpt2sas_cm1: sense pool(0x(____ptrval____))- dma(0xc000000680782000): depth(1771),element_size(96), pool_size(166 kB)
+[   15.972159] mpt2sas_cm1: config page(0x(____ptrval____)) - dma(0xc0000006807ee000): size(512)
+[   15.972165] mpt2sas_cm1: Allocated physical memory: size(926 kB)
+[   15.972170] mpt2sas_cm1: Current Controller Queue Depth(1768),Max Controller Queue Depth(1871)
+[   15.972175] mpt2sas_cm1: Scatter Gather Elements per IO(128)
+[   15.999843] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.019842] mpt2sas_cm1: LSISAS2008: FWVersion(05.00.17.00), ChipRevision(0x03), BiosVersion(00.00.00.00)
+[   16.019847] mpt2sas_cm1: Protocol=(Initiator,Target), Capabilities=(Raid,TLR,EEDP,Snapshot Buffer,Diag Trace Buffer,Task Set Full,NCQ)
+[   16.020035] scsi host2: Fusion MPT SAS Host
+[   16.027249] mpt2sas_cm1: sending port enable !!
+[   16.039707] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.083453] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.123545] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.163396] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.207340] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.243531] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.288247] scsi 3:0:0:0: CD-ROM            AMI      Virtual CDROM    1.00 PQ: 0 ANSI: 0 CCS
+[   16.291325] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.339325] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.379438] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.423254] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.463418] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.519395] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.563231] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.603400] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.643256] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.683518] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.723349] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.763352] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.803132] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.843328] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.883313] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.923178] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   16.963303] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.011407] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.059260] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.099264] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.139258] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.179252] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.219040] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.259042] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.299223] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.339207] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.395165] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.429431] mpt2sas_cm0: host_add: handle(0x0001), sas_addr(0x5080020000fb0840), phys(8)
+[   17.447160] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.495014] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.559211] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.597063] mpt2sas_cm1: host_add: handle(0x0001), sas_addr(0x5080020000fb0841), phys(8)
+[   17.599155] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.643170] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.683098] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.723220] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.767210] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.807119] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.862996] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.902937] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.942997] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   17.999067] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.043034] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.083126] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.122965] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.163032] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.219099] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.259075] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.299053] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.338842] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.379041] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.419001] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.458872] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.503007] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.542821] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.582963] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.622973] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.678964] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.718926] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.758823] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.802787] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.850921] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.898901] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.938887] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   18.982906] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   19.022887] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   19.062689] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   19.102869] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   19.142859] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   19.182846] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   19.222843] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   19.262666] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   22.674286] mpt2sas_cm0: port enable: SUCCESS
+[   22.685909] sd 1:0:0:0: [sda] 64126976 512-byte logical blocks: (32.8 GB/30.6 GiB)
+[   22.686391] sd 1:0:0:0: [sda] Write Protect is off
+[   22.686405] sd 1:0:0:0: [sda] Mode Sense: bf 00 00 00
+[   22.686909] sd 1:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[   22.711294]  sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7
+[   22.726005] sd 1:0:0:0: [sda] Attached SCSI removable disk
+[   23.846249] mpt2sas_cm1: port enable: SUCCESS
+[   23.860043] scsi 2:0:0:0: CD-ROM            TEAC     DV-W28SS-R       1.0C PQ: 0 ANSI: 0
+[   23.860067] scsi 2:0:0:0: SATA: handle(0x0009), sas_addr(0x4433221106000000), phy(6), device_name(0x0000000000000000)
+[   23.860080] scsi 2:0:0:0: enclosure logical id (0x5080020000fb0841), slot(6) 
+[   23.860225] scsi 2:0:0:0: atapi(y), ncq(n), asyn_notify(n), smart(n), fua(n), sw_preserve(n)
+[   23.860241] scsi 2:0:0:0: qdepth(1), tagged(0), scsi_level(0), cmd_que(0)
+[   23.860253]  end_device-2:0: add: handle(0x0009), sas_addr(0x4433221106000000)
+[   23.870988] sr 2:0:0:0: [sr0] scsi-1 drive
+[   23.870995] cdrom: Uniform CD-ROM driver Revision: 3.20
+[   23.915722] sr 2:0:0:0: Attached scsi CD-ROM sr0
+[   23.920463] sr 3:0:0:0: [sr1] scsi-1 drive
+[   23.947434] sr 3:0:0:0: Attached scsi CD-ROM sr1
+[   24.571460] process '/usr/bin/fstype' started with executable stack
+[   24.609674] PM: Image not found (code -22)
+[   25.993835] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   26.111544] EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+[   26.354306] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[   27.478172] random: crng init done
+[   27.499853] systemd[1]: Inserted module 'autofs4'
+[   27.569718] systemd[1]: systemd 246.2-1 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +ZSTD -SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[   27.572651] systemd[1]: Detected architecture sparc64.
+[   27.628371] systemd[1]: Set hostname to <poutou>.
+[   28.985682] systemd[1]: Queued start job for default target Graphical Interface.
+[   28.999309] systemd[1]: Created slice system-getty.slice.
+[   29.004918] systemd[1]: Created slice system-modprobe.slice.
+[   29.010260] systemd[1]: Created slice system-openvpn.slice.
+[   29.015967] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[   29.022103] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[   29.027437] systemd[1]: Created slice User and Session Slice.
+[   29.027873] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   29.028221] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   29.030047] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   29.030425] systemd[1]: Reached target Local Encrypted Volumes.
+[   29.030724] systemd[1]: Reached target Paths.
+[   29.030932] systemd[1]: Reached target Slices.
+[   29.031109] systemd[1]: Reached target Swap.
+[   29.067057] systemd[1]: Listening on RPCbind Server Activation Socket.
+[   29.067876] systemd[1]: Listening on Syslog Socket.
+[   29.068558] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   29.068943] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   29.070139] systemd[1]: Listening on Journal Audit Socket.
+[   29.070848] systemd[1]: Listening on Journal Socket (/dev/log).
+[   29.071704] systemd[1]: Listening on Journal Socket.
+[   29.072663] systemd[1]: Listening on udev Control Socket.
+[   29.073409] systemd[1]: Listening on udev Kernel Socket.
+[   29.083266] systemd[1]: Mounting Huge Pages File System...
+[   29.092896] systemd[1]: Mounting POSIX Message Queue File System...
+[   29.103913] systemd[1]: Mounting Kernel Debug File System...
+[   29.113858] systemd[1]: Mounting Kernel Trace File System...
+[   29.124687] systemd[1]: Starting Set the console keyboard layout...
+[   29.134697] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[   29.143732] systemd[1]: Starting Load Kernel Module drm...
+[   29.146941] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[   29.147247] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[   29.160066] systemd[1]: Starting Journal Service...
+[   29.172754] systemd[1]: Starting Load Kernel Modules...
+[   29.182036] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   29.192480] systemd[1]: Starting Coldplug All udev Devices...
+[   29.205193] systemd[1]: Mounted Huge Pages File System.
+[   29.206240] systemd[1]: Mounted POSIX Message Queue File System.
+[   29.207092] systemd[1]: Mounted Kernel Debug File System.
+[   29.207937] systemd[1]: Mounted Kernel Trace File System.
+[   29.211524] systemd[1]: Finished Create list of static device nodes for the current kernel.
+[   29.265234] systemd[1]: Finished Load Kernel Modules.
+[   29.266881] systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+[   29.267435] systemd[1]: Condition check resulted in Kernel Configuration File System being skipped.
+[   29.277180] systemd[1]: Starting Apply Kernel Variables...
+[   29.305301] EXT4-fs (sda2): re-mounted. Opts: errors=remount-ro
+[   29.315059] systemd[1]: Finished Remount Root and Kernel File Systems.
+[   29.342709] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[   29.354058] systemd[1]: Starting Create System Users...
+[   29.357308] systemd[1]: modprobe@drm.service: Succeeded.
+[   29.360574] systemd[1]: Finished Load Kernel Module drm.
+[   29.411893] systemd[1]: Finished Apply Kernel Variables.
+[   29.484374] systemd[1]: Finished Create System Users.
+[   29.495845] systemd[1]: Starting Create Static Device Nodes in /dev...
+[   29.608579] systemd[1]: Finished Create Static Device Nodes in /dev.
+[   29.628138] systemd[1]: Starting Rule-based Manager for Device Events and Files...
+[   29.711796] systemd[1]: Started Journal Service.
+[   30.140242] sha1_sparc64: sparc64 sha1 opcode not available.
+[   30.183688] n2_crypto: n2_crypto.c:v0.2 (July 28, 2011)
+[   30.183708] n2_crypto: Found N2CP at /virtual-devices@100/n2cp@7
+[   30.183722] n2_crypto: Registered NCS HVAPI version 2.0
+[   30.185802] n2rng v0.3 (Jan 7, 2017)
+[   30.185823] n2rng f0286a7c: Registered RNG HVAPI major 2 minor 0
+[   30.185839] n2rng f0286a7c: Found multi-unit-capable RNG, units: 1
+[   30.186022] n2_crypto: md5 alg registration failed
+[   30.187074] n2rng f0286a7c: Selftest passed on unit 0
+[   30.207436] n2rng f0286a7c: RNG ready
+[   30.207474] n2cp f028683c: /virtual-devices@100/n2cp@7: Unable to register algorithms.
+[   30.266879] sha1_sparc64: sparc64 sha1 opcode not available.
+[   30.269803] sha256_sparc64: sparc64 sha256 opcode not available.
+[   30.394679] sha1_sparc64: sparc64 sha1 opcode not available.
+[   30.396691] sha512_sparc64: sparc64 sha512 opcode not available.
+[   30.396701] sha256_sparc64: sparc64 sha256 opcode not available.
+[   30.398304] n2cp: probe of f028683c failed with error -22
+[   30.399763] n2_crypto: Found NCP at /virtual-devices@100/ncp@6
+[   30.399772] n2_crypto: Registered NCS HVAPI version 2.0
+[   30.566127] sha1_sparc64: sparc64 sha1 opcode not available.
+[   30.566134] sha512_sparc64: sparc64 sha512 opcode not available.
+[   30.566152] sha256_sparc64: sparc64 sha256 opcode not available.
+[   30.567239] md5_sparc64: sparc64 md5 opcode not available.
+[   30.581039] sd 1:0:0:0: Attached scsi generic sg0 type 0
+[   30.581577] sr 2:0:0:0: Attached scsi generic sg1 type 5
+[   30.582134] sr 3:0:0:0: Attached scsi generic sg2 type 5
+[   30.738622] sha1_sparc64: sparc64 sha1 opcode not available.
+[   30.742149] aes_sparc64: sparc64 aes opcodes not available.
+[   30.742936] sha512_sparc64: sparc64 sha512 opcode not available.
+[   30.742961] md5_sparc64: sparc64 md5 opcode not available.
+[   30.742992] sha256_sparc64: sparc64 sha256 opcode not available.
+[   30.899025] sha512_sparc64: sparc64 sha512 opcode not available.
+[   30.934507] sha1_sparc64: sparc64 sha1 opcode not available.
+[   30.934669] sha256_sparc64: sparc64 sha256 opcode not available.
+[   30.935098] md5_sparc64: sparc64 md5 opcode not available.
+[   31.054436] md5_sparc64: sparc64 md5 opcode not available.
+[   31.054479] aes_sparc64: sparc64 aes opcodes not available.
+[   31.054493] des_sparc64: sparc64 des opcodes not available.
+[   31.054701] sha1_sparc64: sparc64 sha1 opcode not available.
+[   31.057605] sha256_sparc64: sparc64 sha256 opcode not available.
+[   31.059898] sha512_sparc64: sparc64 sha512 opcode not available.
+[   31.226404] sha1_sparc64: sparc64 sha1 opcode not available.
+[   31.290584] sha1_sparc64: sparc64 sha1 opcode not available.
+[   31.293170] sha512_sparc64: sparc64 sha512 opcode not available.
+[   31.293770] aes_sparc64: sparc64 aes opcodes not available.
+[   31.294118] sha256_sparc64: sparc64 sha256 opcode not available.
+[   31.294222] camellia_sparc64: sparc64 camellia opcodes not available.
+[   31.294562] md5_sparc64: sparc64 md5 opcode not available.
+[   31.294587] des_sparc64: sparc64 des opcodes not available.
+[   31.297888] cdc_ether 1-2.3.3:2.0 usb0: register 'cdc_ether' at usb-0000:12:00.2-2.3.3, CDC Ethernet Device, 02:21:28:57:47:17
+[   31.298106] usbcore: registered new interface driver cdc_ether
+[   31.317280] cdc_ether 1-2.3.3:2.0 enx022128574717: renamed from usb0
+[   31.443665] sha256_sparc64: sparc64 sha256 opcode not available.
+[   31.573366] md5_sparc64: sparc64 md5 opcode not available.
+[   31.573952] aes_sparc64: sparc64 aes opcodes not available.
+[   31.574139] camellia_sparc64: sparc64 camellia opcodes not available.
+[   31.574157] sha512_sparc64: sparc64 sha512 opcode not available.
+[   31.574175] sha1_sparc64: sparc64 sha1 opcode not available.
+[   31.574188] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   31.574382] sha256_sparc64: sparc64 sha256 opcode not available.
+[   31.574445] des_sparc64: sparc64 des opcodes not available.
+[   31.770944] sha512_sparc64: sparc64 sha512 opcode not available.
+[   31.806306] md5_sparc64: sparc64 md5 opcode not available.
+[   31.806330] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   31.806388] camellia_sparc64: sparc64 camellia opcodes not available.
+[   31.847822] EXT4-fs (sda1): mounting ext2 file system using the ext4 subsystem
+[   31.854775] EXT4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended
+[   31.870934] sha512_sparc64: sparc64 sha512 opcode not available.
+[   31.873493] sha1_sparc64: sparc64 sha1 opcode not available.
+[   31.873693] sha256_sparc64: sparc64 sha256 opcode not available.
+[   31.873708] aes_sparc64: sparc64 aes opcodes not available.
+[   31.926461] des_sparc64: sparc64 des opcodes not available.
+[   31.926470] md5_sparc64: sparc64 md5 opcode not available.
+[   31.971251] camellia_sparc64: sparc64 camellia opcodes not available.
+[   32.026436] sha1_sparc64: sparc64 sha1 opcode not available.
+[   32.026771] aes_sparc64: sparc64 aes opcodes not available.
+[   32.074642] aes_sparc64: sparc64 aes opcodes not available.
+[   32.075268] des_sparc64: sparc64 des opcodes not available.
+[   32.098192] md5_sparc64: sparc64 md5 opcode not available.
+[   32.098325] sha512_sparc64: sparc64 sha512 opcode not available.
+[   32.098456] sha256_sparc64: sparc64 sha256 opcode not available.
+[   32.098496] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   32.158483] sha1_sparc64: sparc64 sha1 opcode not available.
+[   32.158506] des_sparc64: sparc64 des opcodes not available.
+[   32.158559] aes_sparc64: sparc64 aes opcodes not available.
+[   32.158802] camellia_sparc64: sparc64 camellia opcodes not available.
+[   32.255470] EXT4-fs (sda1): mounted filesystem without journal. Opts: (null)
+[   32.255629] ext2 filesystem being mounted at /boot supports timestamps until 2038 (0x7fffffff)
+[   32.316693] des_sparc64: sparc64 des opcodes not available.
+[   32.317097] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   32.317115] md5_sparc64: sparc64 md5 opcode not available.
+[   32.317127] sha512_sparc64: sparc64 sha512 opcode not available.
+[   32.317139] sha256_sparc64: sparc64 sha256 opcode not available.
+[   32.317155] aes_sparc64: sparc64 aes opcodes not available.
+[   32.317309] sha1_sparc64: sparc64 sha1 opcode not available.
+[   32.317406] camellia_sparc64: sparc64 camellia opcodes not available.
+[   32.434447] sha256_sparc64: sparc64 sha256 opcode not available.
+[   32.434535] des_sparc64: sparc64 des opcodes not available.
+[   32.434909] aes_sparc64: sparc64 aes opcodes not available.
+[   32.436842] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   32.498579] camellia_sparc64: sparc64 camellia opcodes not available.
+[   32.498606] sha512_sparc64: sparc64 sha512 opcode not available.
+[   32.498624] sha1_sparc64: sparc64 sha1 opcode not available.
+[   32.534847] md5_sparc64: sparc64 md5 opcode not available.
+[   32.634429] md5_sparc64: sparc64 md5 opcode not available.
+[   32.634917] aes_sparc64: sparc64 aes opcodes not available.
+[   32.658392] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   32.678222] des_sparc64: sparc64 des opcodes not available.
+[   32.702205] sha1_sparc64: sparc64 sha1 opcode not available.
+[   32.702213] sha512_sparc64: sparc64 sha512 opcode not available.
+[   32.738911] md5_sparc64: sparc64 md5 opcode not available.
+[   32.740564] sha256_sparc64: sparc64 sha256 opcode not available.
+[   32.778285] camellia_sparc64: sparc64 camellia opcodes not available.
+[   32.818369] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   32.818728] sha512_sparc64: sparc64 sha512 opcode not available.
+[   32.820491] sha256_sparc64: sparc64 sha256 opcode not available.
+[   32.821032] des_sparc64: sparc64 des opcodes not available.
+[   32.821078] aes_sparc64: sparc64 aes opcodes not available.
+[   32.821120] sha1_sparc64: sparc64 sha1 opcode not available.
+[   32.938413] sha256_sparc64: sparc64 sha256 opcode not available.
+[   32.938434] aes_sparc64: sparc64 aes opcodes not available.
+[   32.938565] camellia_sparc64: sparc64 camellia opcodes not available.
+[   32.941106] des_sparc64: sparc64 des opcodes not available.
+[   32.962462] sha1_sparc64: sparc64 sha1 opcode not available.
+[   32.986227] sha512_sparc64: sparc64 sha512 opcode not available.
+[   33.006163] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   33.034728] camellia_sparc64: sparc64 camellia opcodes not available.
+[   33.034870] des_sparc64: sparc64 des opcodes not available.
+[   33.037103] md5_sparc64: sparc64 md5 opcode not available.
+[   33.166188] sha256_sparc64: sparc64 sha256 opcode not available.
+[   33.198246] sha1_sparc64: sparc64 sha1 opcode not available.
+[   33.238471] sha1_sparc64: sparc64 sha1 opcode not available.
+[   33.238522] sha512_sparc64: sparc64 sha512 opcode not available.
+[   33.241013] camellia_sparc64: sparc64 camellia opcodes not available.
+[   33.241027] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   33.241118] md5_sparc64: sparc64 md5 opcode not available.
+[   33.241168] des_sparc64: sparc64 des opcodes not available.
+[   33.266436] aes_sparc64: sparc64 aes opcodes not available.
+[   33.322560] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   33.324297] sha256_sparc64: sparc64 sha256 opcode not available.
+[   33.414383] sha512_sparc64: sparc64 sha512 opcode not available.
+[   33.414486] aes_sparc64: sparc64 aes opcodes not available.
+[   33.415091] des_sparc64: sparc64 des opcodes not available.
+[   33.416870] camellia_sparc64: sparc64 camellia opcodes not available.
+[   33.520733] sha256_sparc64: sparc64 sha256 opcode not available.
+[   33.521104] md5_sparc64: sparc64 md5 opcode not available.
+[   33.614318] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   33.614334] sha1_sparc64: sparc64 sha1 opcode not available.
+[   33.650517] sha256_sparc64: sparc64 sha256 opcode not available.
+[   33.652625] des_sparc64: sparc64 des opcodes not available.
+[   33.653327] camellia_sparc64: sparc64 camellia opcodes not available.
+[   33.653402] sha512_sparc64: sparc64 sha512 opcode not available.
+[   33.750443] sha1_sparc64: sparc64 sha1 opcode not available.
+[   33.752511] sha512_sparc64: sparc64 sha512 opcode not available.
+[   33.822348] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   33.822378] aes_sparc64: sparc64 aes opcodes not available.
+[   33.872961] md5_sparc64: sparc64 md5 opcode not available.
+[   33.873004] sha256_sparc64: sparc64 sha256 opcode not available.
+[   33.902201] sha1_sparc64: sparc64 sha1 opcode not available.
+[   33.902349] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   33.902461] camellia_sparc64: sparc64 camellia opcodes not available.
+[   33.902476] sha512_sparc64: sparc64 sha512 opcode not available.
+[   33.970647] sha256_sparc64: sparc64 sha256 opcode not available.
+[   33.970796] md5_sparc64: sparc64 md5 opcode not available.
+[   33.970935] aes_sparc64: sparc64 aes opcodes not available.
+[   34.066261] des_sparc64: sparc64 des opcodes not available.
+[   34.090356] md5_sparc64: sparc64 md5 opcode not available.
+[   34.166263] sha512_sparc64: sparc64 sha512 opcode not available.
+[   34.166284] sha1_sparc64: sparc64 sha1 opcode not available.
+[   34.190179] camellia_sparc64: sparc64 camellia opcodes not available.
+[   34.190191] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   34.190416] aes_sparc64: sparc64 aes opcodes not available.
+[   34.190433] md5_sparc64: sparc64 md5 opcode not available.
+[   34.242731] aes_sparc64: sparc64 aes opcodes not available.
+[   34.243269] des_sparc64: sparc64 des opcodes not available.
+[   34.274391] sha1_sparc64: sparc64 sha1 opcode not available.
+[   34.330402] sha1_sparc64: sparc64 sha1 opcode not available.
+[   34.414376] sha256_sparc64: sparc64 sha256 opcode not available.
+[   34.414516] des_sparc64: sparc64 des opcodes not available.
+[   34.414871] camellia_sparc64: sparc64 camellia opcodes not available.
+[   34.416968] sha512_sparc64: sparc64 sha512 opcode not available.
+[   34.454221] md5_sparc64: sparc64 md5 opcode not available.
+[   34.454452] sha1_sparc64: sparc64 sha1 opcode not available.
+[   34.478327] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   34.498366] sha1_sparc64: sparc64 sha1 opcode not available.
+[   34.498598] des_sparc64: sparc64 des opcodes not available.
+[   34.500245] aes_sparc64: sparc64 aes opcodes not available.
+[   34.604795] camellia_sparc64: sparc64 camellia opcodes not available.
+[   34.666276] md5_sparc64: sparc64 md5 opcode not available.
+[   34.666305] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   34.666359] sha512_sparc64: sparc64 sha512 opcode not available.
+[   34.666373] aes_sparc64: sparc64 aes opcodes not available.
+[   34.714703] camellia_sparc64: sparc64 camellia opcodes not available.
+[   34.716466] sha256_sparc64: sparc64 sha256 opcode not available.
+[   34.762334] des_sparc64: sparc64 des opcodes not available.
+[   34.762353] sha1_sparc64: sparc64 sha1 opcode not available.
+[   34.804170] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   34.874760] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   34.874979] camellia_sparc64: sparc64 camellia opcodes not available.
+[   34.875035] sha256_sparc64: sparc64 sha256 opcode not available.
+[   34.876956] md5_sparc64: sparc64 md5 opcode not available.
+[   34.876970] sha512_sparc64: sparc64 sha512 opcode not available.
+[   34.877035] aes_sparc64: sparc64 aes opcodes not available.
+[   34.877218] des_sparc64: sparc64 des opcodes not available.
+[   34.877236] sha1_sparc64: sparc64 sha1 opcode not available.
+[   35.062311] sha256_sparc64: sparc64 sha256 opcode not available.
+[   35.062396] aes_sparc64: sparc64 aes opcodes not available.
+[   35.062939] des_sparc64: sparc64 des opcodes not available.
+[   35.063602] camellia_sparc64: sparc64 camellia opcodes not available.
+[   35.064975] sha1_sparc64: sparc64 sha1 opcode not available.
+[   35.065084] sha512_sparc64: sparc64 sha512 opcode not available.
+[   35.065098] md5_sparc64: sparc64 md5 opcode not available.
+[   35.065110] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   35.246311] sha256_sparc64: sparc64 sha256 opcode not available.
+[   35.246684] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   35.248113] camellia_sparc64: sparc64 camellia opcodes not available.
+[   35.248366] md5_sparc64: sparc64 md5 opcode not available.
+[   35.248924] sha1_sparc64: sparc64 sha1 opcode not available.
+[   35.249076] sha512_sparc64: sparc64 sha512 opcode not available.
+[   35.249140] des_sparc64: sparc64 des opcodes not available.
+[   35.249153] aes_sparc64: sparc64 aes opcodes not available.
+[   35.362316] camellia_sparc64: sparc64 camellia opcodes not available.
+[   35.362575] sha256_sparc64: sparc64 sha256 opcode not available.
+[   35.418306] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   35.458686] sha256_sparc64: sparc64 sha256 opcode not available.
+[   35.482106] sha1_sparc64: sparc64 sha1 opcode not available.
+[   35.482190] aes_sparc64: sparc64 aes opcodes not available.
+[   35.482208] sha512_sparc64: sparc64 sha512 opcode not available.
+[   35.506319] md5_sparc64: sparc64 md5 opcode not available.
+[   35.506337] des_sparc64: sparc64 des opcodes not available.
+[   35.530366] sha256_sparc64: sparc64 sha256 opcode not available.
+[   35.578084] camellia_sparc64: sparc64 camellia opcodes not available.
+[   35.627478] sha256_sparc64: sparc64 sha256 opcode not available.
+[   35.666304] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   35.666335] sha512_sparc64: sparc64 sha512 opcode not available.
+[   35.666387] des_sparc64: sparc64 des opcodes not available.
+[   35.666410] md5_sparc64: sparc64 md5 opcode not available.
+[   35.666595] sha1_sparc64: sparc64 sha1 opcode not available.
+[   35.714389] sha1_sparc64: sparc64 sha1 opcode not available.
+[   35.714611] sha256_sparc64: sparc64 sha256 opcode not available.
+[   35.715110] aes_sparc64: sparc64 aes opcodes not available.
+[   35.762520] camellia_sparc64: sparc64 camellia opcodes not available.
+[   35.842334] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   35.842352] sha1_sparc64: sparc64 sha1 opcode not available.
+[   35.870648] sha512_sparc64: sparc64 sha512 opcode not available.
+[   35.870749] md5_sparc64: sparc64 md5 opcode not available.
+[   35.894489] camellia_sparc64: sparc64 camellia opcodes not available.
+[   35.894651] sha256_sparc64: sparc64 sha256 opcode not available.
+[   35.930130] aes_sparc64: sparc64 aes opcodes not available.
+[   35.930314] sha1_sparc64: sparc64 sha1 opcode not available.
+[   35.978806] sha512_sparc64: sparc64 sha512 opcode not available.
+[   35.978922] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   35.979030] des_sparc64: sparc64 des opcodes not available.
+[   36.070498] sha256_sparc64: sparc64 sha256 opcode not available.
+[   36.070772] aes_sparc64: sparc64 aes opcodes not available.
+[   36.072801] md5_sparc64: sparc64 md5 opcode not available.
+[   36.118150] sha1_sparc64: sparc64 sha1 opcode not available.
+[   36.166373] sha256_sparc64: sparc64 sha256 opcode not available.
+[   36.168335] des_sparc64: sparc64 des opcodes not available.
+[   36.222114] sha512_sparc64: sparc64 sha512 opcode not available.
+[   36.222141] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   36.270311] sha1_sparc64: sparc64 sha1 opcode not available.
+[   36.270455] md5_sparc64: sparc64 md5 opcode not available.
+[   36.270761] sha256_sparc64: sparc64 sha256 opcode not available.
+[   36.272603] camellia_sparc64: sparc64 camellia opcodes not available.
+[   36.350077] aes_sparc64: sparc64 aes opcodes not available.
+[   36.414281] sha1_sparc64: sparc64 sha1 opcode not available.
+[   36.414436] des_sparc64: sparc64 des opcodes not available.
+[   36.414761] sha512_sparc64: sparc64 sha512 opcode not available.
+[   36.438255] camellia_sparc64: sparc64 camellia opcodes not available.
+[   36.462146] md5_sparc64: sparc64 md5 opcode not available.
+[   36.462162] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   36.498435] aes_sparc64: sparc64 aes opcodes not available.
+[   36.498479] sha512_sparc64: sparc64 sha512 opcode not available.
+[   36.500339] sha256_sparc64: sparc64 sha256 opcode not available.
+[   36.602059] camellia_sparc64: sparc64 camellia opcodes not available.
+[   36.642766] md5_sparc64: sparc64 md5 opcode not available.
+[   36.682716] md5_sparc64: sparc64 md5 opcode not available.
+[   36.682731] sha256_sparc64: sparc64 sha256 opcode not available.
+[   36.683152] aes_sparc64: sparc64 aes opcodes not available.
+[   36.683367] sha512_sparc64: sparc64 sha512 opcode not available.
+[   36.683470] sha1_sparc64: sparc64 sha1 opcode not available.
+[   36.683481] des_sparc64: sparc64 des opcodes not available.
+[   36.683494] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   36.794267] sha512_sparc64: sparc64 sha512 opcode not available.
+[   36.794496] sha256_sparc64: sparc64 sha256 opcode not available.
+[   36.794510] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   36.794594] aes_sparc64: sparc64 aes opcodes not available.
+[   36.794837] des_sparc64: sparc64 des opcodes not available.
+[   36.872194] sha1_sparc64: sparc64 sha1 opcode not available.
+[   36.894052] camellia_sparc64: sparc64 camellia opcodes not available.
+[   36.958305] md5_sparc64: sparc64 md5 opcode not available.
+[   36.958318] sha512_sparc64: sparc64 sha512 opcode not available.
+[   37.006331] sha512_sparc64: sparc64 sha512 opcode not available.
+[   37.030151] sha1_sparc64: sparc64 sha1 opcode not available.
+[   37.030223] aes_sparc64: sparc64 aes opcodes not available.
+[   37.054125] des_sparc64: sparc64 des opcodes not available.
+[   37.074302] camellia_sparc64: sparc64 camellia opcodes not available.
+[   37.074316] md5_sparc64: sparc64 md5 opcode not available.
+[   37.074491] sha512_sparc64: sparc64 sha512 opcode not available.
+[   37.076557] sha256_sparc64: sparc64 sha256 opcode not available.
+[   37.102090] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   37.143974] sha1_sparc64: sparc64 sha1 opcode not available.
+[   37.262313] md5_sparc64: sparc64 md5 opcode not available.
+[   37.262340] sha512_sparc64: sparc64 sha512 opcode not available.
+[   37.263446] camellia_sparc64: sparc64 camellia opcodes not available.
+[   37.263776] sha256_sparc64: sparc64 sha256 opcode not available.
+[   37.264454] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   37.264468] aes_sparc64: sparc64 aes opcodes not available.
+[   37.286224] des_sparc64: sparc64 des opcodes not available.
+[   37.310055] sha1_sparc64: sparc64 sha1 opcode not available.
+[   37.370274] md5_sparc64: sparc64 md5 opcode not available.
+[   37.370635] aes_sparc64: sparc64 aes opcodes not available.
+[   37.371982] sha512_sparc64: sparc64 sha512 opcode not available.
+[   37.486269] sha1_sparc64: sparc64 sha1 opcode not available.
+[   37.510152] des_sparc64: sparc64 des opcodes not available.
+[   37.578109] sha256_sparc64: sparc64 sha256 opcode not available.
+[   37.578120] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   37.578138] camellia_sparc64: sparc64 camellia opcodes not available.
+[   37.578257] sha1_sparc64: sparc64 sha1 opcode not available.
+[   37.578622] sha512_sparc64: sparc64 sha512 opcode not available.
+[   37.579221] md5_sparc64: sparc64 md5 opcode not available.
+[   37.580635] aes_sparc64: sparc64 aes opcodes not available.
+[   37.722477] sha256_sparc64: sparc64 sha256 opcode not available.
+[   37.722494] sha1_sparc64: sparc64 sha1 opcode not available.
+[   37.722508] des_sparc64: sparc64 des opcodes not available.
+[   37.722522] aes_sparc64: sparc64 aes opcodes not available.
+[   37.722643] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   37.746270] md5_sparc64: sparc64 md5 opcode not available.
+[   37.746286] sha512_sparc64: sparc64 sha512 opcode not available.
+[   37.746300] camellia_sparc64: sparc64 camellia opcodes not available.
+[   37.826387] des_sparc64: sparc64 des opcodes not available.
+[   37.827793] sha1_sparc64: sparc64 sha1 opcode not available.
+[   37.950298] sha1_sparc64: sparc64 sha1 opcode not available.
+[   37.951283] camellia_sparc64: sparc64 camellia opcodes not available.
+[   37.951979] md5_sparc64: sparc64 md5 opcode not available.
+[   37.952000] aes_sparc64: sparc64 aes opcodes not available.
+[   37.974151] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   37.974234] sha256_sparc64: sparc64 sha256 opcode not available.
+[   37.974251] sha512_sparc64: sparc64 sha512 opcode not available.
+[   38.022364] des_sparc64: sparc64 des opcodes not available.
+[   38.022383] sha1_sparc64: sparc64 sha1 opcode not available.
+[   38.118088] aes_sparc64: sparc64 aes opcodes not available.
+[   38.167861] md5_sparc64: sparc64 md5 opcode not available.
+[   38.206215] sha256_sparc64: sparc64 sha256 opcode not available.
+[   38.206243] sha1_sparc64: sparc64 sha1 opcode not available.
+[   38.226136] sha512_sparc64: sparc64 sha512 opcode not available.
+[   38.226169] camellia_sparc64: sparc64 camellia opcodes not available.
+[   38.226183] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   38.226200] aes_sparc64: sparc64 aes opcodes not available.
+[   38.310324] sha1_sparc64: sparc64 sha1 opcode not available.
+[   38.350024] md5_sparc64: sparc64 md5 opcode not available.
+[   38.350040] des_sparc64: sparc64 des opcodes not available.
+[   38.406555] sha256_sparc64: sparc64 sha256 opcode not available.
+[   38.406932] camellia_sparc64: sparc64 camellia opcodes not available.
+[   38.408509] aes_sparc64: sparc64 aes opcodes not available.
+[   38.478007] sha512_sparc64: sparc64 sha512 opcode not available.
+[   38.478070] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   38.478229] md5_sparc64: sparc64 md5 opcode not available.
+[   38.479075] des_sparc64: sparc64 des opcodes not available.
+[   38.538156] sha1_sparc64: sparc64 sha1 opcode not available.
+[   38.578239] sha1_sparc64: sparc64 sha1 opcode not available.
+[   38.579688] aes_sparc64: sparc64 aes opcodes not available.
+[   38.580025] camellia_sparc64: sparc64 camellia opcodes not available.
+[   38.580038] sha256_sparc64: sparc64 sha256 opcode not available.
+[   38.642211] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   38.642227] sha512_sparc64: sparc64 sha512 opcode not available.
+[   38.642255] md5_sparc64: sparc64 md5 opcode not available.
+[   38.778279] aes_sparc64: sparc64 aes opcodes not available.
+[   38.778310] md5_sparc64: sparc64 md5 opcode not available.
+[   38.778489] sha256_sparc64: sparc64 sha256 opcode not available.
+[   38.780364] camellia_sparc64: sparc64 camellia opcodes not available.
+[   38.780388] des_sparc64: sparc64 des opcodes not available.
+[   38.780419] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   38.780466] sha1_sparc64: sparc64 sha1 opcode not available.
+[   38.780544] sha512_sparc64: sparc64 sha512 opcode not available.
+[   38.906289] aes_sparc64: sparc64 aes opcodes not available.
+[   38.906834] des_sparc64: sparc64 des opcodes not available.
+[   38.907141] md5_sparc64: sparc64 md5 opcode not available.
+[   38.962249] sha256_sparc64: sparc64 sha256 opcode not available.
+[   38.962353] sha512_sparc64: sparc64 sha512 opcode not available.
+[   38.962376] sha1_sparc64: sparc64 sha1 opcode not available.
+[   39.011790] camellia_sparc64: sparc64 camellia opcodes not available.
+[   39.066007] aes_sparc64: sparc64 aes opcodes not available.
+[   39.106984] md5_sparc64: sparc64 md5 opcode not available.
+[   39.130082] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   39.130112] sha256_sparc64: sparc64 sha256 opcode not available.
+[   39.130133] sha1_sparc64: sparc64 sha1 opcode not available.
+[   39.130176] aes_sparc64: sparc64 aes opcodes not available.
+[   39.130193] des_sparc64: sparc64 des opcodes not available.
+[   39.158001] sha512_sparc64: sparc64 sha512 opcode not available.
+[   39.266245] sha1_sparc64: sparc64 sha1 opcode not available.
+[   39.266265] camellia_sparc64: sparc64 camellia opcodes not available.
+[   39.266642] des_sparc64: sparc64 des opcodes not available.
+[   39.266652] sha256_sparc64: sparc64 sha256 opcode not available.
+[   39.266746] md5_sparc64: sparc64 md5 opcode not available.
+[   39.266857] aes_sparc64: sparc64 aes opcodes not available.
+[   39.266894] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   39.268677] sha512_sparc64: sparc64 sha512 opcode not available.
+[   39.366770] des_sparc64: sparc64 des opcodes not available.
+[   39.446069] sha1_sparc64: sparc64 sha1 opcode not available.
+[   39.474660] des_sparc64: sparc64 des opcodes not available.
+[   39.476283] camellia_sparc64: sparc64 camellia opcodes not available.
+[   39.476297] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   39.476310] md5_sparc64: sparc64 md5 opcode not available.
+[   39.476376] sha256_sparc64: sparc64 sha256 opcode not available.
+[   39.476398] aes_sparc64: sparc64 aes opcodes not available.
+[   39.476437] sha512_sparc64: sparc64 sha512 opcode not available.
+[   39.602283] des_sparc64: sparc64 des opcodes not available.
+[   39.602308] camellia_sparc64: sparc64 camellia opcodes not available.
+[   39.603228] md5_sparc64: sparc64 md5 opcode not available.
+[   39.626134] sha1_sparc64: sparc64 sha1 opcode not available.
+[   39.650062] aes_sparc64: sparc64 aes opcodes not available.
+[   39.650125] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   39.670229] sha1_sparc64: sparc64 sha1 opcode not available.
+[   39.718222] sha1_sparc64: sparc64 sha1 opcode not available.
+[   39.809982] sha256_sparc64: sparc64 sha256 opcode not available.
+[   39.810052] camellia_sparc64: sparc64 camellia opcodes not available.
+[   39.810069] sha512_sparc64: sparc64 sha512 opcode not available.
+[   39.810344] des_sparc64: sparc64 des opcodes not available.
+[   39.810364] sha1_sparc64: sparc64 sha1 opcode not available.
+[   39.810734] aes_sparc64: sparc64 aes opcodes not available.
+[   39.810969] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   39.812003] md5_sparc64: sparc64 md5 opcode not available.
+[   39.914219] camellia_sparc64: sparc64 camellia opcodes not available.
+[   40.009967] sha256_sparc64: sparc64 sha256 opcode not available.
+[   40.010030] des_sparc64: sparc64 des opcodes not available.
+[   40.010258] camellia_sparc64: sparc64 camellia opcodes not available.
+[   40.010297] sha1_sparc64: sparc64 sha1 opcode not available.
+[   40.010522] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   40.012375] aes_sparc64: sparc64 aes opcodes not available.
+[   40.012388] sha512_sparc64: sparc64 sha512 opcode not available.
+[   40.012423] md5_sparc64: sparc64 md5 opcode not available.
+[   40.106270] des_sparc64: sparc64 des opcodes not available.
+[   40.106562] md5_sparc64: sparc64 md5 opcode not available.
+[   40.174215] aes_sparc64: sparc64 aes opcodes not available.
+[   40.198303] des_sparc64: sparc64 des opcodes not available.
+[   40.199393] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   40.254053] sha1_sparc64: sparc64 sha1 opcode not available.
+[   40.302233] sha1_sparc64: sparc64 sha1 opcode not available.
+[   40.302889] des_sparc64: sparc64 des opcodes not available.
+[   40.303693] sha256_sparc64: sparc64 sha256 opcode not available.
+[   40.326128] sha512_sparc64: sparc64 sha512 opcode not available.
+[   40.345961] camellia_sparc64: sparc64 camellia opcodes not available.
+[   40.406195] sha1_sparc64: sparc64 sha1 opcode not available.
+[   40.406206] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   40.406273] sha256_sparc64: sparc64 sha256 opcode not available.
+[   40.406573] aes_sparc64: sparc64 aes opcodes not available.
+[   40.407167] des_sparc64: sparc64 des opcodes not available.
+[   40.469951] sha512_sparc64: sparc64 sha512 opcode not available.
+[   40.526258] des_sparc64: sparc64 des opcodes not available.
+[   40.526300] camellia_sparc64: sparc64 camellia opcodes not available.
+[   40.557989] md5_sparc64: sparc64 md5 opcode not available.
+[   40.589987] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   40.590007] sha1_sparc64: sparc64 sha1 opcode not available.
+[   40.630170] sha1_sparc64: sparc64 sha1 opcode not available.
+[   40.677962] des_sparc64: sparc64 des opcodes not available.
+[   40.678083] sha512_sparc64: sparc64 sha512 opcode not available.
+[   40.678134] sha256_sparc64: sparc64 sha256 opcode not available.
+[   40.718363] sha256_sparc64: sparc64 sha256 opcode not available.
+[   40.774027] camellia_sparc64: sparc64 camellia opcodes not available.
+[   40.805958] md5_sparc64: sparc64 md5 opcode not available.
+[   40.826206] camellia_sparc64: sparc64 camellia opcodes not available.
+[   40.826716] sha512_sparc64: sparc64 sha512 opcode not available.
+[   40.827911] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   40.827929] sha1_sparc64: sparc64 sha1 opcode not available.
+[   40.828036] aes_sparc64: sparc64 aes opcodes not available.
+[   40.828050] sha256_sparc64: sparc64 sha256 opcode not available.
+[   40.906254] md5_sparc64: sparc64 md5 opcode not available.
+[   40.906268] camellia_sparc64: sparc64 camellia opcodes not available.
+[   40.906282] sha256_sparc64: sparc64 sha256 opcode not available.
+[   40.985958] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.026160] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.027687] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   41.065983] aes_sparc64: sparc64 aes opcodes not available.
+[   41.066002] sha512_sparc64: sparc64 sha512 opcode not available.
+[   41.066024] md5_sparc64: sparc64 md5 opcode not available.
+[   41.094171] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.094358] sha256_sparc64: sparc64 sha256 opcode not available.
+[   41.114029] des_sparc64: sparc64 des opcodes not available.
+[   41.155612] camellia_sparc64: sparc64 camellia opcodes not available.
+[   41.233941] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   41.234019] sha256_sparc64: sparc64 sha256 opcode not available.
+[   41.274835] aes_sparc64: sparc64 aes opcodes not available.
+[   41.274877] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   41.275630] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.297938] camellia_sparc64: sparc64 camellia opcodes not available.
+[   41.298173] sha512_sparc64: sparc64 sha512 opcode not available.
+[   41.298221] md5_sparc64: sparc64 md5 opcode not available.
+[   41.317968] des_sparc64: sparc64 des opcodes not available.
+[   41.354241] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.354249] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   41.354298] aes_sparc64: sparc64 aes opcodes not available.
+[   41.356006] sha256_sparc64: sparc64 sha256 opcode not available.
+[   41.482048] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   41.506039] camellia_sparc64: sparc64 camellia opcodes not available.
+[   41.546590] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   41.565932] sha512_sparc64: sparc64 sha512 opcode not available.
+[   41.566058] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.586018] des_sparc64: sparc64 des opcodes not available.
+[   41.586093] md5_sparc64: sparc64 md5 opcode not available.
+[   41.586181] camellia_sparc64: sparc64 camellia opcodes not available.
+[   41.586195] sha256_sparc64: sparc64 sha256 opcode not available.
+[   41.650148] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.650416] sha512_sparc64: sparc64 sha512 opcode not available.
+[   41.698055] aes_sparc64: sparc64 aes opcodes not available.
+[   41.738357] sha512_sparc64: sparc64 sha512 opcode not available.
+[   41.739165] camellia_sparc64: sparc64 camellia opcodes not available.
+[   41.739479] md5_sparc64: sparc64 md5 opcode not available.
+[   41.762157] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.786049] des_sparc64: sparc64 des opcodes not available.
+[   41.810153] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.810570] camellia_sparc64: sparc64 camellia opcodes not available.
+[   41.861934] sha256_sparc64: sparc64 sha256 opcode not available.
+[   41.861995] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   41.862175] md5_sparc64: sparc64 md5 opcode not available.
+[   41.910167] sha1_sparc64: sparc64 sha1 opcode not available.
+[   41.910295] sha512_sparc64: sparc64 sha512 opcode not available.
+[   41.966473] sha512_sparc64: sparc64 sha512 opcode not available.
+[   42.026141] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   42.026245] aes_sparc64: sparc64 aes opcodes not available.
+[   42.026300] md5_sparc64: sparc64 md5 opcode not available.
+[   42.090045] camellia_sparc64: sparc64 camellia opcodes not available.
+[   42.090100] des_sparc64: sparc64 des opcodes not available.
+[   42.154108] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   42.154203] md5_sparc64: sparc64 md5 opcode not available.
+[   42.155384] aes_sparc64: sparc64 aes opcodes not available.
+[   42.155577] sha1_sparc64: sparc64 sha1 opcode not available.
+[   42.178158] sha512_sparc64: sparc64 sha512 opcode not available.
+[   42.178224] sha256_sparc64: sparc64 sha256 opcode not available.
+[   42.254142] sha1_sparc64: sparc64 sha1 opcode not available.
+[   42.254554] aes_sparc64: sparc64 aes opcodes not available.
+[   42.255349] des_sparc64: sparc64 des opcodes not available.
+[   42.309924] camellia_sparc64: sparc64 camellia opcodes not available.
+[   42.366125] sha1_sparc64: sparc64 sha1 opcode not available.
+[   42.366719] md5_sparc64: sparc64 md5 opcode not available.
+[   42.367398] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   42.414023] sha256_sparc64: sparc64 sha256 opcode not available.
+[   42.462110] sha256_sparc64: sparc64 sha256 opcode not available.
+[   42.529963] des_sparc64: sparc64 des opcodes not available.
+[   42.530084] aes_sparc64: sparc64 aes opcodes not available.
+[   42.530156] camellia_sparc64: sparc64 camellia opcodes not available.
+[   42.530207] sha256_sparc64: sparc64 sha256 opcode not available.
+[   42.530516] md5_sparc64: sparc64 md5 opcode not available.
+[   42.531729] sha512_sparc64: sparc64 sha512 opcode not available.
+[   42.531824] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   42.531873] sha1_sparc64: sparc64 sha1 opcode not available.
+[   42.630142] sha512_sparc64: sparc64 sha512 opcode not available.
+[   42.630681] aes_sparc64: sparc64 aes opcodes not available.
+[   42.705898] sha1_sparc64: sparc64 sha1 opcode not available.
+[   42.706191] aes_sparc64: sparc64 aes opcodes not available.
+[   42.730081] md5_sparc64: sparc64 md5 opcode not available.
+[   42.746028] sha256_sparc64: sparc64 sha256 opcode not available.
+[   42.746040] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   42.746053] des_sparc64: sparc64 des opcodes not available.
+[   42.786137] sha1_sparc64: sparc64 sha1 opcode not available.
+[   42.786501] sha512_sparc64: sparc64 sha512 opcode not available.
+[   42.787242] camellia_sparc64: sparc64 camellia opcodes not available.
+[   42.849914] aes_sparc64: sparc64 aes opcodes not available.
+[   42.849927] md5_sparc64: sparc64 md5 opcode not available.
+[   42.926140] sha256_sparc64: sparc64 sha256 opcode not available.
+[   42.926186] sha1_sparc64: sparc64 sha1 opcode not available.
+[   42.926314] des_sparc64: sparc64 des opcodes not available.
+[   42.927053] sha512_sparc64: sparc64 sha512 opcode not available.
+[   42.966086] camellia_sparc64: sparc64 camellia opcodes not available.
+[   43.007097] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   43.078031] md5_sparc64: sparc64 md5 opcode not available.
+[   43.078136] aes_sparc64: sparc64 aes opcodes not available.
+[   43.078216] sha256_sparc64: sparc64 sha256 opcode not available.
+[   43.078230] sha512_sparc64: sparc64 sha512 opcode not available.
+[   43.126267] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   43.127269] sha1_sparc64: sparc64 sha1 opcode not available.
+[   43.127282] des_sparc64: sparc64 des opcodes not available.
+[   43.127353] camellia_sparc64: sparc64 camellia opcodes not available.
+[   43.127445] sha512_sparc64: sparc64 sha512 opcode not available.
+[   43.226595] md5_sparc64: sparc64 md5 opcode not available.
+[   43.227428] aes_sparc64: sparc64 aes opcodes not available.
+[   43.317965] sha256_sparc64: sparc64 sha256 opcode not available.
+[   43.358138] sha256_sparc64: sparc64 sha256 opcode not available.
+[   43.358842] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   43.382036] sha1_sparc64: sparc64 sha1 opcode not available.
+[   43.382109] sha512_sparc64: sparc64 sha512 opcode not available.
+[   43.382124] aes_sparc64: sparc64 aes opcodes not available.
+[   43.382137] des_sparc64: sparc64 des opcodes not available.
+[   43.382176] camellia_sparc64: sparc64 camellia opcodes not available.
+[   43.430100] md5_sparc64: sparc64 md5 opcode not available.
+[   43.430121] sha256_sparc64: sparc64 sha256 opcode not available.
+[   43.542137] sha256_sparc64: sparc64 sha256 opcode not available.
+[   43.542156] sha1_sparc64: sparc64 sha1 opcode not available.
+[   43.542456] sha512_sparc64: sparc64 sha512 opcode not available.
+[   43.566098] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   43.566130] aes_sparc64: sparc64 aes opcodes not available.
+[   43.566142] camellia_sparc64: sparc64 camellia opcodes not available.
+[   43.566160] des_sparc64: sparc64 des opcodes not available.
+[   43.614172] sha1_sparc64: sparc64 sha1 opcode not available.
+[   43.614533] sha512_sparc64: sparc64 sha512 opcode not available.
+[   43.709876] md5_sparc64: sparc64 md5 opcode not available.
+[   43.766099] sha1_sparc64: sparc64 sha1 opcode not available.
+[   43.766165] aes_sparc64: sparc64 aes opcodes not available.
+[   43.766656] sha512_sparc64: sparc64 sha512 opcode not available.
+[   43.767548] sha256_sparc64: sparc64 sha256 opcode not available.
+[   43.789902] des_sparc64: sparc64 des opcodes not available.
+[   43.789916] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   43.790107] camellia_sparc64: sparc64 camellia opcodes not available.
+[   43.834250] sha1_sparc64: sparc64 sha1 opcode not available.
+[   43.862085] md5_sparc64: sparc64 md5 opcode not available.
+[   43.946139] sha1_sparc64: sparc64 sha1 opcode not available.
+[   43.947007] des_sparc64: sparc64 des opcodes not available.
+[   43.947305] sha256_sparc64: sparc64 sha256 opcode not available.
+[   43.947319] aes_sparc64: sparc64 aes opcodes not available.
+[   43.970100] sha512_sparc64: sparc64 sha512 opcode not available.
+[   43.993919] md5_sparc64: sparc64 md5 opcode not available.
+[   44.034189] sha1_sparc64: sparc64 sha1 opcode not available.
+[   44.034222] des_sparc64: sparc64 des opcodes not available.
+[   44.035141] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   44.089867] camellia_sparc64: sparc64 camellia opcodes not available.
+[   44.150914] md5_sparc64: sparc64 md5 opcode not available.
+[   44.150937] des_sparc64: sparc64 des opcodes not available.
+[   44.151253] aes_sparc64: sparc64 aes opcodes not available.
+[   44.151317] sha512_sparc64: sparc64 sha512 opcode not available.
+[   44.151454] sha256_sparc64: sparc64 sha256 opcode not available.
+[   44.193872] sha1_sparc64: sparc64 sha1 opcode not available.
+[   44.258106] sha512_sparc64: sparc64 sha512 opcode not available.
+[   44.258140] camellia_sparc64: sparc64 camellia opcodes not available.
+[   44.258479] des_sparc64: sparc64 des opcodes not available.
+[   44.259016] aes_sparc64: sparc64 aes opcodes not available.
+[   44.313853] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   44.313867] sha256_sparc64: sparc64 sha256 opcode not available.
+[   44.370072] sha512_sparc64: sparc64 sha512 opcode not available.
+[   44.370109] sha1_sparc64: sparc64 sha1 opcode not available.
+[   44.370186] camellia_sparc64: sparc64 camellia opcodes not available.
+[   44.370445] des_sparc64: sparc64 des opcodes not available.
+[   44.371337] md5_sparc64: sparc64 md5 opcode not available.
+[   44.371591] aes_sparc64: sparc64 aes opcodes not available.
+[   44.438155] des_sparc64: sparc64 des opcodes not available.
+[   44.457872] sha256_sparc64: sparc64 sha256 opcode not available.
+[   44.494089] sha1_sparc64: sparc64 sha1 opcode not available.
+[   44.558251] camellia_sparc64: sparc64 camellia opcodes not available.
+[   44.558374] md5_sparc64: sparc64 md5 opcode not available.
+[   44.558629] des_sparc64: sparc64 des opcodes not available.
+[   44.559213] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   44.598054] sha512_sparc64: sparc64 sha512 opcode not available.
+[   44.622027] sha256_sparc64: sparc64 sha256 opcode not available.
+[   44.658172] sha256_sparc64: sparc64 sha256 opcode not available.
+[   44.658530] camellia_sparc64: sparc64 camellia opcodes not available.
+[   44.750037] sha1_sparc64: sparc64 sha1 opcode not available.
+[   44.750044] aes_sparc64: sparc64 aes opcodes not available.
+[   44.750140] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   44.802313] md5_sparc64: sparc64 md5 opcode not available.
+[   44.802810] des_sparc64: sparc64 des opcodes not available.
+[   44.821845] sha512_sparc64: sparc64 sha512 opcode not available.
+[   44.854028] camellia_sparc64: sparc64 camellia opcodes not available.
+[   44.894813] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   44.957970] sha512_sparc64: sparc64 sha512 opcode not available.
+[   44.958089] aes_sparc64: sparc64 aes opcodes not available.
+[   44.958103] sha256_sparc64: sparc64 sha256 opcode not available.
+[   44.958131] camellia_sparc64: sparc64 camellia opcodes not available.
+[   44.958146] md5_sparc64: sparc64 md5 opcode not available.
+[   45.006247] camellia_sparc64: sparc64 camellia opcodes not available.
+[   45.006799] des_sparc64: sparc64 des opcodes not available.
+[   45.030060] sha1_sparc64: sparc64 sha1 opcode not available.
+[   45.030103] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   45.114149] aes_sparc64: sparc64 aes opcodes not available.
+[   45.114180] sha256_sparc64: sparc64 sha256 opcode not available.
+[   45.114194] camellia_sparc64: sparc64 camellia opcodes not available.
+[   45.114338] md5_sparc64: sparc64 md5 opcode not available.
+[   45.114992] sha512_sparc64: sparc64 sha512 opcode not available.
+[   45.202057] sha512_sparc64: sparc64 sha512 opcode not available.
+[   45.273860] sha1_sparc64: sparc64 sha1 opcode not available.
+[   45.273869] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   45.273956] des_sparc64: sparc64 des opcodes not available.
+[   45.322033] md5_sparc64: sparc64 md5 opcode not available.
+[   45.322101] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   45.323099] aes_sparc64: sparc64 aes opcodes not available.
+[   45.323208] sha512_sparc64: sparc64 sha512 opcode not available.
+[   45.323239] camellia_sparc64: sparc64 camellia opcodes not available.
+[   45.323268] sha256_sparc64: sparc64 sha256 opcode not available.
+[   45.429836] sha1_sparc64: sparc64 sha1 opcode not available.
+[   45.478786] aes_sparc64: sparc64 aes opcodes not available.
+[   45.501887] md5_sparc64: sparc64 md5 opcode not available.
+[   45.537832] sha256_sparc64: sparc64 sha256 opcode not available.
+[   45.538124] md5_sparc64: sparc64 md5 opcode not available.
+[   45.538139] aes_sparc64: sparc64 aes opcodes not available.
+[   45.561832] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   45.561846] des_sparc64: sparc64 des opcodes not available.
+[   45.618129] md5_sparc64: sparc64 md5 opcode not available.
+[   45.618873] camellia_sparc64: sparc64 camellia opcodes not available.
+[   45.618911] sha512_sparc64: sparc64 sha512 opcode not available.
+[   45.618939] sha1_sparc64: sparc64 sha1 opcode not available.
+[   45.681928] sha256_sparc64: sparc64 sha256 opcode not available.
+[   45.682140] des_sparc64: sparc64 des opcodes not available.
+[   45.718170] aes_sparc64: sparc64 aes opcodes not available.
+[   45.757998] md5_sparc64: sparc64 md5 opcode not available.
+[   45.758011] des_sparc64: sparc64 des opcodes not available.
+[   45.814131] aes_sparc64: sparc64 aes opcodes not available.
+[   45.814542] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   45.814554] camellia_sparc64: sparc64 camellia opcodes not available.
+[   45.814585] sha512_sparc64: sparc64 sha512 opcode not available.
+[   45.853916] sha256_sparc64: sparc64 sha256 opcode not available.
+[   45.902031] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   45.949942] sha1_sparc64: sparc64 sha1 opcode not available.
+[   45.998083] aes_sparc64: sparc64 aes opcodes not available.
+[   45.998132] md5_sparc64: sparc64 md5 opcode not available.
+[   45.998150] sha1_sparc64: sparc64 sha1 opcode not available.
+[   46.038076] des_sparc64: sparc64 des opcodes not available.
+[   46.061867] sha256_sparc64: sparc64 sha256 opcode not available.
+[   46.105928] sha512_sparc64: sparc64 sha512 opcode not available.
+[   46.106075] sha1_sparc64: sparc64 sha1 opcode not available.
+[   46.106483] camellia_sparc64: sparc64 camellia opcodes not available.
+[   46.106502] md5_sparc64: sparc64 md5 opcode not available.
+[   46.130204] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   46.130234] aes_sparc64: sparc64 aes opcodes not available.
+[   46.174097] des_sparc64: sparc64 des opcodes not available.
+[   46.174666] camellia_sparc64: sparc64 camellia opcodes not available.
+[   46.286076] sha512_sparc64: sparc64 sha512 opcode not available.
+[   46.286125] sha1_sparc64: sparc64 sha1 opcode not available.
+[   46.342114] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   46.342128] sha512_sparc64: sparc64 sha512 opcode not available.
+[   46.342176] md5_sparc64: sparc64 md5 opcode not available.
+[   46.342636] sha256_sparc64: sparc64 sha256 opcode not available.
+[   46.366126] camellia_sparc64: sparc64 camellia opcodes not available.
+[   46.437806] des_sparc64: sparc64 des opcodes not available.
+[   46.437824] aes_sparc64: sparc64 aes opcodes not available.
+[   46.493996] md5_sparc64: sparc64 md5 opcode not available.
+[   46.521809] sha512_sparc64: sparc64 sha512 opcode not available.
+[   46.541805] camellia_sparc64: sparc64 camellia opcodes not available.
+[   46.541920] sha1_sparc64: sparc64 sha1 opcode not available.
+[   46.541955] sha256_sparc64: sparc64 sha256 opcode not available.
+[   46.541966] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   46.578017] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   46.601869] aes_sparc64: sparc64 aes opcodes not available.
+[   46.601886] des_sparc64: sparc64 des opcodes not available.
+[   46.678089] sha256_sparc64: sparc64 sha256 opcode not available.
+[   46.678105] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   46.678121] sha1_sparc64: sparc64 sha1 opcode not available.
+[   46.678438] camellia_sparc64: sparc64 camellia opcodes not available.
+[   46.729949] md5_sparc64: sparc64 md5 opcode not available.
+[   46.729976] sha512_sparc64: sparc64 sha512 opcode not available.
+[   46.809860] des_sparc64: sparc64 des opcodes not available.
+[   46.810044] sha1_sparc64: sparc64 sha1 opcode not available.
+[   46.810247] sha256_sparc64: sparc64 sha256 opcode not available.
+[   46.810311] aes_sparc64: sparc64 aes opcodes not available.
+[   46.834015] camellia_sparc64: sparc64 camellia opcodes not available.
+[   46.869850] sha512_sparc64: sparc64 sha512 opcode not available.
+[   46.934058] sha1_sparc64: sparc64 sha1 opcode not available.
+[   46.934775] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   46.934826] md5_sparc64: sparc64 md5 opcode not available.
+[   46.981837] aes_sparc64: sparc64 aes opcodes not available.
+[   46.981856] sha256_sparc64: sparc64 sha256 opcode not available.
+[   47.038066] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   47.117847] sha512_sparc64: sparc64 sha512 opcode not available.
+[   47.117959] des_sparc64: sparc64 des opcodes not available.
+[   47.118000] md5_sparc64: sparc64 md5 opcode not available.
+[   47.118020] camellia_sparc64: sparc64 camellia opcodes not available.
+[   47.170753] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   47.170803] aes_sparc64: sparc64 aes opcodes not available.
+[   47.170818] sha256_sparc64: sparc64 sha256 opcode not available.
+[   47.170835] sha1_sparc64: sparc64 sha1 opcode not available.
+[   47.242005] sha256_sparc64: sparc64 sha256 opcode not available.
+[   47.242638] md5_sparc64: sparc64 md5 opcode not available.
+[   47.297899] sha512_sparc64: sparc64 sha512 opcode not available.
+[   47.297928] des_sparc64: sparc64 des opcodes not available.
+[   47.338207] des_sparc64: sparc64 des opcodes not available.
+[   47.338322] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   47.377786] md5_sparc64: sparc64 md5 opcode not available.
+[   47.378069] aes_sparc64: sparc64 aes opcodes not available.
+[   47.378105] sha1_sparc64: sparc64 sha1 opcode not available.
+[   47.378130] camellia_sparc64: sparc64 camellia opcodes not available.
+[   47.378148] sha256_sparc64: sparc64 sha256 opcode not available.
+[   47.378158] sha512_sparc64: sparc64 sha512 opcode not available.
+[   47.470198] des_sparc64: sparc64 des opcodes not available.
+[   47.470378] sha1_sparc64: sparc64 sha1 opcode not available.
+[   47.557876] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   47.557932] camellia_sparc64: sparc64 camellia opcodes not available.
+[   47.558016] sha256_sparc64: sparc64 sha256 opcode not available.
+[   47.590017] sha1_sparc64: sparc64 sha1 opcode not available.
+[   47.590155] md5_sparc64: sparc64 md5 opcode not available.
+[   47.590200] aes_sparc64: sparc64 aes opcodes not available.
+[   47.590294] sha512_sparc64: sparc64 sha512 opcode not available.
+[   47.622196] des_sparc64: sparc64 des opcodes not available.
+[   47.729982] sha256_sparc64: sparc64 sha256 opcode not available.
+[   47.730069] des_sparc64: sparc64 des opcodes not available.
+[   47.730230] md5_sparc64: sparc64 md5 opcode not available.
+[   47.769827] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   47.769961] sha1_sparc64: sparc64 sha1 opcode not available.
+[   47.770056] camellia_sparc64: sparc64 camellia opcodes not available.
+[   47.770125] aes_sparc64: sparc64 aes opcodes not available.
+[   47.817763] sha512_sparc64: sparc64 sha512 opcode not available.
+[   47.857959] sha256_sparc64: sparc64 sha256 opcode not available.
+[   47.929824] md5_sparc64: sparc64 md5 opcode not available.
+[   47.929863] sha1_sparc64: sparc64 sha1 opcode not available.
+[   47.929934] des_sparc64: sparc64 des opcodes not available.
+[   47.929983] aes_sparc64: sparc64 aes opcodes not available.
+[   47.954019] sha256_sparc64: sparc64 sha256 opcode not available.
+[   47.994061] sha256_sparc64: sparc64 sha256 opcode not available.
+[   48.037860] camellia_sparc64: sparc64 camellia opcodes not available.
+[   48.085998] sha256_sparc64: sparc64 sha256 opcode not available.
+[   48.086218] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   48.086240] sha512_sparc64: sparc64 sha512 opcode not available.
+[   48.086275] des_sparc64: sparc64 des opcodes not available.
+[   48.086415] aes_sparc64: sparc64 aes opcodes not available.
+[   48.109989] sha1_sparc64: sparc64 sha1 opcode not available.
+[   48.137763] md5_sparc64: sparc64 md5 opcode not available.
+[   48.138030] sha512_sparc64: sparc64 sha512 opcode not available.
+[   48.138058] camellia_sparc64: sparc64 camellia opcodes not available.
+[   48.190125] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   48.245960] sha256_sparc64: sparc64 sha256 opcode not available.
+[   48.318000] des_sparc64: sparc64 des opcodes not available.
+[   48.386019] aes_sparc64: sparc64 aes opcodes not available.
+[   48.386124] md5_sparc64: sparc64 md5 opcode not available.
+[   48.409850] sha512_sparc64: sparc64 sha512 opcode not available.
+[   48.409875] camellia_sparc64: sparc64 camellia opcodes not available.
+[   48.409892] des_sparc64: sparc64 des opcodes not available.
+[   48.433808] sha1_sparc64: sparc64 sha1 opcode not available.
+[   48.433878] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   48.502065] sha1_sparc64: sparc64 sha1 opcode not available.
+[   48.502082] sha256_sparc64: sparc64 sha256 opcode not available.
+[   48.526139] camellia_sparc64: sparc64 camellia opcodes not available.
+[   48.561742] md5_sparc64: sparc64 md5 opcode not available.
+[   48.585761] aes_sparc64: sparc64 aes opcodes not available.
+[   48.662006] sha512_sparc64: sparc64 sha512 opcode not available.
+[   48.662061] camellia_sparc64: sparc64 camellia opcodes not available.
+[   48.662129] sha1_sparc64: sparc64 sha1 opcode not available.
+[   48.713811] des_sparc64: sparc64 des opcodes not available.
+[   48.713826] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   48.713842] sha256_sparc64: sparc64 sha256 opcode not available.
+[   48.713856] md5_sparc64: sparc64 md5 opcode not available.
+[   48.754004] sha256_sparc64: sparc64 sha256 opcode not available.
+[   48.801955] sha1_sparc64: sparc64 sha1 opcode not available.
+[   48.801969] aes_sparc64: sparc64 aes opcodes not available.
+[   48.881947] sha256_sparc64: sparc64 sha256 opcode not available.
+[   48.881960] sha512_sparc64: sparc64 sha512 opcode not available.
+[   48.882140] md5_sparc64: sparc64 md5 opcode not available.
+[   48.882158] camellia_sparc64: sparc64 camellia opcodes not available.
+[   48.882184] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   48.930006] des_sparc64: sparc64 des opcodes not available.
+[   48.977841] aes_sparc64: sparc64 aes opcodes not available.
+[   49.042064] des_sparc64: sparc64 des opcodes not available.
+[   49.065884] sha1_sparc64: sparc64 sha1 opcode not available.
+[   49.097952] sha256_sparc64: sparc64 sha256 opcode not available.
+[   49.117900] sha512_sparc64: sparc64 sha512 opcode not available.
+[   49.117914] md5_sparc64: sparc64 md5 opcode not available.
+[   49.117926] camellia_sparc64: sparc64 camellia opcodes not available.
+[   49.117947] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   49.173996] camellia_sparc64: sparc64 camellia opcodes not available.
+[   49.174257] aes_sparc64: sparc64 aes opcodes not available.
+[   49.174274] sha1_sparc64: sparc64 sha1 opcode not available.
+[   49.197746] sha256_sparc64: sparc64 sha256 opcode not available.
+[   49.197782] des_sparc64: sparc64 des opcodes not available.
+[   49.261997] camellia_sparc64: sparc64 camellia opcodes not available.
+[   49.262013] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   49.262025] md5_sparc64: sparc64 md5 opcode not available.
+[   49.345813] sha512_sparc64: sparc64 sha512 opcode not available.
+[   49.386035] sha512_sparc64: sparc64 sha512 opcode not available.
+[   49.386176] camellia_sparc64: sparc64 camellia opcodes not available.
+[   49.433894] sha1_sparc64: sparc64 sha1 opcode not available.
+[   49.433972] sha256_sparc64: sparc64 sha256 opcode not available.
+[   49.434000] des_sparc64: sparc64 des opcodes not available.
+[   49.434075] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   49.434106] aes_sparc64: sparc64 aes opcodes not available.
+[   49.434205] md5_sparc64: sparc64 md5 opcode not available.
+[   49.593723] camellia_sparc64: sparc64 camellia opcodes not available.
+[   49.618041] md5_sparc64: sparc64 md5 opcode not available.
+[   49.618135] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   49.618195] sha256_sparc64: sparc64 sha256 opcode not available.
+[   49.618298] aes_sparc64: sparc64 aes opcodes not available.
+[   49.618472] sha1_sparc64: sparc64 sha1 opcode not available.
+[   49.618786] sha512_sparc64: sparc64 sha512 opcode not available.
+[   49.637716] des_sparc64: sparc64 des opcodes not available.
+[   49.725734] camellia_sparc64: sparc64 camellia opcodes not available.
+[   49.757745] sha256_sparc64: sparc64 sha256 opcode not available.
+[   49.757761] aes_sparc64: sparc64 aes opcodes not available.
+[   49.798041] des_sparc64: sparc64 des opcodes not available.
+[   49.798062] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   49.798285] sha1_sparc64: sparc64 sha1 opcode not available.
+[   49.830026] sha512_sparc64: sparc64 sha512 opcode not available.
+[   49.830076] md5_sparc64: sparc64 md5 opcode not available.
+[   49.901824] camellia_sparc64: sparc64 camellia opcodes not available.
+[   49.901887] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   49.933921] sha512_sparc64: sparc64 sha512 opcode not available.
+[   50.009888] md5_sparc64: sparc64 md5 opcode not available.
+[   50.049953] md5_sparc64: sparc64 md5 opcode not available.
+[   50.050207] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   50.050220] sha512_sparc64: sparc64 sha512 opcode not available.
+[   50.050265] aes_sparc64: sparc64 aes opcodes not available.
+[   50.050277] sha256_sparc64: sparc64 sha256 opcode not available.
+[   50.050290] camellia_sparc64: sparc64 camellia opcodes not available.
+[   50.050305] des_sparc64: sparc64 des opcodes not available.
+[   50.161907] md5_sparc64: sparc64 md5 opcode not available.
+[   50.162006] sha512_sparc64: sparc64 sha512 opcode not available.
+[   50.162146] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   50.209810] sha256_sparc64: sparc64 sha256 opcode not available.
+[   50.281737] aes_sparc64: sparc64 aes opcodes not available.
+[   50.305868] camellia_sparc64: sparc64 camellia opcodes not available.
+[   50.349889] md5_sparc64: sparc64 md5 opcode not available.
+[   50.350072] sha512_sparc64: sparc64 sha512 opcode not available.
+[   50.350100] sha256_sparc64: sparc64 sha256 opcode not available.
+[   50.350130] des_sparc64: sparc64 des opcodes not available.
+[   50.350148] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   50.350242] aes_sparc64: sparc64 aes opcodes not available.
+[   50.445913] sha256_sparc64: sparc64 sha256 opcode not available.
+[   50.501720] aes_sparc64: sparc64 aes opcodes not available.
+[   50.501881] sha512_sparc64: sparc64 sha512 opcode not available.
+[   50.502010] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   50.537724] md5_sparc64: sparc64 md5 opcode not available.
+[   50.537806] des_sparc64: sparc64 des opcodes not available.
+[   50.537833] camellia_sparc64: sparc64 camellia opcodes not available.
+[   50.641687] sha512_sparc64: sparc64 sha512 opcode not available.
+[   50.641832] sha256_sparc64: sparc64 sha256 opcode not available.
+[   50.641849] aes_sparc64: sparc64 aes opcodes not available.
+[   50.641898] des_sparc64: sparc64 des opcodes not available.
+[   50.641930] md5_sparc64: sparc64 md5 opcode not available.
+[   50.641996] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   50.642029] camellia_sparc64: sparc64 camellia opcodes not available.
+[   50.668026] EXT4-fs (sda7): mounted filesystem with ordered data mode. Opts: (null)
+[   50.753949] sha512_sparc64: sparc64 sha512 opcode not available.
+[   50.754085] des_sparc64: sparc64 des opcodes not available.
+[   50.809755] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   50.809781] camellia_sparc64: sparc64 camellia opcodes not available.
+[   50.841931] sha512_sparc64: sparc64 sha512 opcode not available.
+[   50.865787] sha256_sparc64: sparc64 sha256 opcode not available.
+[   50.905766] aes_sparc64: sparc64 aes opcodes not available.
+[   50.925868] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   50.945704] md5_sparc64: sparc64 md5 opcode not available.
+[   50.985919] sha256_sparc64: sparc64 sha256 opcode not available.
+[   50.985936] des_sparc64: sparc64 des opcodes not available.
+[   51.065776] aes_sparc64: sparc64 aes opcodes not available.
+[   51.065792] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   51.065804] sha512_sparc64: sparc64 sha512 opcode not available.
+[   51.065818] camellia_sparc64: sparc64 camellia opcodes not available.
+[   51.066003] md5_sparc64: sparc64 md5 opcode not available.
+[   51.066060] sha256_sparc64: sparc64 sha256 opcode not available.
+[   51.066309] des_sparc64: sparc64 des opcodes not available.
+[   51.165912] md5_sparc64: sparc64 md5 opcode not available.
+[   51.237727] sha512_sparc64: sparc64 sha512 opcode not available.
+[   51.285822] camellia_sparc64: sparc64 camellia opcodes not available.
+[   51.285846] sha256_sparc64: sparc64 sha256 opcode not available.
+[   51.285989] md5_sparc64: sparc64 md5 opcode not available.
+[   51.286093] sha512_sparc64: sparc64 sha512 opcode not available.
+[   51.286113] aes_sparc64: sparc64 aes opcodes not available.
+[   51.286121] des_sparc64: sparc64 des opcodes not available.
+[   51.286138] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   51.401985] sha512_sparc64: sparc64 sha512 opcode not available.
+[   51.402000] aes_sparc64: sparc64 aes opcodes not available.
+[   51.457808] md5_sparc64: sparc64 md5 opcode not available.
+[   51.457915] sha256_sparc64: sparc64 sha256 opcode not available.
+[   51.505673] des_sparc64: sparc64 des opcodes not available.
+[   51.533763] camellia_sparc64: sparc64 camellia opcodes not available.
+[   51.533801] sha512_sparc64: sparc64 sha512 opcode not available.
+[   51.533875] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   51.561981] sha256_sparc64: sparc64 sha256 opcode not available.
+[   51.561995] aes_sparc64: sparc64 aes opcodes not available.
+[   51.562008] md5_sparc64: sparc64 md5 opcode not available.
+[   51.657973] des_sparc64: sparc64 des opcodes not available.
+[   51.681731] sha512_sparc64: sparc64 sha512 opcode not available.
+[   51.737694] camellia_sparc64: sparc64 camellia opcodes not available.
+[   51.777796] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   51.777834] md5_sparc64: sparc64 md5 opcode not available.
+[   51.778010] sha256_sparc64: sparc64 sha256 opcode not available.
+[   51.793687] sha512_sparc64: sparc64 sha512 opcode not available.
+[   51.793707] des_sparc64: sparc64 des opcodes not available.
+[   51.793739] aes_sparc64: sparc64 aes opcodes not available.
+[   51.825969] camellia_sparc64: sparc64 camellia opcodes not available.
+[   51.825985] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   51.945966] md5_sparc64: sparc64 md5 opcode not available.
+[   51.945972] sha256_sparc64: sparc64 sha256 opcode not available.
+[   51.973805] sha512_sparc64: sparc64 sha512 opcode not available.
+[   52.001783] aes_sparc64: sparc64 aes opcodes not available.
+[   52.097893] des_sparc64: sparc64 des opcodes not available.
+[   52.097933] sha256_sparc64: sparc64 sha256 opcode not available.
+[   52.097964] sha512_sparc64: sparc64 sha512 opcode not available.
+[   52.097981] camellia_sparc64: sparc64 camellia opcodes not available.
+[   52.097992] md5_sparc64: sparc64 md5 opcode not available.
+[   52.098007] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   52.098068] aes_sparc64: sparc64 aes opcodes not available.
+[   52.293858] sha512_sparc64: sparc64 sha512 opcode not available.
+[   52.293868] md5_sparc64: sparc64 md5 opcode not available.
+[   52.293964] des_sparc64: sparc64 des opcodes not available.
+[   52.293981] camellia_sparc64: sparc64 camellia opcodes not available.
+[   52.293996] aes_sparc64: sparc64 aes opcodes not available.
+[   52.294299] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   52.437779] sha512_sparc64: sparc64 sha512 opcode not available.
+[   52.437827] camellia_sparc64: sparc64 camellia opcodes not available.
+[   52.437848] des_sparc64: sparc64 des opcodes not available.
+[   52.437899] aes_sparc64: sparc64 aes opcodes not available.
+[   52.437912] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   52.437958] md5_sparc64: sparc64 md5 opcode not available.
+[   52.589871] camellia_sparc64: sparc64 camellia opcodes not available.
+[   52.589973] md5_sparc64: sparc64 md5 opcode not available.
+[   52.589985] des_sparc64: sparc64 des opcodes not available.
+[   52.589998] aes_sparc64: sparc64 aes opcodes not available.
+[   52.590029] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   52.590080] sha512_sparc64: sparc64 sha512 opcode not available.
+[   52.717816] des_sparc64: sparc64 des opcodes not available.
+[   52.717992] aes_sparc64: sparc64 aes opcodes not available.
+[   52.718005] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   52.718041] md5_sparc64: sparc64 md5 opcode not available.
+[   52.718063] camellia_sparc64: sparc64 camellia opcodes not available.
+[   52.849883] md5_sparc64: sparc64 md5 opcode not available.
+[   52.849991] camellia_sparc64: sparc64 camellia opcodes not available.
+[   52.850010] des_sparc64: sparc64 des opcodes not available.
+[   52.850024] aes_sparc64: sparc64 aes opcodes not available.
+[   52.850037] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   52.969865] md5_sparc64: sparc64 md5 opcode not available.
+[   52.970011] des_sparc64: sparc64 des opcodes not available.
+[   52.970024] aes_sparc64: sparc64 aes opcodes not available.
+[   52.970041] camellia_sparc64: sparc64 camellia opcodes not available.
+[   52.970056] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.073624] md5_sparc64: sparc64 md5 opcode not available.
+[   53.097799] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.117708] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.117951] aes_sparc64: sparc64 aes opcodes not available.
+[   53.117965] des_sparc64: sparc64 des opcodes not available.
+[   53.153625] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.201871] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.201946] aes_sparc64: sparc64 aes opcodes not available.
+[   53.233651] des_sparc64: sparc64 des opcodes not available.
+[   53.257615] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.325642] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.325656] aes_sparc64: sparc64 aes opcodes not available.
+[   53.325861] des_sparc64: sparc64 des opcodes not available.
+[   53.326174] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.437883] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.437914] des_sparc64: sparc64 des opcodes not available.
+[   53.437925] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.437943] aes_sparc64: sparc64 aes opcodes not available.
+[   53.533745] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.533814] des_sparc64: sparc64 des opcodes not available.
+[   53.533831] aes_sparc64: sparc64 aes opcodes not available.
+[   53.533842] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.637683] des_sparc64: sparc64 des opcodes not available.
+[   53.637699] aes_sparc64: sparc64 aes opcodes not available.
+[   53.637795] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.637832] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.741671] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.741726] aes_sparc64: sparc64 aes opcodes not available.
+[   53.741823] des_sparc64: sparc64 des opcodes not available.
+[   53.742135] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.829783] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.829855] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.829868] des_sparc64: sparc64 des opcodes not available.
+[   53.901798] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.901827] des_sparc64: sparc64 des opcodes not available.
+[   53.902129] camellia_sparc64: sparc64 camellia opcodes not available.
+[   53.981795] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   53.981807] camellia_sparc64: sparc64 camellia opcodes not available.
+[   54.045743] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   54.085737] crc32c_sparc64: sparc64 crc32c opcode not available.
+[   54.896813] EXT4-fs (sda4): mounted filesystem with ordered data mode. Opts: (null)
+[   56.969707] Kernel unaligned access at TPC[7a259c] aa_dfa_unpack+0x3c/0x560
+[   56.969728] Kernel unaligned access at TPC[7a25ac] aa_dfa_unpack+0x4c/0x560
+[   56.969739] Kernel unaligned access at TPC[7a2684] aa_dfa_unpack+0x124/0x560
+[   56.969751] Kernel unaligned access at TPC[7a26f0] aa_dfa_unpack+0x190/0x560
+[   56.969761] Kernel unaligned access at TPC[7a2704] aa_dfa_unpack+0x1a4/0x560
+[   56.976305] audit: type=1400 audit(1597864943.104:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=1431 comm="apparmor_parser"
+[   56.986830] audit: type=1400 audit(1597864943.116:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=1432 comm="apparmor_parser"
+[   56.986851] audit: type=1400 audit(1597864943.116:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=1432 comm="apparmor_parser"
+[   56.998634] audit: type=1400 audit(1597864943.128:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=1430 comm="apparmor_parser"
+[   56.998655] audit: type=1400 audit(1597864943.128:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=1430 comm="apparmor_parser"
+[   56.998674] audit: type=1400 audit(1597864943.128:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=1430 comm="apparmor_parser"
+[   59.769862] igb 0000:0c:00.0 enp12s0f0: igb: enp12s0f0 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[   59.770141] IPv6: ADDRCONF(NETDEV_CHANGE): enp12s0f0: link becomes ready
+[   60.567064] zram: Added device: zram0
+[   60.619320] zram0: detected capacity change from 0 to 2147483648
+[   62.509257] Adding 2097144k swap on /dev/zram0.  Priority:100 extents:1 across:2097144k SSFS
+[   65.867728] bmc-watchdog[1730]: segfault at ffff80010003c000 ip ffff800100b5f06c (rpc ffff80010063aa04) sp 000007feffa57e71 error 2 in libc-2.31.so[ffff800100acc000+164000]
+[   74.328279] tun: Universal TUN/TAP device driver, 1.6
+[  961.585582] ipmi-config[2598]: segfault at ffff800100044000 ip ffff800100c0b06c (rpc ffff800100516a04) sp 000007feff8bfaf1 error 2 in libc-2.31.so[ffff800100b78000+164000]
+[  977.748413] ipmi-config[2602]: segfault at ffff80010003c000 ip ffff800100c1706c (rpc ffff8001006f2a04) sp 000007feffa9daf1 error 2 in libc-2.31.so[ffff800100b84000+164000]
+[ 1006.289945] lp: driver loaded but no devices found
+[ 1006.342312] st: Version 20160209, fixed bufsize 32768, s/g segs 256
+[ 2616.557936] ipmitool[2757]: segfault at ffff80010003c000 ip ffff8001011af06c (rpc ffff8001002e6a04) sp 000007feffcb9dc1 error 2 in libc-2.31.so[ffff80010111c000+164000]
+[ 3699.379040] ipmitool[2890]: segfault at ffff800100038000 ip ffff80010112706c (rpc ffff8001002e6a04) sp 000007feff9e5dc1 error 2 in libc-2.31.so[ffff800101094000+164000]
+[ 6078.579033] ipmi-raw[3357]: segfault at ffff80010003c000 ip ffff800100dbf06c (rpc ffff8001006caa04) sp 000007feffdb9c11 error 2 in libc-2.31.so[ffff800100d2c000+164000]
+[ 6084.368660] ipmi-raw[3360]: segfault at ffff80010003c000 ip ffff800100c4f06c (rpc ffff80010072aa04) sp 000007feffef1c81 error 2 in libc-2.31.so[ffff800100bbc000+164000]
+[ 6221.971225] ipmi-raw[3398]: segfault at ffff80010003c000 ip ffff800100c0b06c (rpc ffff800100516a04) sp 000007feff7f3c81 error 2 in libc-2.31.so[ffff800100b78000+164000]
