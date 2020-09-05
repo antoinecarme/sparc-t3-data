@@ -7,6 +7,8 @@ This server has 128 threads (16 cores and 8 threads / core, SMT8).
 
 I will add here the info used to configure this server when installing debian and running pyaf tests/benchmarks
 
+https://en.wikipedia.org/wiki/SPARC_T3
+
 Server Documentation By Oracle : 
 
 https://docs.oracle.com/cd/E19836-01/index.html
