@@ -1,4 +1,4 @@
-# Data science packages for debian sparc64.
+# Data science packages for debian sparc64
 
 ## Please don't use these packages in "production". This is only for a POC test.
 
