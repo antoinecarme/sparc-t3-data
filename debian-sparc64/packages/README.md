@@ -10,14 +10,15 @@ The goal was to check that PyAF runs on such platform wihtout change and produce
 1. To build all the debian packages needed for running PyAF on a debian. These are : pytorch, xgboost, lightgbm, statsmodels, scikit-learn, pandas, numpy, scipy and matplotlib. As of 2022-04-30, these packages do not build on the internal debian buildd system for sparc64. Let alone the package availability on apt servers.
   => https://buildd.debian.org/status/package.php?p=pandas&suite=sid
 
-The new packages are available here
-  => directory 2022-04-30
+The new packages are available here : https://github.com/antoinecarme/sparc-t3-data/tree/master/debian-sparc64/packages/2022-04-30
    
 2. To run PyAF build-tests (the same as those used in circle-ci tests on github), get a log file for each test and compare with the numerical results obtained by circle-ci (Circle-ci uses an intel AWS machine).
 
-  => Logs to come  : (directory here)
-  => build-test log and comparison :
-  => manual checks, these packages may be buggy, this is OK. The only valid reference is the models and numerical values of forecasts given by PyAF when running PyAF tests. The reference models and values are available on Circle-CI.
+    a. Detailed Logs  : https://github.com/antoinecarme/sparc-t3-data/tree/master/debian-sparc64/packages/logs
+    
+    b. build-test log and comparison : https://github.com/antoinecarme/sparc-t3-data/blob/master/debian-sparc64/packages/pyaf-build-test-sparc64-log-2022-04-30.txt
+    
+    c. Manual checks, these packages may be buggy (bug fixing is outside the scope of this POC anyway), this is OK. The only valid reference is the models and numerical values of forecasts given by PyAF when running PyAF tests. The reference models and values are available on Circle-CI.
 
 ## Related github issues :
 
