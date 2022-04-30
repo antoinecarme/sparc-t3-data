@@ -1,0 +1,5 @@
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 863 0
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 863 0
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 863
+EXEC_THIS=1 cp  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_per_node.log tests/references/hierarchical/test_grouped_signals_AllMethods_Exogenous_per_node.log
+NUM_DIFF_FILES_ARE_DIFFERENT

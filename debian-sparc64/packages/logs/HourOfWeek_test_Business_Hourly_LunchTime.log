@@ -1,0 +1,307 @@
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['Signal'], 'Transformations': [('Signal', 'None', '_', 'T+S+R'), ('Signal', 'None', 'Diff_', 'T+S+R'), ('Signal', 'None', 'RelDiff_', 'T+S+R'), ('Signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+          Time_Hourly  Hour  Day       Signal
+0 2000-01-01 00:00:00     0    5  2766.904897
+1 2000-01-01 01:00:00     1    5  2763.570326
+2 2000-01-01 02:00:00     2    5  2763.685613
+3 2000-01-01 03:00:00     3    5  2765.025123
+4 2000-01-01 04:00:00     4    5  2765.401209
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 10000 entries, 0 to 9999
+Data columns (total 4 columns):
+ #   Column       Non-Null Count  Dtype         
+---  ------       --------------  -----         
+ 0   Time_Hourly  10000 non-null  datetime64[ns]
+ 1   Hour         10000 non-null  int64         
+ 2   Day          10000 non-null  int64         
+ 3   Signal       10000 non-null  float64       
+dtypes: datetime64[ns](1), float64(1), int64(2)
+memory usage: 312.6 KB
+None
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal', 'Transformation': '_Signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal', 'Transformation': 'Diff_Signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal', 'Transformation': 'RelDiff_Signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal', 'Transformation': 'CumSum_Signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 39.816, ('TRAINING', {'Signal': 'Signal', 'Transformation': 'RelDiff_Signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 51.504, ('TRAINING', {'Signal': 'Signal', 'Transformation': 'CumSum_Signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 58.051, ('TRAINING', {'Signal': 'Signal', 'Transformation': '_Signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 62.346, ('TRAINING', {'Signal': 'Signal', 'Transformation': 'Diff_Signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 72.523, ('SIGNAL_TRAINING', {'Signals': ['Signal'], 'Transformations': [('Signal', 'None', '_', 'T+S+R'), ('Signal', 'None', 'Diff_', 'T+S+R'), ('Signal', 'None', 'RelDiff_', 'T+S+R'), ('Signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['Signal'], 'Transformations': [('Signal', [('Signal', 'None', 'CumSum_', 'T+S+R'), ('Signal', 'None', 'Diff_', 'T+S+R'), ('Signal', 'None', 'RelDiff_', 'T+S+R'), ('Signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'Signal', 'Transformations': [('Signal', 'None', 'CumSum_', 'T+S+R'), ('Signal', 'None', 'Diff_', 'T+S+R'), ('Signal', 'None', 'RelDiff_', 'T+S+R'), ('Signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.std:PERF_DUMP_START
+INFO:pyaf.std:[
+    {
+        "Category": "NoTransf_Lag1Trend_Seasonal_HourOfWeek_NoAR",
+        "Complexity": 170.0,
+        "DetailedFormula": [
+            "_Signal",
+            "T+S+R",
+            null,
+            "_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0335,
+        "Model": "_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR"
+    },
+    {
+        "Category": "Integration_LinearTrend_Seasonal_HourOfWeek_NoAR",
+        "Complexity": 170.0,
+        "DetailedFormula": [
+            "CumSum_Signal",
+            "T+S+R",
+            null,
+            "CumSum_Signal_LinearTrend_residue_Seasonal_HourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0414,
+        "Model": "CumSum_Signal_LinearTrend_residue_Seasonal_HourOfWeek_residue_NoAR"
+    },
+    {
+        "Category": "NoTransf_ConstantTrend_Seasonal_ThreeHourOfWeek_NoAR",
+        "Complexity": 56.0,
+        "DetailedFormula": [
+            "_Signal",
+            "T+S+R",
+            null,
+            "_Signal_ConstantTrend_residue_Seasonal_ThreeHourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0441,
+        "Model": "_Signal_ConstantTrend_residue_Seasonal_ThreeHourOfWeek_residue_NoAR"
+    },
+    {
+        "Category": "Integration_Lag1Trend_Seasonal_FourHourOfWeek_NoAR",
+        "Complexity": 45.0,
+        "DetailedFormula": [
+            "CumSum_Signal",
+            "T+S+R",
+            null,
+            "CumSum_Signal_Lag1Trend_residue_Seasonal_FourHourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0763,
+        "Model": "CumSum_Signal_Lag1Trend_residue_Seasonal_FourHourOfWeek_residue_NoAR"
+    },
+    {
+        "Category": "NoTransf_LinearTrend_Seasonal_HourOfWeek_NoAR",
+        "Complexity": 169.0,
+        "DetailedFormula": [
+            "_Signal",
+            "T+S+R",
+            null,
+            "_Signal_LinearTrend_residue_Seasonal_HourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.9152,
+        "Model": "_Signal_LinearTrend_residue_Seasonal_HourOfWeek_residue_NoAR"
+    },
+    {
+        "Category": "NoTransf_LinearTrend_Seasonal_TwoHourOfWeek_NoAR",
+        "Complexity": 85.0,
+        "DetailedFormula": [
+            "_Signal",
+            "T+S+R",
+            null,
+            "_Signal_LinearTrend_residue_Seasonal_TwoHourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.9159,
+        "Model": "_Signal_LinearTrend_residue_Seasonal_TwoHourOfWeek_residue_NoAR"
+    },
+    {
+        "Category": "NoTransf_LinearTrend_Seasonal_ThreeHourOfWeek_NoAR",
+        "Complexity": 57.0,
+        "DetailedFormula": [
+            "_Signal",
+            "T+S+R",
+            null,
+            "_Signal_LinearTrend_residue_Seasonal_ThreeHourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.9258,
+        "Model": "_Signal_LinearTrend_residue_Seasonal_ThreeHourOfWeek_residue_NoAR"
+    },
+    {
+        "Category": "Integration_ConstantTrend_NoCycle_NoAR",
+        "Complexity": 1.0,
+        "DetailedFormula": [
+            "CumSum_Signal",
+            "T+S+R",
+            null,
+            "CumSum_Signal_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.9302,
+        "Model": "CumSum_Signal_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+    },
+    {
+        "Category": "NoTransf_LinearTrend_Seasonal_FourHourOfWeek_NoAR",
+        "Complexity": 43.0,
+        "DetailedFormula": [
+            "_Signal",
+            "T+S+R",
+            null,
+            "_Signal_LinearTrend_residue_Seasonal_FourHourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.9473,
+        "Model": "_Signal_LinearTrend_residue_Seasonal_FourHourOfWeek_residue_NoAR"
+    },
+    {
+        "Category": "NoTransf_LinearTrend_Seasonal_SixHourOfWeek_NoAR",
+        "Complexity": 29.0,
+        "DetailedFormula": [
+            "_Signal",
+            "T+S+R",
+            null,
+            "_Signal_LinearTrend_residue_Seasonal_SixHourOfWeek_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.9623,
+        "Model": "_Signal_LinearTrend_residue_Seasonal_SixHourOfWeek_residue_NoAR"
+    }
+]
+INFO:pyaf.std:PERF_DUMP_END
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.086, ('MODEL_SELECTION', {'Signal': 'Signal', 'Transformations': [('Signal', 'None', 'CumSum_', 'T+S+R'), ('Signal', 'None', 'Diff_', 'T+S+R'), ('Signal', 'None', 'RelDiff_', 'T+S+R'), ('Signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'Signal', 'Model': '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.417, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'Signal', 'Model': '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'Signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.65, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'Signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.158, ('FINALIZE_TRAINING', {'Signals': ['Signal'], 'Transformations': [('Signal', [('Signal', 'None', 'CumSum_', 'T+S+R'), ('Signal', 'None', 'Diff_', 'T+S+R'), ('Signal', 'None', 'RelDiff_', 'T+S+R'), ('Signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.std:TIME_DETAIL TimeVariable='Time_Hourly' TimeMin=2000-03-16T08:00:00.000000 TimeMax=2000-12-13T13:00:00.000000 TimeDelta=<DateOffset: hours=1> Horizon=24
+INFO:pyaf.std:SIGNAL_DETAIL_ORIG SignalVariable='Signal' Length=8192  Min=2.275479 Max=2767.96688  Mean=1336.786643 StdDev=1188.872729
+INFO:pyaf.std:SIGNAL_DETAIL_TRANSFORMED TransformedSignalVariable='_Signal' Min=0.0 Max=1.0  Mean=0.482524 StdDev=0.429865
+INFO:pyaf.std:DECOMPOSITION_TYPE 'T+S+R'
+INFO:pyaf.std:BEST_TRANSOFORMATION_TYPE '_'
+INFO:pyaf.std:BEST_DECOMPOSITION  '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR' [Lag1Trend + Seasonal_HourOfWeek + NoAR]
+INFO:pyaf.std:TREND_DETAIL '_Signal_Lag1Trend' [Lag1Trend]
+INFO:pyaf.std:CYCLE_DETAIL '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek' [Seasonal_HourOfWeek]
+INFO:pyaf.std:AUTOREG_DETAIL '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR' [NoAR]
+INFO:pyaf.std:MODEL_MAPE MAPE_Fit=0.0353 MAPE_Forecast=0.0335 MAPE_Test=0.0516
+INFO:pyaf.std:MODEL_SMAPE SMAPE_Fit=0.0342 SMAPE_Forecast=0.0329 SMAPE_Test=0.051
+INFO:pyaf.std:MODEL_MASE MASE_Fit=0.0122 MASE_Forecast=0.0127 MASE_Test=0.0365
+INFO:pyaf.std:MODEL_CRPS CRPS_Fit=333.0036 CRPS_Forecast=333.985 CRPS_Test=33.5472
+INFO:pyaf.std:MODEL_L1 L1_Fit=1.083 L1_Forecast=1.1501 L1_Test=0.738
+INFO:pyaf.std:MODEL_L2 L2_Fit=1.3762 L2_Forecast=1.4379 L2_Test=0.8548
+INFO:pyaf.std:MODEL_LnQ LnQ_Fit=83.4074 LnQ_Forecast=18.4493 LnQ_Test=0.227
+INFO:pyaf.std:MODEL_MEDIAN_AE MedAE_Fit=0.9118 MedAE_Forecast=0.9826 MedAE_Test=0.6317
+INFO:pyaf.std:MODEL_COMPLEXITY 170.0
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_DETAIL_START
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_MODEL_VALUES NoTransf None
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_DETAIL_END
+INFO:pyaf.std:TREND_DETAIL_START
+INFO:pyaf.std:LAG1_TREND Lag1Trend 0.250568
+INFO:pyaf.std:TREND_DETAIL_END
+INFO:pyaf.std:CYCLE_MODEL_DETAIL_START
+INFO:pyaf.std:SEASONAL_MODEL_VALUES _Signal_Lag1Trend_residue_Seasonal_HourOfWeek 3e-05 {80: 0.000121, 81: 0.00019, 82: -5.9e-05, 83: -4.5e-05, 84: -0.11938, 85: 0.010848, 86: 0.108364, 87: 9e-05, 88: -6.4e-05, 89: -8.4e-05, 90: 3.5e-05, 91: -5.5e-05, 92: -0.000126, 93: 2.5e-05, 94: -5.5e-05, 95: -0.0, 96: 0.748384, 97: 0.000144, 98: 1e-06, 99: -1.5e-05, 100: 2.5e-05, 101: 6e-05, 102: -0.000115, 103: 5.2e-05, 104: -8e-06, 105: -6e-05, 106: -4.8e-05, 107: -1.5e-05, 108: -0.477312, 109: 0.043295, 110: 0.433919, 111: 7.3e-05, 112: 0.000199, 113: 3.2e-05, 114: 2e-06, 115: -6e-05, 116: -0.000136, 117: -8.1e-05, 118: 0.000109, 119: 1.6e-05, 120: 8.2e-05, 121: -8.7e-05, 122: -2.1e-05, 123: -8.5e-05, 124: -4.1e-05, 125: -4.3e-05, 126: 8e-06, 127: -5e-05, 128: 0.000164, 129: -0.000137, 130: 2.8e-05, 131: 2.3e-05, 132: -0.477302, 133: 0.043295, 134: 0.434065, 135: 4.3e-05, 136: -0.000134, 137: -4.9e-05, 138: -0.000115, 139: 7.6e-05, 140: 0.000124, 141: -2.8e-05, 142: 5.7e-05, 143: -0.000111, 144: -6.8e-05, 145: 0.000177, 146: -2.3e-05, 147: 6.9e-05, 148: 4.5e-05, 149: 0.000129, 150: 3e-06, 151: -0.000107, 152: -6.5e-05, 153: 7.6e-05, 154: -0.000138, 155: -2.8e-05, 156: -0.477257, 157: 0.043453, 158: 0.433987, 159: -0.00013, 160: 0.000206, 161: -0.000222, 162: 0.000123, 163: -0.00018, 164: 1.8e-05, 165: 0.000104, 166: -0.000165, 167: 0.000153, 0: -0.998012, 1: -0.000111, 2: 5.9e-05, 3: -0.00016, 4: -9.2e-05, 5: 6.7e-05, 6: -6.2e-05, 7: -5.4e-05, 8: -2.6e-05, 9: -4.5e-05, 10: 3.3e-05, 11: 4.4e-05, 12: 3e-06, 13: -7.3e-05, 14: 0.000122, 15: -0.000182, 16: -4.9e-05, 17: 2.5e-05, 18: -5.8e-05, 19: 0.000125, 20: 5.5e-05, 21: -0.000114, 22: 8.6e-05, 23: -5.7e-05, 24: 0.083229, 25: -4.1e-05, 26: -2.6e-05, 27: -6.7e-05, 28: -1.4e-05, 29: 4.6e-05, 30: 4.5e-05, 31: -7e-05, 32: -5.7e-05, 33: -1.6e-05, 34: -4e-06, 35: -1.2e-05, 36: -0.039861, 37: 0.003576, 38: 0.036179, 39: 1.5e-05, 40: -1.8e-05, 41: 0.000227, 42: -0.000116, 43: 2.1e-05, 44: 3.8e-05, 45: 5.3e-05, 46: -0.000265, 47: 3.7e-05, 48: 0.0832, 49: 0.000188, 50: -0.000123, 51: 4e-06, 52: -6.4e-05, 53: -1e-06, 54: -1.4e-05, 55: 2.4e-05, 56: -7e-06, 57: 2.4e-05, 58: -0.000126, 59: 0.000194, 60: -0.079625, 61: 0.007293, 62: 0.072214, 63: -5.2e-05, 64: 9e-06, 65: 0.000113, 66: -2.3e-05, 67: -0.000182, 68: 2.6e-05, 69: -1.4e-05, 70: -2.2e-05, 71: -3.8e-05, 72: 0.083262, 73: -0.000163, 74: 0.000156, 75: 0.000157, 76: 7.8e-05, 77: -0.00029, 78: 0.000205, 79: -0.000226}
+INFO:pyaf.std:CYCLE_MODEL_DETAIL_END
+INFO:pyaf.std:AR_MODEL_DETAIL_START
+INFO:pyaf.std:AR_MODEL_DETAIL_END
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['Signal'], 'Horizon': 24}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 6.185, ('FORECASTING', {'Signals': ['Signal'], 'Horizon': 24}))
+INFO:pyaf.timing:('OPERATION_START', ('PLOTTING', {'Signals': ['Signal']}))
+  Split Transformation DecompositionType  ... FitMAPE ForecastMAPE TestMAPE
+0  None        _Signal             T+S+R  ...  0.0353       0.0335   0.0516
+1  None  CumSum_Signal             T+S+R  ...  0.0421       0.0414   0.0929
+2  None        _Signal             T+S+R  ...  0.0439       0.0441   0.0602
+3  None  CumSum_Signal             T+S+R  ...  0.0783       0.0763   0.0943
+4  None        _Signal             T+S+R  ...  0.3780       0.9152   2.6116
+
+[5 rows x 10 columns]
+Forecast Columns  Index(['Time_Hourly', 'Signal', 'row_number', 'Time_Hourly_Normalized',
+       '_Signal', '_Signal_Lag1Trend', '_Signal_Lag1Trend_residue',
+       '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek',
+       '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue',
+       '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR',
+       '_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR_residue',
+       '_Signal_Trend', '_Signal_Trend_residue', '_Signal_Cycle',
+       '_Signal_Cycle_residue', '_Signal_AR', '_Signal_AR_residue',
+       '_Signal_TransformedForecast', 'Signal_Forecast',
+       '_Signal_TransformedResidue', 'Signal_Residue',
+       'Signal_Forecast_Lower_Bound', 'Signal_Forecast_Upper_Bound',
+       'Signal_Forecast_Quantile_5', 'Signal_Forecast_Quantile_10',
+       'Signal_Forecast_Quantile_15', 'Signal_Forecast_Quantile_20',
+       'Signal_Forecast_Quantile_25', 'Signal_Forecast_Quantile_30',
+       'Signal_Forecast_Quantile_35', 'Signal_Forecast_Quantile_40',
+       'Signal_Forecast_Quantile_45', 'Signal_Forecast_Quantile_50',
+       'Signal_Forecast_Quantile_55', 'Signal_Forecast_Quantile_60',
+       'Signal_Forecast_Quantile_65', 'Signal_Forecast_Quantile_70',
+       'Signal_Forecast_Quantile_75', 'Signal_Forecast_Quantile_80',
+       'Signal_Forecast_Quantile_85', 'Signal_Forecast_Quantile_90',
+       'Signal_Forecast_Quantile_95'],
+      dtype='object')
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 8216 entries, 0 to 8215
+Data columns (total 3 columns):
+ #   Column           Non-Null Count  Dtype         
+---  ------           --------------  -----         
+ 0   Time_Hourly      8216 non-null   datetime64[ns]
+ 1   Signal           8192 non-null   float64       
+ 2   Signal_Forecast  8216 non-null   float64       
+dtypes: datetime64[ns](1), float64(2)
+memory usage: 192.7 KB
+None
+Forecasts
+              Time_Hourly  Signal  Signal_Forecast
+8192 2001-02-20 16:00:00     NaN       235.468764
+8193 2001-02-20 17:00:00     NaN       236.097437
+8194 2001-02-20 18:00:00     NaN       235.775547
+8195 2001-02-20 19:00:00     NaN       235.834084
+8196 2001-02-20 20:00:00     NaN       235.937979
+8197 2001-02-20 21:00:00     NaN       236.084633
+8198 2001-02-20 22:00:00     NaN       235.350804
+8199 2001-02-20 23:00:00     NaN       235.454125
+8200 2001-02-21 00:00:00     NaN       465.559586
+8201 2001-02-21 01:00:00     NaN       466.079489
+8202 2001-02-21 02:00:00     NaN       465.739675
+8203 2001-02-21 03:00:00     NaN       465.750328
+8204 2001-02-21 04:00:00     NaN       465.574424
+8205 2001-02-21 05:00:00     NaN       465.572598
+8206 2001-02-21 06:00:00     NaN       465.533747
+8207 2001-02-21 07:00:00     NaN       465.599470
+8208 2001-02-21 08:00:00     NaN       465.580942
+8209 2001-02-21 09:00:00     NaN       465.646820
+8210 2001-02-21 10:00:00     NaN       465.298076
+8211 2001-02-21 11:00:00     NaN       465.833497
+8212 2001-02-21 12:00:00     NaN       245.616253
+8213 2001-02-21 13:00:00     NaN       265.786607
+8214 2001-02-21 14:00:00     NaN       465.507797
+8215 2001-02-21 15:00:00     NaN       465.362897
+
+
+<ModelInfo>
+{
+    "Signal": {
+        "Dataset": {
+            "Signal": "Signal",
+            "Time": {
+                "Horizon": 24,
+                "TimeMinMax": [
+                    "2000-03-16 08:00:00",
+                    "2001-02-20 15:00:00"
+                ],
+                "TimeVariable": "Time_Hourly"
+            },
+            "Training_Signal_Length": 8192
+        },
+        "Model": {
+            "AR_Model": "NoAR",
+            "Best_Decomposition": "_Signal_Lag1Trend_residue_Seasonal_HourOfWeek_residue_NoAR",
+            "Cycle": "Seasonal_HourOfWeek",
+            "Signal_Decomposition_Type": "T+S+R",
+            "Signal_Transoformation": "NoTransf",
+            "Trend": "Lag1Trend"
+        },
+        "Model_Performance": {
+            "COMPLEXITY": 170.0,
+            "CRPS": 333.985,
+            "LnQ": 18.4493,
+            "MAE": 1.1501,
+            "MAPE": 0.0335,
+            "MASE": 0.0127,
+            "MedAE": 0.9826,
+            "RMSE": 1.4379
+        }
+    }
+}
+</ModelInfo>
+
+
+
+
+<Forecast>
+{"Time_Hourly":{"8168":"2001-02-19T16:00:00.000Z","8169":"2001-02-19T17:00:00.000Z","8170":"2001-02-19T18:00:00.000Z","8171":"2001-02-19T19:00:00.000Z","8172":"2001-02-19T20:00:00.000Z","8173":"2001-02-19T21:00:00.000Z","8174":"2001-02-19T22:00:00.000Z","8175":"2001-02-19T23:00:00.000Z","8176":"2001-02-20T00:00:00.000Z","8177":"2001-02-20T01:00:00.000Z","8178":"2001-02-20T02:00:00.000Z","8179":"2001-02-20T03:00:00.000Z","8180":"2001-02-20T04:00:00.000Z","8181":"2001-02-20T05:00:00.000Z","8182":"2001-02-20T06:00:00.000Z","8183":"2001-02-20T07:00:00.000Z","8184":"2001-02-20T08:00:00.000Z","8185":"2001-02-20T09:00:00.000Z","8186":"2001-02-20T10:00:00.000Z","8187":"2001-02-20T11:00:00.000Z","8188":"2001-02-20T12:00:00.000Z","8189":"2001-02-20T13:00:00.000Z","8190":"2001-02-20T14:00:00.000Z","8191":"2001-02-20T15:00:00.000Z","8192":"2001-02-20T16:00:00.000Z","8193":"2001-02-20T17:00:00.000Z","8194":"2001-02-20T18:00:00.000Z","8195":"2001-02-20T19:00:00.000Z","8196":"2001-02-20T20:00:00.000Z","8197":"2001-02-20T21:00:00.000Z","8198":"2001-02-20T22:00:00.000Z","8199":"2001-02-20T23:00:00.000Z","8200":"2001-02-21T00:00:00.000Z","8201":"2001-02-21T01:00:00.000Z","8202":"2001-02-21T02:00:00.000Z","8203":"2001-02-21T03:00:00.000Z","8204":"2001-02-21T04:00:00.000Z","8205":"2001-02-21T05:00:00.000Z","8206":"2001-02-21T06:00:00.000Z","8207":"2001-02-21T07:00:00.000Z","8208":"2001-02-21T08:00:00.000Z","8209":"2001-02-21T09:00:00.000Z","8210":"2001-02-21T10:00:00.000Z","8211":"2001-02-21T11:00:00.000Z","8212":"2001-02-21T12:00:00.000Z","8213":"2001-02-21T13:00:00.000Z","8214":"2001-02-21T14:00:00.000Z","8215":"2001-02-21T15:00:00.000Z"},"Signal":{"8168":6.1828044847,"8169":4.8593202407,"8170":4.4581210597,"8171":4.6720669544,"8172":5.377316142,"8173":4.6057202027,"8174":3.948168777,"8175":4.488278897,"8176":235.2411256911,"8177":235.8410141926,"8178":235.3992971332,"8179":236.5652340139,"8180":235.1510918179,"8181":234.8075931922,"8182":235.8816710308,"8183":235.5407126867,"8184":234.9860840606,"8185":234.7994054131,"8186":235.9182146446,"8187":236.3021914065,"8188":124.9340494532,"8189":135.2337239728,"8190":234.2087054952,"8191":235.519654915,"8192":null,"8193":null,"8194":null,"8195":null,"8196":null,"8197":null,"8198":null,"8199":null,"8200":null,"8201":null,"8202":null,"8203":null,"8204":null,"8205":null,"8206":null,"8207":null,"8208":null,"8209":null,"8210":null,"8211":null,"8212":null,"8213":null,"8214":null,"8215":null},"Signal_Forecast":{"8168":4.7568197991,"8169":6.2516331715,"8170":4.6983884696,"8171":4.8033406504,"8172":4.8238037823,"8173":5.0629456946,"8174":4.8434754503,"8175":3.7910723086,"8176":234.67502098,"8177":235.1269984621,"8178":235.7693809284,"8179":235.2128689339,"8180":236.5275734263,"8181":235.2779639012,"8182":234.9320405267,"8183":235.6869139853,"8184":235.3843930037,"8185":234.940695707,"8186":234.7885457023,"8187":235.8862733966,"8188":126.0582915494,"8189":134.8242045713,"8190":235.2946117544,"8191":234.250191574,"8192":235.4687642017,"8193":236.0974371052,"8194":235.7755473446,"8195":235.8340840053,"8196":235.937979064,"8197":236.0846326842,"8198":235.3508043131,"8199":235.4541251788,"8200":465.5595863587,"8201":466.0794885979,"8202":465.7396751966,"8203":465.7503277509,"8204":465.5744240556,"8205":465.5725983123,"8206":465.5337474725,"8207":465.5994702196,"8208":465.5809422814,"8209":465.6468195196,"8210":465.2980755575,"8211":465.8334966302,"8212":245.6162534785,"8213":265.7866070331,"8214":465.5077965936,"8215":465.3628967163}}
+</Forecast>
+
+
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 91.485, ('PLOTTING', {'Signals': ['Signal']}))

@@ -1,0 +1,13 @@
+DIFFERENT_WORDS 0.1877 0.1871
+DIFFERENT_WORDS 0.2186 0.2187
+NUM_DIFF_NUMBER_OF__DIFFERENT_LINES 2
+FIRST_DIFFERENCE_ORIG 2  None         _Ozone             T+S+R  ...  0.1877       0.2186   0.2538
+
+FIRST_DIFFERENCE_NEW 2  None         _Ozone             T+S+R  ...  0.1871       0.2187   0.2538
+
+LAST_DIFFERENCE_ORIG 2  None         _Ozone             T+S+R  ...  0.1877       0.2186   0.2538
+
+LAST_DIFFERENCE_NEW 2  None         _Ozone             T+S+R  ...  0.1871       0.2187   0.2538
+
+EXEC_THIS=1 cp  logs/missing_data_test_missing_data_ozone_Interpolate_Mean.log tests/references/missing_data/test_missing_data_ozone_Interpolate_Mean.log
+NUM_DIFF_FILES_ARE_DIFFERENT

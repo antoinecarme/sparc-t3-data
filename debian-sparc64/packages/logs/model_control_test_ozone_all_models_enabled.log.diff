@@ -1,0 +1,5 @@
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 139 6
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 139 6
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 133
+EXEC_THIS=1 cp  logs/model_control_test_ozone_all_models_enabled.log tests/references/model_control/test_ozone_all_models_enabled.log
+NUM_DIFF_FILES_ARE_DIFFERENT

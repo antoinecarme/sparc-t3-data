@@ -1,0 +1,11 @@
+NUM_DIFF_NUMBER_OF__DIFFERENT_LINES 16
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+EXEC_THIS=1 cp  logs/basic_checks_issue_46_negative_horizon.log tests/references/basic_checks/issue_46_negative_horizon.log
+NUM_DIFF_FILES_ARE_DIFFERENT

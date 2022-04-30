@@ -1,0 +1,12 @@
+DIFFERENT_WORDS 2 4
+NUM_DIFF_NUMBER_OF__DIFFERENT_LINES 5
+FIRST_DIFFERENCE_ORIG 1.8.0 1.22.3 sys.version_info(major=3, minor=10, micro=2, releaselevel='final', serial=0)
+
+FIRST_DIFFERENCE_NEW 1.7.3 1.21.5 sys.version_info(major=3, minor=10, micro=4, releaselevel='final', serial=0)
+
+LAST_DIFFERENCE_ORIG (0.8660254037844385, 0.011724811003954672) (0.8660254037844388, 0.011724811003954602)
+
+LAST_DIFFERENCE_NEW (0.8660254037844387, 0.011724811003954626) (0.8660254037844388, 0.011724811003954602)
+
+EXEC_THIS=1 cp  logs/basic_checks_test_pearson.log tests/references/basic_checks/test_pearson.log
+NUM_DIFF_FILES_ARE_DIFFERENT

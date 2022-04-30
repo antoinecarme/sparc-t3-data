@@ -1,0 +1,5 @@
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 1064 538
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 1064 538
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 526
+EXEC_THIS=1 cp  logs/cross_validation_test_ozone_custom_split.log tests/references/cross_validation/test_ozone_custom_split.log
+NUM_DIFF_FILES_ARE_DIFFERENT

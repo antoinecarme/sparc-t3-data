@@ -1,0 +1,11 @@
+NUM_DIFF_NUMBER_OF__DIFFERENT_LINES 46
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_ORIG /home/circleci/project/tests/basic_checks/issue_46_wrong_type_signal_column.py:13: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+
+LAST_DIFFERENCE_NEW /home/antoine/dev/python/packages/timeseries/pyaf/tests/basic_checks/issue_46_wrong_type_signal_column.py:13: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+
+EXEC_THIS=1 cp  logs/basic_checks_issue_46_wrong_type_signal_column.log tests/references/basic_checks/issue_46_wrong_type_signal_column.log
+NUM_DIFF_FILES_ARE_DIFFERENT

@@ -1,0 +1,11 @@
+NUM_DIFF_NUMBER_OF__DIFFERENT_LINES 2
+FIRST_DIFFERENCE_ORIG /home/circleci/.pyenv/versions/3.10.2/lib/python3.10/site-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+
+FIRST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+
+LAST_DIFFERENCE_ORIG /home/circleci/.pyenv/versions/3.10.2/lib/python3.10/site-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+
+LAST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+
+EXEC_THIS=1 cp  logs/croston_croston_test_1_SBA.log tests/references/croston/croston_test_1_SBA.log
+NUM_DIFF_FILES_ARE_DIFFERENT

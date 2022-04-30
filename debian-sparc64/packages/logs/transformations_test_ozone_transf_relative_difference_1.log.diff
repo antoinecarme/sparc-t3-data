@@ -1,0 +1,5 @@
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 642 598
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 642 598
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 44
+EXEC_THIS=1 cp  logs/transformations_test_ozone_transf_relative_difference_1.log tests/references/transformations/test_ozone_transf_relative_difference_1.log
+NUM_DIFF_FILES_ARE_DIFFERENT

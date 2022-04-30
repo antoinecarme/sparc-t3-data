@@ -1,0 +1,268 @@
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['Signal_Zero'], 'Transformations': [('Signal_Zero', 'None', '_', 'T+S+R'), ('Signal_Zero', 'None', '_', 'TS+R'), ('Signal_Zero', 'None', '_', 'TSR'), ('Signal_Zero', 'None', 'Diff_', 'T+S+R'), ('Signal_Zero', 'None', 'Diff_', 'TS+R'), ('Signal_Zero', 'None', 'Diff_', 'TSR'), ('Signal_Zero', 'None', 'RelDiff_', 'T+S+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TS+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TSR'), ('Signal_Zero', 'None', 'CumSum_', 'T+S+R'), ('Signal_Zero', 'None', 'CumSum_', 'TS+R'), ('Signal_Zero', 'None', 'CumSum_', 'TSR')], 'Cores': 8}))
+         Date  idx     T  ...  Signal_Constant  Signal_Zero  Signal_One
+0  2016-01-25    0  0.00  ...              4.0          0.0         1.0
+1  2016-01-26    1  0.05  ...              4.0          0.0         1.0
+2  2016-01-27    2  0.10  ...              4.0          0.0         1.0
+3  2016-01-28    3  0.15  ...              4.0          0.0         1.0
+4  2016-01-29    4  0.20  ...              4.0          0.0         1.0
+5  2016-01-30    5  0.25  ...              4.0          0.0         1.0
+6  2016-01-31    6  0.30  ...              4.0          0.0         1.0
+7  2016-02-01    7  0.35  ...              4.0          0.0         1.0
+8  2016-02-02    8  0.40  ...              4.0          0.0         1.0
+9  2016-02-03    9  0.45  ...              4.0          0.0         1.0
+10 2016-02-04   10  0.50  ...              4.0          0.0         1.0
+11 2016-02-05   11  0.55  ...              4.0          0.0         1.0
+12 2016-02-06   12  0.60  ...              4.0          0.0         1.0
+13 2016-02-07   13  0.65  ...              4.0          0.0         1.0
+14 2016-02-08   14  0.70  ...              4.0          0.0         1.0
+15 2016-02-09   15  0.75  ...              4.0          0.0         1.0
+16 2016-02-10   16  0.80  ...              4.0          0.0         1.0
+17 2016-02-11   17  0.85  ...              4.0          0.0         1.0
+18 2016-02-12   18  0.90  ...              4.0          0.0         1.0
+19 2016-02-13   19  0.95  ...              4.0          0.0         1.0
+20 2016-02-14   20  1.00  ...              4.0          0.0         1.0
+21 2016-02-15   21  1.05  ...              4.0          0.0         1.0
+22 2016-02-16   22  1.10  ...              4.0          0.0         1.0
+23 2016-02-17   23  1.15  ...              4.0          0.0         1.0
+
+[24 rows x 11 columns]
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': '_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': '_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': '_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'Diff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'Diff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'Diff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'RelDiff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'RelDiff_Signal_Zero'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('TS+R', 12, 10, ['RelDiff_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_zeroCycle[1.0]_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_zeroCycle[1.0]_residue', 'RelDiff_Signal_Zero_PolyTrend_residue_zeroCycle[1.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 12, 10, ['RelDiff_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_zeroCycle[0.0]_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_Signal_Zero_PolyTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 12, 10, ['_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue', '_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_Lag1Trend_residue_zeroCycle[0.0]_residue', '_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue', '_Signal_Zero_PolyTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('TS+R', 12, 10, ['Diff_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue', 'Diff_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_Lag1Trend_residue_zeroCycle[1.0]_residue', 'Diff_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_LinearTrend_residue_zeroCycle[1.0]_residue', 'Diff_Signal_Zero_PolyTrend_residue_zeroCycle[1.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('TS+R', 12, 10, ['_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue', '_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_Lag1Trend_residue_zeroCycle[1.0]_residue', '_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_LinearTrend_residue_zeroCycle[1.0]_residue', '_Signal_Zero_PolyTrend_residue_zeroCycle[1.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 12, 10, ['Diff_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_Lag1Trend_residue_zeroCycle[0.0]_residue', 'Diff_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue', 'Diff_Signal_Zero_PolyTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('TSR', 12, 10, ['_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue', '_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_Lag1Trend_residue_zeroCycle[1.0]_residue', '_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', '_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', '_Signal_Zero_LinearTrend_residue_zeroCycle[1.0]_residue', '_Signal_Zero_PolyTrend_residue_zeroCycle[1.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('TSR', 12, 10, ['Diff_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue', 'Diff_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_Lag1Trend_residue_zeroCycle[1.0]_residue', 'Diff_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'Diff_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'Diff_Signal_Zero_LinearTrend_residue_zeroCycle[1.0]_residue', 'Diff_Signal_Zero_PolyTrend_residue_zeroCycle[1.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 21.04, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'RelDiff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 21.166, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': '_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'RelDiff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 23.26, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'Diff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 23.412, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': '_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 23.43, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'Diff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 23.434, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'RelDiff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 23.519, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'Diff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 23.643, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': '_Signal_Zero'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('TSR', 12, 10, ['RelDiff_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_Lag1Trend_residue_zeroCycle[1.0]_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_Signal_Zero_LinearTrend_residue_zeroCycle[1.0]_residue', 'RelDiff_Signal_Zero_PolyTrend_residue_zeroCycle[1.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.565, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'RelDiff_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'CumSum_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'CumSum_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'CumSum_Signal_Zero'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 12, 10, ['CumSum_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_zeroCycle[0.0]_residue', 'CumSum_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue', 'CumSum_Signal_Zero_PolyTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('TSR', 12, 10, ['CumSum_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_zeroCycle[1.0]_residue', 'CumSum_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_LinearTrend_residue_zeroCycle[1.0]_residue', 'CumSum_Signal_Zero_PolyTrend_residue_zeroCycle[1.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('TS+R', 12, 10, ['CumSum_Signal_Zero_ConstantTrend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_Lag1Trend_residue_zeroCycle[1.0]_residue', 'CumSum_Signal_Zero_LinearTrend_residue_Seasonal_DayOfWeek_residue', 'CumSum_Signal_Zero_LinearTrend_residue_bestCycle_byMAPE_residue', 'CumSum_Signal_Zero_LinearTrend_residue_zeroCycle[1.0]_residue', 'CumSum_Signal_Zero_PolyTrend_residue_zeroCycle[1.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 7.296, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'CumSum_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 7.495, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'CumSum_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.955, ('TRAINING', {'Signal': 'Signal_Zero', 'Transformation': 'CumSum_Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 45.279, ('SIGNAL_TRAINING', {'Signals': ['Signal_Zero'], 'Transformations': [('Signal_Zero', 'None', '_', 'T+S+R'), ('Signal_Zero', 'None', '_', 'TS+R'), ('Signal_Zero', 'None', '_', 'TSR'), ('Signal_Zero', 'None', 'Diff_', 'T+S+R'), ('Signal_Zero', 'None', 'Diff_', 'TS+R'), ('Signal_Zero', 'None', 'Diff_', 'TSR'), ('Signal_Zero', 'None', 'RelDiff_', 'T+S+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TS+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TSR'), ('Signal_Zero', 'None', 'CumSum_', 'T+S+R'), ('Signal_Zero', 'None', 'CumSum_', 'TS+R'), ('Signal_Zero', 'None', 'CumSum_', 'TSR')], 'Cores': 8}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['Signal_Zero'], 'Transformations': [('Signal_Zero', [('Signal_Zero', 'None', 'CumSum_', 'T+S+R'), ('Signal_Zero', 'None', 'CumSum_', 'TS+R'), ('Signal_Zero', 'None', 'CumSum_', 'TSR'), ('Signal_Zero', 'None', 'Diff_', 'T+S+R'), ('Signal_Zero', 'None', 'Diff_', 'TS+R'), ('Signal_Zero', 'None', 'Diff_', 'TSR'), ('Signal_Zero', 'None', 'RelDiff_', 'T+S+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TS+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TSR'), ('Signal_Zero', 'None', '_', 'T+S+R'), ('Signal_Zero', 'None', '_', 'TS+R'), ('Signal_Zero', 'None', '_', 'TSR')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'Signal_Zero', 'Transformations': [('Signal_Zero', 'None', 'CumSum_', 'T+S+R'), ('Signal_Zero', 'None', 'CumSum_', 'TS+R'), ('Signal_Zero', 'None', 'CumSum_', 'TSR'), ('Signal_Zero', 'None', 'Diff_', 'T+S+R'), ('Signal_Zero', 'None', 'Diff_', 'TS+R'), ('Signal_Zero', 'None', 'Diff_', 'TSR'), ('Signal_Zero', 'None', 'RelDiff_', 'T+S+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TS+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TSR'), ('Signal_Zero', 'None', '_', 'T+S+R'), ('Signal_Zero', 'None', '_', 'TS+R'), ('Signal_Zero', 'None', '_', 'TSR')]}))
+INFO:pyaf.std:PERF_DUMP_START
+INFO:pyaf.std:[
+    {
+        "Category": "NoTransf_ConstantTrend_NoCycle_NoAR",
+        "Complexity": 0.0,
+        "DetailedFormula": [
+            "_Signal_Zero",
+            "T+S+R",
+            null,
+            "_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+    },
+    {
+        "Category": "Integration_ConstantTrend_NoCycle_NoAR",
+        "Complexity": 1.0,
+        "DetailedFormula": [
+            "CumSum_Signal_Zero",
+            "T+S+R",
+            null,
+            "CumSum_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "CumSum_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+    },
+    {
+        "Category": "Difference_ConstantTrend_NoCycle_NoAR",
+        "Complexity": 1.0,
+        "DetailedFormula": [
+            "Diff_Signal_Zero",
+            "T+S+R",
+            null,
+            "Diff_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "Diff_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+    },
+    {
+        "Category": "RelativeDifference_ConstantTrend_NoCycle_NoAR",
+        "Complexity": 1.0,
+        "DetailedFormula": [
+            "RelDiff_Signal_Zero",
+            "T+S+R",
+            null,
+            "RelDiff_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "RelDiff_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR"
+    },
+    {
+        "Category": "NoTransf_ConstantTrend_NoCycle_NoAR",
+        "Complexity": 1.0,
+        "DetailedFormula": [
+            "_Signal_Zero",
+            "TS+R",
+            null,
+            "_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue_NoAR"
+    },
+    {
+        "Category": "NoTransf_LinearTrend_NoCycle_NoAR",
+        "Complexity": 1.0,
+        "DetailedFormula": [
+            "_Signal_Zero",
+            "T+S+R",
+            null,
+            "_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue_NoAR"
+    },
+    {
+        "Category": "Integration_ConstantTrend_NoCycle_NoAR",
+        "Complexity": 2.0,
+        "DetailedFormula": [
+            "CumSum_Signal_Zero",
+            "TS+R",
+            null,
+            "CumSum_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "CumSum_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue_NoAR"
+    },
+    {
+        "Category": "Integration_LinearTrend_NoCycle_NoAR",
+        "Complexity": 2.0,
+        "DetailedFormula": [
+            "CumSum_Signal_Zero",
+            "T+S+R",
+            null,
+            "CumSum_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "CumSum_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue_NoAR"
+    },
+    {
+        "Category": "Difference_ConstantTrend_NoCycle_NoAR",
+        "Complexity": 2.0,
+        "DetailedFormula": [
+            "Diff_Signal_Zero",
+            "TS+R",
+            null,
+            "Diff_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "Diff_Signal_Zero_ConstantTrend_residue_zeroCycle[1.0]_residue_NoAR"
+    },
+    {
+        "Category": "Difference_LinearTrend_NoCycle_NoAR",
+        "Complexity": 2.0,
+        "DetailedFormula": [
+            "Diff_Signal_Zero",
+            "T+S+R",
+            null,
+            "Diff_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue_NoAR"
+        ],
+        "ForecastMAPE": 0.0,
+        "Model": "Diff_Signal_Zero_LinearTrend_residue_zeroCycle[0.0]_residue_NoAR"
+    }
+]
+INFO:pyaf.std:PERF_DUMP_END
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.082, ('MODEL_SELECTION', {'Signal': 'Signal_Zero', 'Transformations': [('Signal_Zero', 'None', 'CumSum_', 'T+S+R'), ('Signal_Zero', 'None', 'CumSum_', 'TS+R'), ('Signal_Zero', 'None', 'CumSum_', 'TSR'), ('Signal_Zero', 'None', 'Diff_', 'T+S+R'), ('Signal_Zero', 'None', 'Diff_', 'TS+R'), ('Signal_Zero', 'None', 'Diff_', 'TSR'), ('Signal_Zero', 'None', 'RelDiff_', 'T+S+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TS+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TSR'), ('Signal_Zero', 'None', '_', 'T+S+R'), ('Signal_Zero', 'None', '_', 'TS+R'), ('Signal_Zero', 'None', '_', 'TSR')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'Signal_Zero', 'Model': '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.206, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'Signal_Zero', 'Model': '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.369, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'Signal_Zero'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.661, ('FINALIZE_TRAINING', {'Signals': ['Signal_Zero'], 'Transformations': [('Signal_Zero', [('Signal_Zero', 'None', 'CumSum_', 'T+S+R'), ('Signal_Zero', 'None', 'CumSum_', 'TS+R'), ('Signal_Zero', 'None', 'CumSum_', 'TSR'), ('Signal_Zero', 'None', 'Diff_', 'T+S+R'), ('Signal_Zero', 'None', 'Diff_', 'TS+R'), ('Signal_Zero', 'None', 'Diff_', 'TSR'), ('Signal_Zero', 'None', 'RelDiff_', 'T+S+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TS+R'), ('Signal_Zero', 'None', 'RelDiff_', 'TSR'), ('Signal_Zero', 'None', '_', 'T+S+R'), ('Signal_Zero', 'None', '_', 'TS+R'), ('Signal_Zero', 'None', '_', 'TSR')])], 'Cores': 1}))
+INFO:pyaf.std:TIME_DETAIL TimeVariable='Date' TimeMin=2016-01-25T00:00:00.000000 TimeMax=2016-11-05T00:00:00.000000 TimeDelta=<DateOffset: days=1> Horizon=7
+INFO:pyaf.std:SIGNAL_DETAIL_ORIG SignalVariable='Signal_Zero' Length=365  Min=0.0 Max=0.0  Mean=0.0 StdDev=0.0
+INFO:pyaf.std:SIGNAL_DETAIL_TRANSFORMED TransformedSignalVariable='_Signal_Zero' Min=0.0 Max=0.0  Mean=0.0 StdDev=0.0
+INFO:pyaf.std:DECOMPOSITION_TYPE 'T+S+R'
+INFO:pyaf.std:BEST_TRANSOFORMATION_TYPE '_'
+INFO:pyaf.std:BEST_DECOMPOSITION  '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR' [ConstantTrend + NoCycle + NoAR]
+INFO:pyaf.std:TREND_DETAIL '_Signal_Zero_ConstantTrend' [ConstantTrend]
+INFO:pyaf.std:CYCLE_DETAIL '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]' [NoCycle]
+INFO:pyaf.std:AUTOREG_DETAIL '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR' [NoAR]
+INFO:pyaf.std:MODEL_MAPE MAPE_Fit=0.0 MAPE_Forecast=0.0 MAPE_Test=0.0
+INFO:pyaf.std:MODEL_SMAPE SMAPE_Fit=0.0 SMAPE_Forecast=0.0 SMAPE_Test=0.0
+INFO:pyaf.std:MODEL_MASE MASE_Fit=0.0 MASE_Forecast=0.0 MASE_Test=0.0
+INFO:pyaf.std:MODEL_CRPS CRPS_Fit=0.0 CRPS_Forecast=0.0 CRPS_Test=0.0
+INFO:pyaf.std:MODEL_L1 L1_Fit=0.0 L1_Forecast=0.0 L1_Test=0.0
+INFO:pyaf.std:MODEL_L2 L2_Fit=0.0 L2_Forecast=0.0 L2_Test=0.0
+INFO:pyaf.std:MODEL_LnQ LnQ_Fit=inf LnQ_Forecast=inf LnQ_Test=inf
+INFO:pyaf.std:MODEL_MEDIAN_AE MedAE_Fit=0.0 MedAE_Forecast=0.0 MedAE_Test=0.0
+INFO:pyaf.std:MODEL_COMPLEXITY 0.0
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_DETAIL_START
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_MODEL_VALUES NoTransf None
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_DETAIL_END
+INFO:pyaf.std:TREND_DETAIL_START
+INFO:pyaf.std:CONSTANT_TREND _Signal_Zero_ConstantTrend 0.0
+INFO:pyaf.std:TREND_DETAIL_END
+INFO:pyaf.std:CYCLE_MODEL_DETAIL_START
+INFO:pyaf.std:ZERO_CYCLE_MODEL_VALUES _Signal_Zero_ConstantTrend_residue_zeroCycle[0.0] 0.0 {}
+INFO:pyaf.std:CYCLE_MODEL_DETAIL_END
+INFO:pyaf.std:AR_MODEL_DETAIL_START
+INFO:pyaf.std:AR_MODEL_DETAIL_END
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['Signal_Zero'], 'Horizon': 7}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.069, ('FORECASTING', {'Signals': ['Signal_Zero'], 'Horizon': 7}))
+INFO:pyaf.timing:('OPERATION_START', ('PLOTTING', {'Signals': ['Signal_Zero']}))
+/usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+  return n/db/n.sum(), bin_edges
+/usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+  return n/db/n.sum(), bin_edges
+/home/antoine/dev/python/packages/timeseries/pyaf/pyaf/TS/Plots.py:183: RuntimeWarning: invalid value encountered in double_scalars
+  j = (bins1[i] - lMin) / (lMax - lMin)
+/home/antoine/dev/python/packages/timeseries/pyaf/pyaf/TS/Plots.py:187: UserWarning: Attempting to set identical left == right == 0.0 results in singular transformations; automatically expanding.
+  axs[h].set_xlim((lMin,lMax))
+  Split       Transformation DecompositionType  ... FitMAPE ForecastMAPE TestMAPE
+0  None         _Signal_Zero             T+S+R  ...     0.0          0.0      0.0
+1  None   CumSum_Signal_Zero             T+S+R  ...     0.0          0.0      0.0
+2  None     Diff_Signal_Zero             T+S+R  ...     0.0          0.0      0.0
+3  None  RelDiff_Signal_Zero             T+S+R  ...     0.0          0.0      0.0
+4  None         _Signal_Zero              TS+R  ...     0.0          0.0      0.0
+
+[5 rows x 10 columns]
+Index(['Date', 'Signal_Zero', 'row_number', 'Date_Normalized', '_Signal_Zero',
+       '_Signal_Zero_ConstantTrend', '_Signal_Zero_ConstantTrend_residue',
+       '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]',
+       '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue',
+       '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR',
+       '_Signal_Zero_ConstantTrend_residue_zeroCycle[0.0]_residue_NoAR_residue',
+       '_Signal_Zero_Trend', '_Signal_Zero_Trend_residue',
+       '_Signal_Zero_Cycle', '_Signal_Zero_Cycle_residue', '_Signal_Zero_AR',
+       '_Signal_Zero_AR_residue', '_Signal_Zero_TransformedForecast',
+       'Signal_Zero_Forecast', '_Signal_Zero_TransformedResidue',
+       'Signal_Zero_Residue', 'Signal_Zero_Forecast_Lower_Bound',
+       'Signal_Zero_Forecast_Upper_Bound', 'Signal_Zero_Forecast_Quantile_2',
+       'Signal_Zero_Forecast_Quantile_14', 'Signal_Zero_Forecast_Quantile_26',
+       'Signal_Zero_Forecast_Quantile_38', 'Signal_Zero_Forecast_Quantile_50',
+       'Signal_Zero_Forecast_Quantile_62', 'Signal_Zero_Forecast_Quantile_74',
+       'Signal_Zero_Forecast_Quantile_86', 'Signal_Zero_Forecast_Quantile_98'],
+      dtype='object')
+['2017-01-24T00:00:00.000000000' '2017-01-25T00:00:00.000000000'
+ '2017-01-26T00:00:00.000000000' '2017-01-27T00:00:00.000000000'
+ '2017-01-28T00:00:00.000000000' '2017-01-29T00:00:00.000000000'
+ '2017-01-30T00:00:00.000000000']
+[0. 0. 0. 0. 0. 0. 0.]
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 68.878, ('PLOTTING', {'Signals': ['Signal_Zero']}))

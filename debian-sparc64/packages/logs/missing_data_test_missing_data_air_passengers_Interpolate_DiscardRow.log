@@ -1,0 +1,157 @@
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['AirPassengers'], 'Transformations': [('AirPassengers', 'None', '_', 'T+S+R'), ('AirPassengers', 'None', 'Diff_', 'T+S+R'), ('AirPassengers', 'None', 'RelDiff_', 'T+S+R'), ('AirPassengers', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'AirPassengers', 'Transformation': '_AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'AirPassengers', 'Transformation': 'Diff_AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'AirPassengers', 'Transformation': 'RelDiff_AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'AirPassengers', 'Transformation': 'CumSum_AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 18.12, ('TRAINING', {'Signal': 'AirPassengers', 'Transformation': 'CumSum_AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 19.095, ('TRAINING', {'Signal': 'AirPassengers', 'Transformation': '_AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 19.255, ('TRAINING', {'Signal': 'AirPassengers', 'Transformation': 'Diff_AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 19.941, ('TRAINING', {'Signal': 'AirPassengers', 'Transformation': 'RelDiff_AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 41.259, ('SIGNAL_TRAINING', {'Signals': ['AirPassengers'], 'Transformations': [('AirPassengers', 'None', '_', 'T+S+R'), ('AirPassengers', 'None', 'Diff_', 'T+S+R'), ('AirPassengers', 'None', 'RelDiff_', 'T+S+R'), ('AirPassengers', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['AirPassengers'], 'Transformations': [('AirPassengers', [('AirPassengers', 'None', 'CumSum_', 'T+S+R'), ('AirPassengers', 'None', 'Diff_', 'T+S+R'), ('AirPassengers', 'None', 'RelDiff_', 'T+S+R'), ('AirPassengers', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'AirPassengers', 'Transformations': [('AirPassengers', 'None', 'CumSum_', 'T+S+R'), ('AirPassengers', 'None', 'Diff_', 'T+S+R'), ('AirPassengers', 'None', 'RelDiff_', 'T+S+R'), ('AirPassengers', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.054, ('MODEL_SELECTION', {'Signal': 'AirPassengers', 'Transformations': [('AirPassengers', 'None', 'CumSum_', 'T+S+R'), ('AirPassengers', 'None', 'Diff_', 'T+S+R'), ('AirPassengers', 'None', 'RelDiff_', 'T+S+R'), ('AirPassengers', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'AirPassengers', 'Model': '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_AR(26)'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.251, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'AirPassengers', 'Model': '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_AR(26)'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 3.126, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'AirPassengers'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 3.435, ('FINALIZE_TRAINING', {'Signals': ['AirPassengers'], 'Transformations': [('AirPassengers', [('AirPassengers', 'None', 'CumSum_', 'T+S+R'), ('AirPassengers', 'None', 'Diff_', 'T+S+R'), ('AirPassengers', 'None', 'RelDiff_', 'T+S+R'), ('AirPassengers', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.std:TIME_DETAIL TimeVariable='time' TimeMin=1949.0 TimeMax=1956.83333333334 TimeDelta=0.105855855855947 Horizon=12
+INFO:pyaf.std:SIGNAL_DETAIL_ORIG SignalVariable='AirPassengers' Length=106  Min=112.0 Max=559.0  Mean=271.179245 StdDev=108.485091
+INFO:pyaf.std:SIGNAL_DETAIL_TRANSFORMED TransformedSignalVariable='_AirPassengers' Min=0.0 Max=1.0  Mean=0.356106 StdDev=0.242696
+INFO:pyaf.std:DECOMPOSITION_TYPE 'T+S+R'
+INFO:pyaf.std:BEST_TRANSOFORMATION_TYPE '_'
+INFO:pyaf.std:BEST_DECOMPOSITION  '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_AR(26)' [LinearTrend + Cycle_None + AR]
+INFO:pyaf.std:TREND_DETAIL '_AirPassengers_LinearTrend' [LinearTrend]
+INFO:pyaf.std:CYCLE_DETAIL '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE' [Cycle_None]
+INFO:pyaf.std:AUTOREG_DETAIL '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_AR(26)' [AR]
+INFO:pyaf.std:MODEL_MAPE MAPE_Fit=0.0936 MAPE_Forecast=0.0902 MAPE_Test=0.1183
+INFO:pyaf.std:MODEL_SMAPE SMAPE_Fit=0.0912 SMAPE_Forecast=0.0973 SMAPE_Test=0.1291
+INFO:pyaf.std:MODEL_MASE MASE_Fit=0.9259 MASE_Forecast=0.9244 MASE_Test=1.2253
+INFO:pyaf.std:MODEL_CRPS CRPS_Fit=16.3766 CRPS_Forecast=13.3117 CRPS_Test=15.4761
+INFO:pyaf.std:MODEL_L1 L1_Fit=20.383 L1_Forecast=37.8508 L1_Test=55.1398
+INFO:pyaf.std:MODEL_L2 L2_Fit=27.1386 L2_Forecast=52.7909 L2_Test=69.812
+INFO:pyaf.std:MODEL_LnQ LnQ_Fit=0.9833 LnQ_Forecast=0.3198 LnQ_Test=0.2908
+INFO:pyaf.std:MODEL_MEDIAN_AE MedAE_Fit=14.8905 MedAE_Forecast=16.1544 MedAE_Test=46.2139
+INFO:pyaf.std:MODEL_COMPLEXITY 19.0
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_DETAIL_START
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_MODEL_VALUES NoTransf None
+INFO:pyaf.std:SIGNAL_TRANSFORMATION_DETAIL_END
+INFO:pyaf.std:TREND_DETAIL_START
+INFO:pyaf.std:LINEAR_RIDGE_TREND LinearTrend (0.015458, array([0.429689]))
+INFO:pyaf.std:TREND_DETAIL_END
+INFO:pyaf.std:CYCLE_MODEL_DETAIL_START
+INFO:pyaf.std:BEST_CYCLE_LENGTH_VALUES _AirPassengers_LinearTrend_residue_bestCycle_byMAPE None -0.009222 {}
+INFO:pyaf.std:CYCLE_MODEL_DETAIL_END
+INFO:pyaf.std:AR_MODEL_DETAIL_START
+INFO:pyaf.std:AR_MODEL_COEFF 1 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag1 0.164405
+INFO:pyaf.std:AR_MODEL_COEFF 2 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag10 0.058363
+INFO:pyaf.std:AR_MODEL_COEFF 3 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag11 0.055558
+INFO:pyaf.std:AR_MODEL_COEFF 4 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag9 0.048784
+INFO:pyaf.std:AR_MODEL_COEFF 5 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag14 -0.043641
+INFO:pyaf.std:AR_MODEL_COEFF 6 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag24 -0.042852
+INFO:pyaf.std:AR_MODEL_COEFF 7 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag2 0.041167
+INFO:pyaf.std:AR_MODEL_COEFF 8 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag23 -0.03916
+INFO:pyaf.std:AR_MODEL_COEFF 9 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag4 -0.037756
+INFO:pyaf.std:AR_MODEL_COEFF 10 _AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_Lag15 -0.036984
+INFO:pyaf.std:AR_MODEL_DETAIL_END
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['AirPassengers'], 'Horizon': 12}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 2.026, ('FORECASTING', {'Signals': ['AirPassengers'], 'Horizon': 12}))
+  Split        Transformation  ... ForecastMAPE TestMAPE
+0  None        _AirPassengers  ...       0.0902   0.1183
+1  None        _AirPassengers  ...       0.0902   0.1183
+2  None  CumSum_AirPassengers  ...       0.0921   0.0970
+3  None  CumSum_AirPassengers  ...       0.0937   0.1080
+4  None        _AirPassengers  ...       0.0952   0.0874
+
+[5 rows x 10 columns]
+Forecast Columns  Index(['time', 'AirPassengers', 'row_number', 'time_Normalized',
+       '_AirPassengers', '_AirPassengers_LinearTrend',
+       '_AirPassengers_LinearTrend_residue',
+       '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE',
+       '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue',
+       '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_AR(26)',
+       '_AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_AR(26)_residue',
+       '_AirPassengers_Trend', '_AirPassengers_Trend_residue',
+       '_AirPassengers_Cycle', '_AirPassengers_Cycle_residue',
+       '_AirPassengers_AR', '_AirPassengers_AR_residue',
+       '_AirPassengers_TransformedForecast', 'AirPassengers_Forecast',
+       '_AirPassengers_TransformedResidue', 'AirPassengers_Residue',
+       'AirPassengers_Forecast_Lower_Bound',
+       'AirPassengers_Forecast_Upper_Bound',
+       'AirPassengers_Forecast_Quantile_25',
+       'AirPassengers_Forecast_Quantile_50',
+       'AirPassengers_Forecast_Quantile_75'],
+      dtype='object')
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 118 entries, 0 to 117
+Data columns (total 3 columns):
+ #   Column                  Non-Null Count  Dtype  
+---  ------                  --------------  -----  
+ 0   time                    118 non-null    float64
+ 1   AirPassengers           106 non-null    float64
+ 2   AirPassengers_Forecast  118 non-null    float64
+dtypes: float64(3)
+memory usage: 2.9 KB
+None
+Forecasts
+             time  AirPassengers  AirPassengers_Forecast
+106  1960.022523            NaN              377.068469
+107  1960.128378            NaN              390.584126
+108  1960.234234            NaN              403.578105
+109  1960.340090            NaN              414.058564
+110  1960.445946            NaN              422.829855
+111  1960.551802            NaN              421.864925
+112  1960.657658            NaN              407.364664
+113  1960.763514            NaN              387.357906
+114  1960.869369            NaN              376.166920
+115  1960.975225            NaN              378.629180
+116  1961.081081            NaN              391.611578
+117  1961.186937            NaN              406.884584
+
+
+<ModelInfo>
+{
+    "AirPassengers": {
+        "Dataset": {
+            "Signal": "AirPassengers",
+            "Time": {
+                "Horizon": 12,
+                "TimeMinMax": [
+                    "1949.0",
+                    "1959.91666666667"
+                ],
+                "TimeVariable": "time"
+            },
+            "Training_Signal_Length": 106
+        },
+        "Model": {
+            "AR_Model": "AR",
+            "Best_Decomposition": "_AirPassengers_LinearTrend_residue_bestCycle_byMAPE_residue_AR(26)",
+            "Cycle": "Cycle_None",
+            "Signal_Decomposition_Type": "T+S+R",
+            "Signal_Transoformation": "NoTransf",
+            "Trend": "LinearTrend"
+        },
+        "Model_Performance": {
+            "COMPLEXITY": 19.0,
+            "CRPS": 13.3117,
+            "LnQ": 0.3198,
+            "MAE": 37.8508,
+            "MAPE": 0.0902,
+            "MASE": 0.9244,
+            "MedAE": 16.1544,
+            "RMSE": 52.7909
+        }
+    }
+}
+</ModelInfo>
+
+
+
+
+<Forecast>
+{"time":{"94":1959.0,"95":1959.0833333333,"96":1959.1666666667,"97":1959.25,"98":1959.3333333333,"99":1959.4166666667,"100":1959.5,"101":1959.5833333333,"102":1959.6666666667,"103":1959.75,"104":1959.8333333333,"105":1959.9166666667,"106":1960.0225225225,"107":1960.1283783784,"108":1960.2342342342,"109":1960.3400900901,"110":1960.4459459459,"111":1960.5518018018,"112":1960.6576576577,"113":1960.7635135135,"114":1960.8693693694,"115":1960.9752252252,"116":1961.0810810811,"117":1961.1869369369},"AirPassengers":{"94":360.0,"95":342.0,"96":406.0,"97":396.0,"98":420.0,"99":472.0,"100":548.0,"101":559.0,"102":463.0,"103":407.0,"104":362.0,"105":405.0,"106":null,"107":null,"108":null,"109":null,"110":null,"111":null,"112":null,"113":null,"114":null,"115":null,"116":null,"117":null},"AirPassengers_Forecast":{"94":320.5623630037,"95":334.9926285833,"96":350.4011142164,"97":379.3085306151,"98":392.759699024,"99":405.3487010961,"100":411.3233531614,"101":413.6705296927,"102":398.972181217,"103":368.4612784477,"104":350.5127993988,"105":352.0097698268,"106":377.0684688835,"107":390.5841257391,"108":403.5781052515,"109":414.0585639252,"110":422.8298551301,"111":421.8649250116,"112":407.3646644444,"113":387.3579063495,"114":376.1669196576,"115":378.629180395,"116":391.611577565,"117":406.8845841878}}
+</Forecast>
+
+

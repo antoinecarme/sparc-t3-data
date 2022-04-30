@@ -1,0 +1,5 @@
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 278 230
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 278 230
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 48
+EXEC_THIS=1 cp  logs/multiplicative_seasonal_artificial_model_One.log tests/references/multiplicative_seasonal/artificial_model_One.log
+NUM_DIFF_FILES_ARE_DIFFERENT

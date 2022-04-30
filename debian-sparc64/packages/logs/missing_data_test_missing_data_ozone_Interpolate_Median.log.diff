@@ -1,0 +1,5 @@
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 131 6
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 131 6
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 125
+EXEC_THIS=1 cp  logs/missing_data_test_missing_data_ozone_Interpolate_Median.log tests/references/missing_data/test_missing_data_ozone_Interpolate_Median.log
+NUM_DIFF_FILES_ARE_DIFFERENT

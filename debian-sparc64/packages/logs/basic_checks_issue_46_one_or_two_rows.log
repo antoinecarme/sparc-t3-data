@@ -1,0 +1,277 @@
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 14.979, ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 15.01, ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 15.11, ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 16.398, ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 35.229, ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.07, ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': '_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.269, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': '_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.429, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.774, ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['signal'], 'Horizon': 1}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.199, ('FORECASTING', {'Signals': ['signal'], 'Horizon': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+ConstantTrend + Cycle_None + NoAR
+PERFS_MAPE_MASE 0.0 None
+Forecasts
+    date  signal  ...  signal_Forecast_Lower_Bound  signal_Forecast_Upper_Bound
+1     1     NaN  ...                      0.54543                      0.54543
+
+[1 rows x 6 columns]
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.25, ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.258, ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.572, ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.663, ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.092, ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.057, ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': '_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.24, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': '_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.281, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.585, ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['signal'], 'Horizon': 2}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.473, ('FORECASTING', {'Signals': ['signal'], 'Horizon': 2}))
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+ConstantTrend + Cycle_None + NoAR
+PERFS_MAPE_MASE 0.0 None
+Forecasts
+    date  signal  ...  signal_Forecast_Lower_Bound  signal_Forecast_Upper_Bound
+1     1     NaN  ...                      0.54543                      0.54543
+2     2     NaN  ...                          NaN                          NaN
+
+[2 rows x 6 columns]
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.546, ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.038, ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.829, ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.181, ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.677, ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.078, ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': '_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.301, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': '_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.551, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.935, ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['signal'], 'Horizon': 10}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.88, ('FORECASTING', {'Signals': ['signal'], 'Horizon': 10}))
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+ConstantTrend + Cycle_None + NoAR
+PERFS_MAPE_MASE 0.0 None
+Forecasts
+     date  signal  ...  signal_Forecast_Lower_Bound  signal_Forecast_Upper_Bound
+1      1     NaN  ...                      0.54543                      0.54543
+2      2     NaN  ...                      0.54543                      0.54543
+3      3     NaN  ...                          NaN                          NaN
+4      4     NaN  ...                          NaN                          NaN
+5      5     NaN  ...                          NaN                          NaN
+6      6     NaN  ...                          NaN                          NaN
+7      7     NaN  ...                          NaN                          NaN
+8      8     NaN  ...                          NaN                          NaN
+9      9     NaN  ...                          NaN                          NaN
+10    10     NaN  ...                          NaN                          NaN
+
+[10 rows x 6 columns]
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.549, ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.767, ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.859, ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.22, ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.623, ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.083, ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': '_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.326, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': '_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 5.018, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 5.432, ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['signal'], 'Horizon': 10}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.755, ('FORECASTING', {'Signals': ['signal'], 'Horizon': 10}))
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+ConstantTrend + Cycle_None + NoAR
+PERFS_MAPE_MASE 0.0 None
+Forecasts
+     date  signal  ...  signal_Forecast_Lower_Bound  signal_Forecast_Upper_Bound
+1      1     NaN  ...                      0.54543                      0.54543
+2      2     NaN  ...                      0.54543                      0.54543
+3      3     NaN  ...                      0.54543                      0.54543
+4      4     NaN  ...                      0.54543                      0.54543
+5      5     NaN  ...                      0.54543                      0.54543
+6      6     NaN  ...                      0.54543                      0.54543
+7      7     NaN  ...                      0.54543                      0.54543
+8      8     NaN  ...                      0.54543                      0.54543
+9      9     NaN  ...                      0.54543                      0.54543
+10    10     NaN  ...                      0.54543                      0.54543
+
+[10 rows x 6 columns]
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', '_signal_LinearTrend_residue_bestCycle_byMAPE_residue', '_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'Diff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.974, ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.986, ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.05, ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.882, ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 11.327, ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.054, ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': 'CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.217, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': 'CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.215, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.49, ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['signal'], 'Horizon': 4}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.621, ('FORECASTING', {'Signals': ['signal'], 'Horizon': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+ConstantTrend + Cycle_None + NoAR
+PERFS_MAPE_MASE 0.0 0.0
+Forecasts
+    date  signal  ...  signal_Forecast_Lower_Bound  signal_Forecast_Upper_Bound
+2     2     NaN  ...                         0.43                         0.43
+3     3     NaN  ...                          NaN                          NaN
+4     4     NaN  ...                          NaN                          NaN
+5     5     NaN  ...                          NaN                          NaN
+
+[4 rows x 6 columns]
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', '_signal_LinearTrend_residue_bestCycle_byMAPE_residue', '_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'Diff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.33, ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.979, ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.102, ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.428, ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.825, ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.054, ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': 'CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.218, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': 'CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.252, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.527, ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['signal'], 'Horizon': 2}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.327, ('FORECASTING', {'Signals': ['signal'], 'Horizon': 2}))
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+ConstantTrend + Cycle_None + NoAR
+PERFS_MAPE_MASE 0.0 0.0
+Forecasts
+    date  signal  ...  signal_Forecast_Lower_Bound  signal_Forecast_Upper_Bound
+2     2     NaN  ...                         0.43                         0.43
+3     3     NaN  ...                         0.43                         0.43
+
+[2 rows x 6 columns]
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', '_signal_LinearTrend_residue_bestCycle_byMAPE_residue', '_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'Diff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.346, ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.994, ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.085, ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.468, ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 10.876, ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.059, ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': 'CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.224, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': 'CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.218, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.505, ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['signal'], 'Horizon': 1}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.191, ('FORECASTING', {'Signals': ['signal'], 'Horizon': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+ConstantTrend + Cycle_None + NoAR
+PERFS_MAPE_MASE 0.0 0.0
+Forecasts
+    date  signal  ...  signal_Forecast_Lower_Bound  signal_Forecast_Upper_Bound
+2     2     NaN  ...                         0.43                         0.43
+
+[1 rows x 6 columns]
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', '_signal_LinearTrend_residue_bestCycle_byMAPE_residue', '_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'Diff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.297, ('TRAINING', {'Signal': 'signal', 'Transformation': '_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 8.316, ('TRAINING', {'Signal': 'signal', 'Transformation': 'CumSum_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.008, ('TRAINING', {'Signal': 'signal', 'Transformation': 'Diff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.524, ('TRAINING', {'Signal': 'signal', 'Transformation': 'RelDiff_signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 9.893, ('SIGNAL_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', 'None', '_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+INFO:pyaf.timing:('OPERATION_START', ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.055, ('MODEL_SELECTION', {'Signal': 'signal', 'Transformations': [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')]}))
+INFO:pyaf.timing:('OPERATION_START', ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': 'CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.217, ('UPDATE_BEST_MODEL_PERFS', {'Signal': 'signal', 'Model': 'CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue_NoAR'}))
+INFO:pyaf.timing:('OPERATION_START', ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.229, ('COMPUTE_PREDICTION_INTERVALS', {'Signal': 'signal'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 0.506, ('FINALIZE_TRAINING', {'Signals': ['signal'], 'Transformations': [('signal', [('signal', 'None', 'CumSum_', 'T+S+R'), ('signal', 'None', 'Diff_', 'T+S+R'), ('signal', 'None', 'RelDiff_', 'T+S+R'), ('signal', 'None', '_', 'T+S+R')])], 'Cores': 1}))
+INFO:pyaf.timing:('OPERATION_START', ('FORECASTING', {'Signals': ['signal'], 'Horizon': 7}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 1.012, ('FORECASTING', {'Signals': ['signal'], 'Horizon': 7}))
+ConstantTrend + Cycle_None + NoAR
+PERFS_MAPE_MASE 0.0 0.0
+Forecasts
+    date  signal  ...  signal_Forecast_Lower_Bound  signal_Forecast_Upper_Bound
+2     2     NaN  ...                         0.43                         0.43
+3     3     NaN  ...                          NaN                          NaN
+4     4     NaN  ...                          NaN                          NaN
+5     5     NaN  ...                          NaN                          NaN
+6     6     NaN  ...                          NaN                          NaN
+7     7     NaN  ...                          NaN                          NaN
+8     8     NaN  ...                          NaN                          NaN
+
+[7 rows x 6 columns]

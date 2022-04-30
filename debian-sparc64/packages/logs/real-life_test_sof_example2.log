@@ -1,0 +1,14 @@
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['dengue_index'], 'Transformations': [('dengue_index', 'None', '_', 'T+S+R'), ('dengue_index', 'None', 'Diff_', 'T+S+R'), ('dengue_index', 'None', 'RelDiff_', 'T+S+R'), ('dengue_index', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+        date  dengue_index
+0 2010-01-01      0.169194
+1 2010-01-02      0.172350
+2 2010-01-03      0.174940
+3 2010-01-04      0.176245
+4 2010-01-05      0.176658
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'dengue_index', 'Transformation': '_dengue_index'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'dengue_index', 'Transformation': 'Diff_dengue_index'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'dengue_index', 'Transformation': 'RelDiff_dengue_index'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'dengue_index', 'Transformation': 'CumSum_dengue_index'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 55.919, ('TRAINING', {'Signal': 'dengue_index', 'Transformation': '_dengue_index'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 63.786, ('TRAINING', {'Signal': 'dengue_index', 'Transformation': 'Diff_dengue_index'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 68.735, ('TRAINING', {'Signal': 'dengue_index', 'Transformation': 'RelDiff_dengue_index'}))

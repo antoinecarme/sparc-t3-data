@@ -1,0 +1,5 @@
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 119 11
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 119 11
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 108
+EXEC_THIS=1 cp  logs/heroku_test_seasonal_week_of_year.log tests/references/heroku/test_seasonal_week_of_year.log
+NUM_DIFF_FILES_ARE_DIFFERENT

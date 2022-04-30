@@ -1,0 +1,17 @@
+DIFFERENT_WORDS 0.1747 0.1735
+DIFFERENT_WORDS 0.1499 0.1492
+DIFFERENT_WORDS 0.2387 0.1871
+DIFFERENT_WORDS 0.1717 0.1747
+DIFFERENT_WORDS 0.1518 0.1499
+DIFFERENT_WORDS 0.1843 0.2387
+NUM_DIFF_NUMBER_OF__DIFFERENT_LINES 6
+FIRST_DIFFERENCE_ORIG 2  None         _Ozone             T+S+R  ...  0.1747       0.1499   0.2387
+
+FIRST_DIFFERENCE_NEW 2  None         _Ozone             T+S+R  ...  0.1735       0.1492   0.1871
+
+LAST_DIFFERENCE_ORIG 3  None         _Ozone             T+S+R  ...  0.1717       0.1518   0.1843
+
+LAST_DIFFERENCE_NEW 3  None         _Ozone             T+S+R  ...  0.1747       0.1499   0.2387
+
+EXEC_THIS=1 cp  logs/missing_data_test_missing_data_ozone_Interpolate_None.log tests/references/missing_data/test_missing_data_ozone_Interpolate_None.log
+NUM_DIFF_FILES_ARE_DIFFERENT

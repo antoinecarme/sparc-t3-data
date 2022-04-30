@@ -1,0 +1,19 @@
+INFO:pyaf.timing:('OPERATION_START', ('SIGNAL_TRAINING', {'Signals': ['Close'], 'Transformations': [('Close', 'None', '_', 'T+S+R'), ('Close', 'None', 'Diff_', 'T+S+R'), ('Close', 'None', 'RelDiff_', 'T+S+R'), ('Close', 'None', 'CumSum_', 'T+S+R')], 'Cores': 4}))
+REQUEST_DETAILS [('CSVFile', 'https://raw.githubusercontent.com/antoinecarme/TimeSeriesData/a5fa96af431caabc817180d52bc1d01b8c61da41/YahooFinance/nasdaq/yahoo_GOOG.csv'), ('DateFormat', '%Y-%m-%d'), ('Horizon', 21), ('Name', 'PYAF_MODEL_DJOQFD_GOOG'), ('Present', '2016-01-01'), ('SignalVar', 'Close'), ('TimeVar', 'Date')]
+None
+DATASET_DETECTED_COLUMNS Index(['Unnamed: 0', 'Symbol', 'Date', 'Close', 'Low', 'Volume', 'Open',
+       'Adj_Close', 'High'],
+      dtype='object')
+DATASET_FINAL_COLUMNS Index(['Unnamed: 0', 'Symbol', 'Date', 'Close', 'Low', 'Volume', 'Open',
+       'Adj_Close', 'High'],
+      dtype='object')
+TRAIN_PARAMS (857, 9) Index(['Unnamed: 0', 'Symbol', 'Date', 'Close', 'Low', 'Volume', 'Open',
+       'Adj_Close', 'High'],
+      dtype='object') Date Close 21
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Close', 'Transformation': '_Close'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Close', 'Transformation': 'Diff_Close'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Close', 'Transformation': 'CumSum_Close'}))
+INFO:pyaf.timing:('OPERATION_START', ('TRAINING', {'Signal': 'Close', 'Transformation': 'RelDiff_Close'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 42.098, ('TRAINING', {'Signal': 'Close', 'Transformation': '_Close'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 47.327, ('TRAINING', {'Signal': 'Close', 'Transformation': 'Diff_Close'}))
+INFO:pyaf.timing:('OPERATION_END_ELAPSED', 51.756, ('TRAINING', {'Signal': 'Close', 'Transformation': 'RelDiff_Close'}))
