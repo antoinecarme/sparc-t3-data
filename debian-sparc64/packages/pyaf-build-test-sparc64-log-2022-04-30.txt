@@ -1,0 +1,928 @@
+timeout 480 python  tests/demos/demo1.py  >  logs/demos_demo1.log  2>&1
+timeout 480 python  tests/basic_checks/test_temporal_demo_hourly_D_H_ErrorMessage_3.py  >  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage_3.log  2>&1
+timeout 480 python  tests/basic_checks/test_temporal_demo_hourly_D_H_ErrorMessage_2.py  >  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage_2.log  2>&1
+timeout 480 python  tests/basic_checks/test_temporal_demo_hourly_D_H_ErrorMessage.py  >  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage.log  2>&1
+timeout 480 python  tests/basic_checks/test_pearson.py  >  logs/basic_checks_test_pearson.log  2>&1
+timeout 480 python  tests/basic_checks/platform_info.py  >  logs/basic_checks_platform_info.log  2>&1
+timeout 480 python  tests/basic_checks/issue_46_wrong_type_signal_column.py  >  logs/basic_checks_issue_46_wrong_type_signal_column.log  2>&1
+timeout 480 python  tests/basic_checks/issue_46_wrong_type_date_column.py  >  logs/basic_checks_issue_46_wrong_type_date_column.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/test_pearson.log logs/basic_checks_test_pearson.log  >  logs/basic_checks_test_pearson.log.diff
+tail -10  logs/basic_checks_test_pearson.log.diff 
+FIRST_DIFFERENCE_ORIG 1.8.0 1.22.3 sys.version_info(major=3, minor=10, micro=2, releaselevel='final', serial=0)
+
+FIRST_DIFFERENCE_NEW 1.7.3 1.21.5 sys.version_info(major=3, minor=10, micro=4, releaselevel='final', serial=0)
+
+LAST_DIFFERENCE_ORIG (0.8660254037844385, 0.011724811003954672) (0.8660254037844388, 0.011724811003954602)
+
+LAST_DIFFERENCE_NEW (0.8660254037844387, 0.011724811003954626) (0.8660254037844388, 0.011724811003954602)
+
+EXEC_THIS=1 cp  logs/basic_checks_test_pearson.log tests/references/basic_checks/test_pearson.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/basic_checks/issue_46_one_or_two_rows.py  >  logs/basic_checks_issue_46_one_or_two_rows.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/test_temporal_demo_hourly_D_H_ErrorMessage.log logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage.log  >  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/test_temporal_demo_hourly_D_H_ErrorMessage_3.log logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage_3.log  >  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage_3.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/test_temporal_demo_hourly_D_H_ErrorMessage_2.log logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage_2.log  >  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage_2.log.diff
+tail -10  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage.log.diff 
+timeout 480 python  tests/basic_checks/issue_46_non_existant_time_column.py  >  logs/basic_checks_issue_46_non_existant_time_column.log  2>&1
+tail -10  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage_3.log.diff 
+timeout 480 python  tests/basic_checks/issue_46_non_existant_signal_column.py  >  logs/basic_checks_issue_46_non_existant_signal_column.log  2>&1
+tail -10  logs/basic_checks_test_temporal_demo_hourly_D_H_ErrorMessage_2.log.diff 
+timeout 480 python  tests/basic_checks/issue_46_negative_horizon.py  >  logs/basic_checks_issue_46_negative_horizon.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/issue_46_non_existant_time_column.log logs/basic_checks_issue_46_non_existant_time_column.log  >  logs/basic_checks_issue_46_non_existant_time_column.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/issue_46_non_existant_signal_column.log logs/basic_checks_issue_46_non_existant_signal_column.log  >  logs/basic_checks_issue_46_non_existant_signal_column.log.diff
+tail -10  logs/basic_checks_issue_46_non_existant_time_column.log.diff 
+timeout 480 python  tests/basic_checks/issue_46_min_max_issues.py  >  logs/basic_checks_issue_46_min_max_issues.log  2>&1
+tail -10  logs/basic_checks_issue_46_non_existant_signal_column.log.diff 
+timeout 480 python  tests/basic_checks/hierarchy_checks_unkonwn_base_column.py  >  logs/basic_checks_hierarchy_checks_unkonwn_base_column.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/platform_info.log logs/basic_checks_platform_info.log  >  logs/basic_checks_platform_info.log.diff
+tail -10  logs/basic_checks_platform_info.log.diff 
+timeout 480 python  tests/basic_checks/hierarchy_checks_non_existant_date_column.py  >  logs/basic_checks_hierarchy_checks_non_existant_date_column.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/issue_46_min_max_issues.log logs/basic_checks_issue_46_min_max_issues.log  >  logs/basic_checks_issue_46_min_max_issues.log.diff
+tail -10  logs/basic_checks_issue_46_min_max_issues.log.diff 
+timeout 480 python  tests/basic_checks/hierarchy_checks_non_existant_base_column.py  >  logs/basic_checks_hierarchy_checks_non_existant_base_column.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/hierarchy_checks_unkonwn_base_column.log logs/basic_checks_hierarchy_checks_unkonwn_base_column.log  >  logs/basic_checks_hierarchy_checks_unkonwn_base_column.log.diff
+tail -10  logs/basic_checks_hierarchy_checks_unkonwn_base_column.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/project/tests/basic_checks/hierarchy_checks_unkonwn_base_column.py:37: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+FIRST_DIFFERENCE_NEW          City        State    Country
+
+LAST_DIFFERENCE_ORIG 7       Other  Other_State  Australia
+
+LAST_DIFFERENCE_NEW PYAF_ERROR_HIERARCHY_BASE_COLUMN_NOT_FOUND Unknown
+
+EXEC_THIS=1 cp  logs/basic_checks_hierarchy_checks_unkonwn_base_column.log tests/references/basic_checks/hierarchy_checks_unkonwn_base_column.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/basic_checks/hierarchy_checks_date_column_bad_storage.py  >  logs/basic_checks_hierarchy_checks_date_column_bad_storage.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/hierarchy_checks_non_existant_date_column.log logs/basic_checks_hierarchy_checks_non_existant_date_column.log  >  logs/basic_checks_hierarchy_checks_non_existant_date_column.log.diff
+tail -10  logs/basic_checks_hierarchy_checks_non_existant_date_column.log.diff 
+timeout 480 python  tests/basic_checks/hierarchy_checks_base_column_bad_storage.py  >  logs/basic_checks_hierarchy_checks_base_column_bad_storage.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/hierarchy_checks_non_existant_base_column.log logs/basic_checks_hierarchy_checks_non_existant_base_column.log  >  logs/basic_checks_hierarchy_checks_non_existant_base_column.log.diff
+tail -10  logs/basic_checks_hierarchy_checks_non_existant_base_column.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/project/tests/basic_checks/hierarchy_checks_non_existant_base_column.py:37: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+FIRST_DIFFERENCE_NEW          City        State    Country
+
+LAST_DIFFERENCE_ORIG 7       Other  Other_State  Australia
+
+LAST_DIFFERENCE_NEW PYAF_ERROR_HIERARCHY_BASE_COLUMN_NOT_FOUND Unknown
+
+EXEC_THIS=1 cp  logs/basic_checks_hierarchy_checks_non_existant_base_column.log tests/references/basic_checks/hierarchy_checks_non_existant_base_column.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/basic_checks/hierarchy_checks_bad_horizon.py  >  logs/basic_checks_hierarchy_checks_bad_horizon.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/hierarchy_checks_date_column_bad_storage.log logs/basic_checks_hierarchy_checks_date_column_bad_storage.log  >  logs/basic_checks_hierarchy_checks_date_column_bad_storage.log.diff
+tail -10  logs/basic_checks_hierarchy_checks_date_column_bad_storage.log.diff 
+timeout 480 python  tests/basic_checks/hierarchy_checks.py  >  logs/basic_checks_hierarchy_checks.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/hierarchy_checks_base_column_bad_storage.log logs/basic_checks_hierarchy_checks_base_column_bad_storage.log  >  logs/basic_checks_hierarchy_checks_base_column_bad_storage.log.diff
+tail -10  logs/basic_checks_hierarchy_checks_base_column_bad_storage.log.diff 
+timeout 480 python  tests/cross_validation/test_ozone_custom_split.py  >  logs/cross_validation_test_ozone_custom_split.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/hierarchy_checks_bad_horizon.log logs/basic_checks_hierarchy_checks_bad_horizon.log  >  logs/basic_checks_hierarchy_checks_bad_horizon.log.diff
+tail -10  logs/basic_checks_hierarchy_checks_bad_horizon.log.diff 
+timeout 480 python  tests/cross_validation/test_ozone_cross_valid.py  >  logs/cross_validation_test_ozone_cross_valid.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/hierarchy_checks.log logs/basic_checks_hierarchy_checks.log  >  logs/basic_checks_hierarchy_checks.log.diff
+tail -10  logs/basic_checks_hierarchy_checks.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/project/tests/basic_checks/hierarchy_checks.py:37: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+FIRST_DIFFERENCE_NEW          City        State    Country
+
+LAST_DIFFERENCE_ORIG 7       Other  Other_State  Australia
+
+LAST_DIFFERENCE_NEW PYAF_ERROR_HIERARCHY_BASE_COLUMN_NOT_FOUND Unknown
+
+EXEC_THIS=1 cp  logs/basic_checks_hierarchy_checks.log tests/references/basic_checks/hierarchy_checks.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/cross_validation/test_air_passengers_cross_valid.py  >  logs/cross_validation_test_air_passengers_cross_valid.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/demos/demo1.log logs/demos_demo1.log  >  logs/demos_demo1.log.diff
+tail -10  logs/demos_demo1.log.diff 
+timeout 480 python  tests/croston/test_croston_fpp2_counts_example_optimize.py  >  logs/croston_test_croston_fpp2_counts_example_optimize.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/issue_46_negative_horizon.log logs/basic_checks_issue_46_negative_horizon.log  >  logs/basic_checks_issue_46_negative_horizon.log.diff
+tail -10  logs/basic_checks_issue_46_negative_horizon.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+EXEC_THIS=1 cp  logs/basic_checks_issue_46_negative_horizon.log tests/references/basic_checks/issue_46_negative_horizon.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/croston/test_croston_fpp2_counts_example.py  >  logs/croston_test_croston_fpp2_counts_example.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/issue_46_wrong_type_date_column.log logs/basic_checks_issue_46_wrong_type_date_column.log  >  logs/basic_checks_issue_46_wrong_type_date_column.log.diff
+tail -10  logs/basic_checks_issue_46_wrong_type_date_column.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+EXEC_THIS=1 cp  logs/basic_checks_issue_46_wrong_type_date_column.log tests/references/basic_checks/issue_46_wrong_type_date_column.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/croston/croston_tests.py  >  logs/croston_croston_tests.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/croston_tests.log logs/croston_croston_tests.log  >  logs/croston_croston_tests.log.diff
+tail -10  logs/croston_croston_tests.log.diff 
+timeout 480 python  tests/croston/croston_test_1_legacy_linear_trend.py  >  logs/croston_croston_test_1_legacy_linear_trend.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/issue_46_wrong_type_signal_column.log logs/basic_checks_issue_46_wrong_type_signal_column.log  >  logs/basic_checks_issue_46_wrong_type_signal_column.log.diff
+tail -10  logs/basic_checks_issue_46_wrong_type_signal_column.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['CumSum_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'CumSum_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'CumSum_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_ORIG /home/circleci/project/tests/basic_checks/issue_46_wrong_type_signal_column.py:13: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+
+LAST_DIFFERENCE_NEW /home/antoine/dev/python/packages/timeseries/pyaf/tests/basic_checks/issue_46_wrong_type_signal_column.py:13: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+
+EXEC_THIS=1 cp  logs/basic_checks_issue_46_wrong_type_signal_column.log tests/references/basic_checks/issue_46_wrong_type_signal_column.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/croston/croston_test_1_SBJ_linear_trend.py  >  logs/croston_croston_test_1_SBJ_linear_trend.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/basic_checks/issue_46_one_or_two_rows.log logs/basic_checks_issue_46_one_or_two_rows.log  >  logs/basic_checks_issue_46_one_or_two_rows.log.diff
+tail -10  logs/basic_checks_issue_46_one_or_two_rows.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['Diff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'Diff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'Diff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'Diff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 4, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_ORIG INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', '_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', '_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', '_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', '_signal_LinearTrend_residue_bestCycle_byMAPE_residue', '_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+
+LAST_DIFFERENCE_NEW INFO:pyaf.std:SKIPPING_AR_MODELS_WITH_LOW_VARIANCE_FOR_CYCLE_RESIDUES ('T+S+R', 6, 10, ['RelDiff_signal_ConstantTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_ConstantTrend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_Lag1Trend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_Lag1Trend_residue_zeroCycle[0.0]_residue', 'RelDiff_signal_LinearTrend_residue_bestCycle_byMAPE_residue', 'RelDiff_signal_LinearTrend_residue_zeroCycle[0.0]_residue'])
+
+EXEC_THIS=1 cp  logs/basic_checks_issue_46_one_or_two_rows.log tests/references/basic_checks/issue_46_one_or_two_rows.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/croston/croston_test_1_SBJ.py  >  logs/croston_croston_test_1_SBJ.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/test_croston_fpp2_counts_example_optimize.log logs/croston_test_croston_fpp2_counts_example_optimize.log  >  logs/croston_test_croston_fpp2_counts_example_optimize.log.diff
+tail -10  logs/croston_test_croston_fpp2_counts_example_optimize.log.diff 
+timeout 480 python  tests/croston/croston_test_1_SBA_linear_trend.py  >  logs/croston_croston_test_1_SBA_linear_trend.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/test_croston_fpp2_counts_example.log logs/croston_test_croston_fpp2_counts_example.log  >  logs/croston_test_croston_fpp2_counts_example.log.diff
+tail -10  logs/croston_test_croston_fpp2_counts_example.log.diff 
+timeout 480 python  tests/croston/croston_test_1_SBA.py  >  logs/croston_croston_test_1_SBA.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/cross_validation/test_air_passengers_cross_valid.log logs/cross_validation_test_air_passengers_cross_valid.log  >  logs/cross_validation_test_air_passengers_cross_valid.log.diff
+tail -10  logs/cross_validation_test_air_passengers_cross_valid.log.diff 
+timeout 480 python  tests/croston/croston_test_1_None.py  >  logs/croston_croston_test_1_None.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/croston_test_1_legacy_linear_trend.log logs/croston_croston_test_1_legacy_linear_trend.log  >  logs/croston_croston_test_1_legacy_linear_trend.log.diff
+tail -10  logs/croston_croston_test_1_legacy_linear_trend.log.diff 
+timeout 480 python  tests/croston/__init__.py  >  logs/croston___init__.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/__init__.log logs/croston___init__.log  >  logs/croston___init__.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/cross_validation/test_ozone_cross_valid.log logs/cross_validation_test_ozone_cross_valid.log  >  logs/cross_validation_test_ozone_cross_valid.log.diff
+tail -10  logs/croston___init__.log.diff 
+timeout 480 python  tests/exog/test_random_exogenous.py  >  logs/exog_test_random_exogenous.log  2>&1
+tail -10  logs/cross_validation_test_ozone_cross_valid.log.diff 
+timeout 480 python  tests/exog/test_ozone_exogenous_with_categorical.py  >  logs/exog_test_ozone_exogenous_with_categorical.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/croston_test_1_SBJ_linear_trend.log logs/croston_croston_test_1_SBJ_linear_trend.log  >  logs/croston_croston_test_1_SBJ_linear_trend.log.diff
+tail -10  logs/croston_croston_test_1_SBJ_linear_trend.log.diff 
+timeout 480 python  tests/exog/test_ozone_exogenous_profile.py  >  logs/exog_test_ozone_exogenous_profile.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_random_exogenous.log logs/exog_test_random_exogenous.log  >  logs/exog_test_random_exogenous.log.diff
+tail -10  logs/exog_test_random_exogenous.log.diff 
+timeout 480 python  tests/exog/test_ozone_exogenous_XGBX.py  >  logs/exog_test_ozone_exogenous_XGBX.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/croston_test_1_SBJ.log logs/croston_croston_test_1_SBJ.log  >  logs/croston_croston_test_1_SBJ.log.diff
+tail -10  logs/croston_croston_test_1_SBJ.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/.pyenv/versions/3.10.2/lib/python3.10/site-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+
+FIRST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+
+LAST_DIFFERENCE_ORIG /home/circleci/.pyenv/versions/3.10.2/lib/python3.10/site-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+
+LAST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+
+EXEC_THIS=1 cp  logs/croston_croston_test_1_SBJ.log tests/references/croston/croston_test_1_SBJ.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/exog/test_ozone_exogenous_SVRX.py  >  logs/exog_test_ozone_exogenous_SVRX.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/croston_test_1_SBA_linear_trend.log logs/croston_croston_test_1_SBA_linear_trend.log  >  logs/croston_croston_test_1_SBA_linear_trend.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/croston/croston_test_1_SBA.log logs/croston_croston_test_1_SBA.log  >  logs/croston_croston_test_1_SBA.log.diff
+tail -10  logs/croston_croston_test_1_SBA_linear_trend.log.diff 
+timeout 480 python  tests/exog/test_ozone_exogenous_MLPX.py  >  logs/exog_test_ozone_exogenous_MLPX.log  2>&1
+tail -10  logs/croston_croston_test_1_SBA.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/.pyenv/versions/3.10.2/lib/python3.10/site-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+
+FIRST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+
+LAST_DIFFERENCE_ORIG /home/circleci/.pyenv/versions/3.10.2/lib/python3.10/site-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+
+LAST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+
+EXEC_THIS=1 cp  logs/croston_croston_test_1_SBA.log tests/references/croston/croston_test_1_SBA.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/exog/test_ozone_exogenous_LSTMX.py  >  logs/exog_test_ozone_exogenous_LSTMX.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous_profile.log logs/exog_test_ozone_exogenous_profile.log  >  logs/exog_test_ozone_exogenous_profile.log.diff
+tail -10  logs/exog_test_ozone_exogenous_profile.log.diff 
+timeout 480 python  tests/exog/test_ozone_exogenous_LGBX.py  >  logs/exog_test_ozone_exogenous_LGBX.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/croston/croston_test_1_None.log logs/croston_croston_test_1_None.log  >  logs/croston_croston_test_1_None.log.diff
+tail -10  logs/croston_croston_test_1_None.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/.pyenv/versions/3.10.2/lib/python3.10/site-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+
+FIRST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: divide by zero encountered in true_divide
+
+LAST_DIFFERENCE_ORIG /home/circleci/.pyenv/versions/3.10.2/lib/python3.10/site-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+
+LAST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/numpy/lib/histograms.py:906: RuntimeWarning: invalid value encountered in true_divide
+
+EXEC_THIS=1 cp  logs/croston_croston_test_1_None.log tests/references/croston/croston_test_1_None.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/exog/test_ozone_exogenous_ARX.py  >  logs/exog_test_ozone_exogenous_ARX.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous_XGBX.log logs/exog_test_ozone_exogenous_XGBX.log  >  logs/exog_test_ozone_exogenous_XGBX.log.diff
+tail -10  logs/exog_test_ozone_exogenous_XGBX.log.diff 
+timeout 480 python  tests/exog/test_ozone_exogenous.py  >  logs/exog_test_ozone_exogenous.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous_LGBX.log logs/exog_test_ozone_exogenous_LGBX.log  >  logs/exog_test_ozone_exogenous_LGBX.log.diff
+tail -10  logs/exog_test_ozone_exogenous_LGBX.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:EXOGENOUS_DATA ['Exog2', 'Exog3', 'Exog4']
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:DECOMPOSITION_TYPE 'T+S+R'
+
+LAST_DIFFERENCE_ORIG {"Time":{"192":"1971-01-01T00:00:00.000Z","193":"1971-02-01T00:00:00.000Z","194":"1971-03-01T00:00:00.000Z","195":"1971-04-01T00:00:00.000Z","196":"1971-05-01T00:00:00.000Z","197":"1971-06-01T00:00:00.000Z","198":"1971-07-01T00:00:00.000Z","199":"1971-08-01T00:00:00.000Z","200":"1971-09-01T00:00:00.000Z","201":"1971-10-01T00:00:00.000Z","202":"1971-11-01T00:00:00.000Z","203":"1971-12-01T00:00:00.000Z","204":"1972-01-01T00:00:00.000Z","205":"1972-02-01T00:00:00.000Z","206":"1972-03-01T00:00:00.000Z","207":"1972-04-01T00:00:00.000Z","208":"1972-05-01T00:00:00.000Z","209":"1972-06-01T00:00:00.000Z","210":"1972-07-01T00:00:00.000Z","211":"1972-08-01T00:00:00.000Z","212":"1972-09-01T00:00:00.000Z","213":"1972-10-01T00:00:00.000Z","214":"1972-11-01T00:00:00.000Z","215":"1972-12-01T00:00:00.000Z"},"Ozone":{"192":1.8,"193":2.0,"194":2.2,"195":3.0,"196":2.4,"197":3.5,"198":3.5,"199":3.3,"200":2.7,"201":2.5,"202":1.6,"203":1.2,"204":null,"205":null,"206":null,"207":null,"208":null,"209":null,"210":null,"211":null,"212":null,"213":null,"214":null,"215":null},"Ozone_Forecast":{"192":2.0942270525,"193":2.326703045,"194":2.8563621794,"195":3.6165329388,"196":3.2088988861,"197":3.5822377958,"198":4.2875259824,"199":4.1022667392,"200":3.515765374,"201":3.5928223447,"202":2.0959904783,"203":2.0942270525,"204":2.0942270525,"205":2.2601124536,"206":2.7883763261,"207":3.5169235084,"208":3.7253192623,"209":4.5037696443,"210":4.9826513957,"211":4.8315123038,"212":4.5804256919,"213":4.3854860386,"214":3.1255424367,"215":2.0638733435}}
+
+LAST_DIFFERENCE_NEW 
+
+EXEC_THIS=1 cp  logs/exog_test_ozone_exogenous_LGBX.log tests/references/exog/test_ozone_exogenous_LGBX.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/heroku/test_seasonal_week_of_year.py  >  logs/heroku_test_seasonal_week_of_year.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous_SVRX.log logs/exog_test_ozone_exogenous_SVRX.log  >  logs/exog_test_ozone_exogenous_SVRX.log.diff
+tail -10  logs/exog_test_ozone_exogenous_SVRX.log.diff 
+timeout 480 python  tests/heroku/test_ozone_heroku.py  >  logs/heroku_test_ozone_heroku.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous_ARX.log logs/exog_test_ozone_exogenous_ARX.log  >  logs/exog_test_ozone_exogenous_ARX.log.diff
+tail -10  logs/exog_test_ozone_exogenous_ARX.log.diff 
+timeout 480 python  tests/heroku/test_ozone_exog_heroku.py  >  logs/heroku_test_ozone_exog_heroku.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous_MLPX.log logs/exog_test_ozone_exogenous_MLPX.log  >  logs/exog_test_ozone_exogenous_MLPX.log.diff
+tail -10  logs/exog_test_ozone_exogenous_MLPX.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:TIME_DETAIL TimeVariable='Time' TimeMin=1955-01-01T00:00:00.000000 TimeMax=1967-09-01T00:00:00.000000 TimeDelta=<DateOffset: months=1> Horizon=12
+
+FIRST_DIFFERENCE_NEW Error in cpuinfo: processor architecture is not supported in cpuinfo
+
+LAST_DIFFERENCE_ORIG </Forecast>
+
+LAST_DIFFERENCE_NEW 
+
+EXEC_THIS=1 cp  logs/exog_test_ozone_exogenous_MLPX.log tests/references/exog/test_ozone_exogenous_MLPX.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/heroku/test_air_passengers_heroku.py  >  logs/heroku_test_air_passengers_heroku.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/heroku/test_ozone_heroku.log logs/heroku_test_ozone_heroku.log  >  logs/heroku_test_ozone_heroku.log.diff
+tail -10  logs/heroku_test_ozone_heroku.log.diff 
+timeout 480 python  tests/heroku/build_generic_heroku_model.py  >  logs/heroku_build_generic_heroku_model.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/heroku/build_generic_heroku_model.log logs/heroku_build_generic_heroku_model.log  >  logs/heroku_build_generic_heroku_model.log.diff
+tail -10  logs/heroku_build_generic_heroku_model.log.diff 
+timeout 480 python  tests/hierarchical/test_hierarchy_AU_TD.py  >  logs/hierarchical_test_hierarchy_AU_TD.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/heroku/test_air_passengers_heroku.log logs/heroku_test_air_passengers_heroku.log  >  logs/heroku_test_air_passengers_heroku.log.diff
+tail -10  logs/heroku_test_air_passengers_heroku.log.diff 
+timeout 480 python  tests/hierarchical/test_hierarchy_AU_OC.py  >  logs/hierarchical_test_hierarchy_AU_OC.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous.log logs/exog_test_ozone_exogenous.log  >  logs/exog_test_ozone_exogenous.log.diff
+tail -10  logs/exog_test_ozone_exogenous.log.diff 
+timeout 480 python  tests/hierarchical/test_hierarchy_AU_MO.py  >  logs/hierarchical_test_hierarchy_AU_MO.log  2>&1
+make: [tests/Makefile:515: cross_validation/test_ozone_custom_split.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/cross_validation/test_ozone_custom_split.log logs/cross_validation_test_ozone_custom_split.log  >  logs/cross_validation_test_ozone_custom_split.log.diff
+tail -10  logs/cross_validation_test_ozone_custom_split.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 1064 538
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 1064 538
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 526
+EXEC_THIS=1 cp  logs/cross_validation_test_ozone_custom_split.log tests/references/cross_validation/test_ozone_custom_split.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/hierarchical/test_hierarchy_AU_BU.py  >  logs/hierarchical_test_hierarchy_AU_BU.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/heroku/test_ozone_exog_heroku.log logs/heroku_test_ozone_exog_heroku.log  >  logs/heroku_test_ozone_exog_heroku.log.diff
+tail -10  logs/heroku_test_ozone_exog_heroku.log.diff 
+timeout 480 python  tests/hierarchical/test_hierarchy_AU_AllMethods_Exogenous_per_node.py  >  logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_per_node.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous_with_categorical.log logs/exog_test_ozone_exogenous_with_categorical.log  >  logs/exog_test_ozone_exogenous_with_categorical.log.diff
+tail -10  logs/exog_test_ozone_exogenous_with_categorical.log.diff 
+timeout 480 python  tests/hierarchical/test_hierarchy_AU_AllMethods_Exogenous_all_nodes.py  >  logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_all_nodes.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_hierarchy_AU_TD.log logs/hierarchical_test_hierarchy_AU_TD.log  >  logs/hierarchical_test_hierarchy_AU_TD.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/exog/test_ozone_exogenous_LSTMX.log logs/exog_test_ozone_exogenous_LSTMX.log  >  logs/exog_test_ozone_exogenous_LSTMX.log.diff
+tail -10  logs/hierarchical_test_hierarchy_AU_TD.log.diff 
+timeout 480 python  tests/hierarchical/test_hierarchy_AU_AllMethods.py  >  logs/hierarchical_test_hierarchy_AU_AllMethods.log  2>&1
+tail -10  logs/exog_test_ozone_exogenous_LSTMX.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:TIME_DETAIL TimeVariable='Time' TimeMin=1955-01-01T00:00:00.000000 TimeMax=1967-09-01T00:00:00.000000 TimeDelta=<DateOffset: months=1> Horizon=12
+
+FIRST_DIFFERENCE_NEW Error in cpuinfo: processor architecture is not supported in cpuinfo
+
+LAST_DIFFERENCE_ORIG </Forecast>
+
+LAST_DIFFERENCE_NEW 
+
+EXEC_THIS=1 cp  logs/exog_test_ozone_exogenous_LSTMX.log tests/references/exog/test_ozone_exogenous_LSTMX.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/hierarchical/test_hierarchy_AU.py  >  logs/hierarchical_test_hierarchy_AU.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_hierarchy_AU_OC.log logs/hierarchical_test_hierarchy_AU_OC.log  >  logs/hierarchical_test_hierarchy_AU_OC.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_hierarchy_AU_MO.log logs/hierarchical_test_hierarchy_AU_MO.log  >  logs/hierarchical_test_hierarchy_AU_MO.log.diff
+tail -10  logs/hierarchical_test_hierarchy_AU_OC.log.diff 
+timeout 480 python  tests/hierarchical/test_grouped_signals_TD.py  >  logs/hierarchical_test_grouped_signals_TD.log  2>&1
+tail -10  logs/hierarchical_test_hierarchy_AU_MO.log.diff 
+timeout 480 python  tests/hierarchical/test_grouped_signals_OC.py  >  logs/hierarchical_test_grouped_signals_OC.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_hierarchy_AU_BU.log logs/hierarchical_test_hierarchy_AU_BU.log  >  logs/hierarchical_test_hierarchy_AU_BU.log.diff
+tail -10  logs/hierarchical_test_hierarchy_AU_BU.log.diff 
+timeout 480 python  tests/hierarchical/test_grouped_signals_MO.py  >  logs/hierarchical_test_grouped_signals_MO.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_hierarchy_AU_AllMethods_Exogenous_per_node.log logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_per_node.log  >  logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_per_node.log.diff
+tail -10  logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_per_node.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/project/tests/hierarchical/test_hierarchy_AU_AllMethods_Exogenous_per_node.py:14: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+FIRST_DIFFERENCE_NEW          City        State    Country
+
+LAST_DIFFERENCE_ORIG INFO:pyaf.hierarchical:FORECASTING_HIERARCHICAL_MODEL_TOP_DOWN_METHOD PHA_TD
+
+LAST_DIFFERENCE_NEW INFO:pyaf.hierarchical:FORECASTING_HIERARCHICAL_MODEL_OPTIMAL_COMBINATION_METHOD OC
+
+EXEC_THIS=1 cp  logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_per_node.log tests/references/hierarchical/test_hierarchy_AU_AllMethods_Exogenous_per_node.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/hierarchical/test_grouped_signals_BU.py  >  logs/hierarchical_test_grouped_signals_BU.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped_signals_TD.log logs/hierarchical_test_grouped_signals_TD.log  >  logs/hierarchical_test_grouped_signals_TD.log.diff
+tail -10  logs/hierarchical_test_grouped_signals_TD.log.diff 
+timeout 480 python  tests/hierarchical/test_grouped_signals_AllMethods_Exogenous_per_node.py  >  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_per_node.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped_signals_OC.log logs/hierarchical_test_grouped_signals_OC.log  >  logs/hierarchical_test_grouped_signals_OC.log.diff
+tail -10  logs/hierarchical_test_grouped_signals_OC.log.diff 
+timeout 480 python  tests/hierarchical/test_grouped_signals_AllMethods_Exogenous_all_nodes.py  >  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_all_nodes.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped_signals_MO.log logs/hierarchical_test_grouped_signals_MO.log  >  logs/hierarchical_test_grouped_signals_MO.log.diff
+tail -10  logs/hierarchical_test_grouped_signals_MO.log.diff 
+timeout 480 python  tests/hierarchical/test_grouped_signals_AllMethods_2.py  >  logs/hierarchical_test_grouped_signals_AllMethods_2.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_hierarchy_AU.log logs/hierarchical_test_hierarchy_AU.log  >  logs/hierarchical_test_hierarchy_AU.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_hierarchy_AU_AllMethods.log logs/hierarchical_test_hierarchy_AU_AllMethods.log  >  logs/hierarchical_test_hierarchy_AU_AllMethods.log.diff
+tail -10  logs/hierarchical_test_hierarchy_AU.log.diff 
+timeout 480 python  tests/hierarchical/test_grouped_signals_AllMethods.py  >  logs/hierarchical_test_grouped_signals_AllMethods.log  2>&1
+tail -10  logs/hierarchical_test_hierarchy_AU_AllMethods.log.diff 
+timeout 480 python  tests/hierarchical/test_grouped.py  >  logs/hierarchical_test_grouped.log  2>&1
+make: [tests/Makefile:850: heroku/test_seasonal_week_of_year.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/heroku/test_seasonal_week_of_year.log logs/heroku_test_seasonal_week_of_year.log  >  logs/heroku_test_seasonal_week_of_year.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_hierarchy_AU_AllMethods_Exogenous_all_nodes.log logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_all_nodes.log  >  logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_all_nodes.log.diff
+tail -10  logs/heroku_test_seasonal_week_of_year.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 119 11
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 119 11
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 108
+EXEC_THIS=1 cp  logs/heroku_test_seasonal_week_of_year.log tests/references/heroku/test_seasonal_week_of_year.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/model_control/test_ozone_no_models_enabled.py  >  logs/model_control_test_ozone_no_models_enabled.log  2>&1
+tail -10  logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_all_nodes.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/project/tests/hierarchical/test_hierarchy_AU_AllMethods_Exogenous_all_nodes.py:14: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+FIRST_DIFFERENCE_NEW          City        State    Country
+
+LAST_DIFFERENCE_ORIG INFO:pyaf.hierarchical:FORECASTING_HIERARCHICAL_MODEL_TOP_DOWN_METHOD PHA_TD
+
+LAST_DIFFERENCE_NEW INFO:pyaf.hierarchical:FORECASTING_HIERARCHICAL_MODEL_OPTIMAL_COMBINATION_METHOD OC
+
+EXEC_THIS=1 cp  logs/hierarchical_test_hierarchy_AU_AllMethods_Exogenous_all_nodes.log tests/references/hierarchical/test_hierarchy_AU_AllMethods_Exogenous_all_nodes.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/model_control/test_ozone_custom_models_enabled.py  >  logs/model_control_test_ozone_custom_models_enabled.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped_signals_BU.log logs/hierarchical_test_grouped_signals_BU.log  >  logs/hierarchical_test_grouped_signals_BU.log.diff
+tail -10  logs/hierarchical_test_grouped_signals_BU.log.diff 
+timeout 480 python  tests/model_control/test_ozone_all_models_enabled.py  >  logs/model_control_test_ozone_all_models_enabled.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/model_control/test_ozone_custom_models_enabled.log logs/model_control_test_ozone_custom_models_enabled.log  >  logs/model_control_test_ozone_custom_models_enabled.log.diff
+tail -10  logs/model_control_test_ozone_custom_models_enabled.log.diff 
+timeout 480 python  tests/perfs/test_ozone_perf_measure_MASE.py  >  logs/perfs_test_ozone_perf_measure_MASE.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped.log logs/hierarchical_test_grouped.log  >  logs/hierarchical_test_grouped.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped_signals_AllMethods.log logs/hierarchical_test_grouped_signals_AllMethods.log  >  logs/hierarchical_test_grouped_signals_AllMethods.log.diff
+tail -10  logs/hierarchical_test_grouped.log.diff 
+timeout 480 python  tests/perfs/test_ozone_perf_measure_MAPE.py  >  logs/perfs_test_ozone_perf_measure_MAPE.log  2>&1
+tail -10  logs/hierarchical_test_grouped_signals_AllMethods.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.hierarchical:REPORT_COMBINED_FORECASTS_FIT_PERF {'Signal': 'NSW_female_AHP_TD_Forecast', 'Length': 59, 'MAPE': 0.0782, 'RMSE': 61.8831, 'MAE': 47.3389, 'SMAPE': 0.0765, 'ErrorMean': 3.1971, 'ErrorStdDev': 61.8005, 'R2': 0.9118, 'Pearson': 0.9575, 'MedAE': 39.1538, 'LnQ': 0.5501}
+
+FIRST_DIFFERENCE_NEW /usr/lib/python3/dist-packages/scipy/stats/stats.py:4053: PearsonRNearConstantInputWarning: An input array is nearly constant; the computed correlation coefficient may be inaccurate.
+
+LAST_DIFFERENCE_ORIG 
+
+LAST_DIFFERENCE_NEW <Forecast>
+
+EXEC_THIS=1 cp  logs/hierarchical_test_grouped_signals_AllMethods.log tests/references/hierarchical/test_grouped_signals_AllMethods.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/perfs/test_ozone_perf_measure_L2.py  >  logs/perfs_test_ozone_perf_measure_L2.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/model_control/test_ozone_no_models_enabled.log logs/model_control_test_ozone_no_models_enabled.log  >  logs/model_control_test_ozone_no_models_enabled.log.diff
+tail -10  logs/model_control_test_ozone_no_models_enabled.log.diff 
+timeout 480 python  tests/perfs/test_ozone_perf_measure_L1.py  >  logs/perfs_test_ozone_perf_measure_L1.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped_signals_AllMethods_2.log logs/hierarchical_test_grouped_signals_AllMethods_2.log  >  logs/hierarchical_test_grouped_signals_AllMethods_2.log.diff
+tail -10  logs/hierarchical_test_grouped_signals_AllMethods_2.log.diff 
+timeout 480 python  tests/perfs/test_ozone_perf_measure.py  >  logs/perfs_test_ozone_perf_measure.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/perfs/test_ozone_perf_measure.log logs/perfs_test_ozone_perf_measure.log  >  logs/perfs_test_ozone_perf_measure.log.diff
+tail -10  logs/perfs_test_ozone_perf_measure.log.diff 
+timeout 480 python  tests/svr/test_ozone_svr_only.py  >  logs/svr_test_ozone_svr_only.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/perfs/test_ozone_perf_measure_MASE.log logs/perfs_test_ozone_perf_measure_MASE.log  >  logs/perfs_test_ozone_perf_measure_MASE.log.diff
+tail -10  logs/perfs_test_ozone_perf_measure_MASE.log.diff 
+timeout 480 python  tests/svr/test_ozone_svr.py  >  logs/svr_test_ozone_svr.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped_signals_AllMethods_Exogenous_all_nodes.log logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_all_nodes.log  >  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_all_nodes.log.diff
+tail -10  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_all_nodes.log.diff 
+FIRST_DIFFERENCE_ORIG /home/circleci/project/tests/hierarchical/test_grouped_signals_AllMethods_Exogenous_all_nodes.py:17: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.hierarchical:TRAINING_HIERARCHICAL_MODEL_COMPUTE_TOP_DOWN_HISTORICAL_PROPORTIONS
+
+LAST_DIFFERENCE_ORIG INFO:pyaf.hierarchical:FORECASTING_HIERARCHICAL_MODEL_TOP_DOWN_METHOD PHA_TD
+
+LAST_DIFFERENCE_NEW INFO:pyaf.hierarchical:FORECASTING_HIERARCHICAL_MODEL_OPTIMAL_COMBINATION_METHOD OC
+
+EXEC_THIS=1 cp  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_all_nodes.log tests/references/hierarchical/test_grouped_signals_AllMethods_Exogenous_all_nodes.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/svr/test_air_passengers_svr_only.py  >  logs/svr_test_air_passengers_svr_only.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/perfs/test_ozone_perf_measure_MAPE.log logs/perfs_test_ozone_perf_measure_MAPE.log  >  logs/perfs_test_ozone_perf_measure_MAPE.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/perfs/test_ozone_perf_measure_L2.log logs/perfs_test_ozone_perf_measure_L2.log  >  logs/perfs_test_ozone_perf_measure_L2.log.diff
+tail -10  logs/perfs_test_ozone_perf_measure_MAPE.log.diff 
+timeout 480 python  tests/svr/test_air_passengers_svr.py  >  logs/svr_test_air_passengers_svr.log  2>&1
+tail -10  logs/perfs_test_ozone_perf_measure_L2.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_relative_difference_1.py  >  logs/transformations_test_ozone_transf_relative_difference_1.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/perfs/test_ozone_perf_measure_L1.log logs/perfs_test_ozone_perf_measure_L1.log  >  logs/perfs_test_ozone_perf_measure_L1.log.diff
+tail -10  logs/perfs_test_ozone_perf_measure_L1.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_relative_difference.py  >  logs/transformations_test_ozone_transf_relative_difference.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/svr/test_ozone_svr_only.log logs/svr_test_ozone_svr_only.log  >  logs/svr_test_ozone_svr_only.log.diff
+tail -10  logs/svr_test_ozone_svr_only.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_quantization.py  >  logs/transformations_test_ozone_transf_quantization.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/svr/test_ozone_svr.log logs/svr_test_ozone_svr.log  >  logs/svr_test_ozone_svr.log.diff
+tail -10  logs/svr_test_ozone_svr.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_none.py  >  logs/transformations_test_ozone_transf_none.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/svr/test_air_passengers_svr.log logs/svr_test_air_passengers_svr.log  >  logs/svr_test_air_passengers_svr.log.diff
+tail -10  logs/svr_test_air_passengers_svr.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_logit.py  >  logs/transformations_test_ozone_transf_logit.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/svr/test_air_passengers_svr_only.log logs/svr_test_air_passengers_svr_only.log  >  logs/svr_test_air_passengers_svr_only.log.diff
+tail -10  logs/svr_test_air_passengers_svr_only.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_generic.py  >  logs/transformations_test_ozone_transf_generic.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_generic.log logs/transformations_test_ozone_transf_generic.log  >  logs/transformations_test_ozone_transf_generic.log.diff
+tail -10  logs/transformations_test_ozone_transf_generic.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_fisher.py  >  logs/transformations_test_ozone_transf_fisher.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_relative_difference.log logs/transformations_test_ozone_transf_relative_difference.log  >  logs/transformations_test_ozone_transf_relative_difference.log.diff
+tail -10  logs/transformations_test_ozone_transf_relative_difference.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_difference.py  >  logs/transformations_test_ozone_transf_difference.log  2>&1
+make: [tests/Makefile:880: hierarchical/test_grouped_signals_AllMethods_Exogenous_per_node.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/hierarchical/test_grouped_signals_AllMethods_Exogenous_per_node.log logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_per_node.log  >  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_per_node.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_none.log logs/transformations_test_ozone_transf_none.log  >  logs/transformations_test_ozone_transf_none.log.diff
+tail -10  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_per_node.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 863 0
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 863 0
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 863
+EXEC_THIS=1 cp  logs/hierarchical_test_grouped_signals_AllMethods_Exogenous_per_node.log tests/references/hierarchical/test_grouped_signals_AllMethods_Exogenous_per_node.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/transformations/test_ozone_transf_cumsum.py  >  logs/transformations_test_ozone_transf_cumsum.log  2>&1
+tail -10  logs/transformations_test_ozone_transf_none.log.diff 
+timeout 480 python  tests/transformations/test_ozone_transf_boxcox.py  >  logs/transformations_test_ozone_transf_boxcox.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_relative_difference_1.log logs/transformations_test_ozone_transf_relative_difference_1.log  >  logs/transformations_test_ozone_transf_relative_difference_1.log.diff
+tail -10  logs/transformations_test_ozone_transf_relative_difference_1.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 642 598
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 642 598
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 44
+EXEC_THIS=1 cp  logs/transformations_test_ozone_transf_relative_difference_1.log tests/references/transformations/test_ozone_transf_relative_difference_1.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/transformations/test_ozone_transf_anscombe.py  >  logs/transformations_test_ozone_transf_anscombe.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_logit.log logs/transformations_test_ozone_transf_logit.log  >  logs/transformations_test_ozone_transf_logit.log.diff
+tail -10  logs/transformations_test_ozone_transf_logit.log.diff 
+timeout 480 python  tests/func/test_version.py  >  logs/func_test_version.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_version.log logs/func_test_version.log  >  logs/func_test_version.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_fisher.log logs/transformations_test_ozone_transf_fisher.log  >  logs/transformations_test_ozone_transf_fisher.log.diff
+tail -10  logs/func_test_version.log.diff 
+timeout 480 python  tests/func/test_ozone_with_logging.py  >  logs/func_test_ozone_with_logging.log  2>&1
+tail -10  logs/transformations_test_ozone_transf_fisher.log.diff 
+timeout 480 python  tests/func/test_ozone_horizon_one.py  >  logs/func_test_ozone_horizon_one.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_quantization.log logs/transformations_test_ozone_transf_quantization.log  >  logs/transformations_test_ozone_transf_quantization.log.diff
+tail -10  logs/transformations_test_ozone_transf_quantization.log.diff 
+timeout 480 python  tests/func/test_ozone_bench_mode.py  >  logs/func_test_ozone_bench_mode.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_difference.log logs/transformations_test_ozone_transf_difference.log  >  logs/transformations_test_ozone_transf_difference.log.diff
+tail -10  logs/transformations_test_ozone_transf_difference.log.diff 
+timeout 480 python  tests/func/test_ozone.py  >  logs/func_test_ozone.log  2>&1
+make: [tests/Makefile:1225: model_control/test_ozone_all_models_enabled.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/model_control/test_ozone_all_models_enabled.log logs/model_control_test_ozone_all_models_enabled.log  >  logs/model_control_test_ozone_all_models_enabled.log.diff
+tail -10  logs/model_control_test_ozone_all_models_enabled.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 139 6
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 139 6
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 133
+EXEC_THIS=1 cp  logs/model_control_test_ozone_all_models_enabled.log tests/references/model_control/test_ozone_all_models_enabled.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/func/test_cycles_full.py  >  logs/func_test_cycles_full.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_ozone_bench_mode.log logs/func_test_ozone_bench_mode.log  >  logs/func_test_ozone_bench_mode.log.diff
+tail -10  logs/func_test_ozone_bench_mode.log.diff 
+timeout 480 python  tests/func/test_cycle.py  >  logs/func_test_cycle.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_cumsum.log logs/transformations_test_ozone_transf_cumsum.log  >  logs/transformations_test_ozone_transf_cumsum.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_anscombe.log logs/transformations_test_ozone_transf_anscombe.log  >  logs/transformations_test_ozone_transf_anscombe.log.diff
+tail -10  logs/transformations_test_ozone_transf_cumsum.log.diff 
+timeout 480 python  tests/func/test_const_signal.py  >  logs/func_test_const_signal.log  2>&1
+tail -10  logs/transformations_test_ozone_transf_anscombe.log.diff 
+timeout 480 python  tests/func/test_ar.py  >  logs/func_test_ar.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/transformations/test_ozone_transf_boxcox.log logs/transformations_test_ozone_transf_boxcox.log  >  logs/transformations_test_ozone_transf_boxcox.log.diff
+tail -10  logs/transformations_test_ozone_transf_boxcox.log.diff 
+timeout 480 python  tests/func/test_air_passengers.py  >  logs/func_test_air_passengers.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_ozone_horizon_one.log logs/func_test_ozone_horizon_one.log  >  logs/func_test_ozone_horizon_one.log.diff
+tail -10  logs/func_test_ozone_horizon_one.log.diff 
+timeout 480 python  tests/real-life/test_sof_example2.py  >  logs/real-life_test_sof_example2.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_ozone_with_logging.log logs/func_test_ozone_with_logging.log  >  logs/func_test_ozone_with_logging.log.diff
+tail -10  logs/func_test_ozone_with_logging.log.diff 
+timeout 480 python  tests/real-life/test_sof_example.py  >  logs/real-life_test_sof_example.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_cycle.log logs/func_test_cycle.log  >  logs/func_test_cycle.log.diff
+tail -10  logs/func_test_cycle.log.diff 
+timeout 480 python  tests/time_res/test_ozone_Weekly.py  >  logs/time_res_test_ozone_Weekly.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_const_signal.log logs/func_test_const_signal.log  >  logs/func_test_const_signal.log.diff
+tail -10  logs/func_test_const_signal.log.diff 
+timeout 480 python  tests/time_res/test_ozone_Secondly.py  >  logs/time_res_test_ozone_Secondly.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_ozone.log logs/func_test_ozone.log  >  logs/func_test_ozone.log.diff
+tail -10  logs/func_test_ozone.log.diff 
+timeout 480 python  tests/time_res/test_ozone_Minutely.py  >  logs/time_res_test_ozone_Minutely.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_ar.log logs/func_test_ar.log  >  logs/func_test_ar.log.diff
+tail -10  logs/func_test_ar.log.diff 
+timeout 480 python  tests/time_res/test_ozone_Hourly.py  >  logs/time_res_test_ozone_Hourly.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/time_res/test_ozone_Secondly.log logs/time_res_test_ozone_Secondly.log  >  logs/time_res_test_ozone_Secondly.log.diff
+tail -10  logs/time_res_test_ozone_Secondly.log.diff 
+timeout 480 python  tests/time_res/test_ozone_Daily.py  >  logs/time_res_test_ozone_Daily.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/func/test_air_passengers.log logs/func_test_air_passengers.log  >  logs/func_test_air_passengers.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/time_res/test_ozone_Weekly.log logs/time_res_test_ozone_Weekly.log  >  logs/time_res_test_ozone_Weekly.log.diff
+tail -10  logs/func_test_air_passengers.log.diff 
+timeout 480 python  tests/xgb/test_ozone_xgbx_exogenous.py  >  logs/xgb_test_ozone_xgbx_exogenous.log  2>&1
+tail -10  logs/time_res_test_ozone_Weekly.log.diff 
+FIRST_DIFFERENCE_ORIG 1  None         _Ozone             T+S+R  ...  0.2354       0.2482   0.2319
+
+FIRST_DIFFERENCE_NEW 1  None         _Ozone             T+S+R  ...  0.2270       0.2482   0.2319
+
+LAST_DIFFERENCE_ORIG 4  None         _Ozone             T+S+R  ...  0.2340       0.2764   0.2582
+
+LAST_DIFFERENCE_NEW 4  None   CumSum_Ozone             T+S+R  ...  0.2384       0.2778   0.2132
+
+EXEC_THIS=1 cp  logs/time_res_test_ozone_Weekly.log tests/references/time_res/test_ozone_Weekly.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/xgb/test_ozone_xgb_only.py  >  logs/xgb_test_ozone_xgb_only.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/time_res/test_ozone_Minutely.log logs/time_res_test_ozone_Minutely.log  >  logs/time_res_test_ozone_Minutely.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/real-life/test_sof_example.log logs/real-life_test_sof_example.log  >  logs/real-life_test_sof_example.log.diff
+tail -10  logs/time_res_test_ozone_Minutely.log.diff 
+timeout 480 python  tests/xgb/test_ozone_xgb_exogenous.py  >  logs/xgb_test_ozone_xgb_exogenous.log  2>&1
+tail -10  logs/real-life_test_sof_example.log.diff 
+timeout 480 python  tests/xgb/test_ozone_xgb.py  >  logs/xgb_test_ozone_xgb.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/time_res/test_ozone_Hourly.log logs/time_res_test_ozone_Hourly.log  >  logs/time_res_test_ozone_Hourly.log.diff
+tail -10  logs/time_res_test_ozone_Hourly.log.diff 
+timeout 480 python  tests/xgb/test_air_passengers_xgb_only_with_custom_options.py  >  logs/xgb_test_air_passengers_xgb_only_with_custom_options.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/time_res/test_ozone_Daily.log logs/time_res_test_ozone_Daily.log  >  logs/time_res_test_ozone_Daily.log.diff
+tail -10  logs/time_res_test_ozone_Daily.log.diff 
+timeout 480 python  tests/xgb/test_air_passengers_xgb_only.py  >  logs/xgb_test_air_passengers_xgb_only.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/xgb/test_ozone_xgb_only.log logs/xgb_test_ozone_xgb_only.log  >  logs/xgb_test_ozone_xgb_only.log.diff
+tail -10  logs/xgb_test_ozone_xgb_only.log.diff 
+timeout 480 python  tests/xgb/test_air_passengers_xgb.py  >  logs/xgb_test_air_passengers_xgb.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/xgb/test_ozone_xgb.log logs/xgb_test_ozone_xgb.log  >  logs/xgb_test_ozone_xgb.log.diff
+tail -10  logs/xgb_test_ozone_xgb.log.diff 
+timeout 480 python  tests/sampling/test_ozone_with_sampling_3.py  >  logs/sampling_test_ozone_with_sampling_3.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/xgb/test_air_passengers_xgb_only_with_custom_options.log logs/xgb_test_air_passengers_xgb_only_with_custom_options.log  >  logs/xgb_test_air_passengers_xgb_only_with_custom_options.log.diff
+tail -10  logs/xgb_test_air_passengers_xgb_only_with_custom_options.log.diff 
+timeout 480 python  tests/sampling/test_ozone_with_sampling_2.py  >  logs/sampling_test_ozone_with_sampling_2.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/xgb/test_ozone_xgbx_exogenous.log logs/xgb_test_ozone_xgbx_exogenous.log  >  logs/xgb_test_ozone_xgbx_exogenous.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/xgb/test_ozone_xgb_exogenous.log logs/xgb_test_ozone_xgb_exogenous.log  >  logs/xgb_test_ozone_xgb_exogenous.log.diff
+tail -10  logs/xgb_test_ozone_xgbx_exogenous.log.diff 
+timeout 480 python  tests/sampling/test_ozone_with_sampling.py  >  logs/sampling_test_ozone_with_sampling.log  2>&1
+tail -10  logs/xgb_test_ozone_xgb_exogenous.log.diff 
+timeout 480 python  tests/sampling/test_ozone_with_no_sampling.py  >  logs/sampling_test_ozone_with_no_sampling.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/xgb/test_air_passengers_xgb_only.log logs/xgb_test_air_passengers_xgb_only.log  >  logs/xgb_test_air_passengers_xgb_only.log.diff
+tail -10  logs/xgb_test_air_passengers_xgb_only.log.diff 
+timeout 480 python  tests/HourOfWeek/test_Business_Hourly_WeekEnd.py  >  logs/HourOfWeek_test_Business_Hourly_WeekEnd.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/sampling/test_ozone_with_sampling_3.log logs/sampling_test_ozone_with_sampling_3.log  >  logs/sampling_test_ozone_with_sampling_3.log.diff
+tail -10  logs/sampling_test_ozone_with_sampling_3.log.diff 
+timeout 480 python  tests/HourOfWeek/test_Business_Hourly_MondayMorning.py  >  logs/HourOfWeek_test_Business_Hourly_MondayMorning.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/sampling/test_ozone_with_sampling_2.log logs/sampling_test_ozone_with_sampling_2.log  >  logs/sampling_test_ozone_with_sampling_2.log.diff
+tail -10  logs/sampling_test_ozone_with_sampling_2.log.diff 
+timeout 480 python  tests/HourOfWeek/test_Business_Hourly_LunchTime.py  >  logs/HourOfWeek_test_Business_Hourly_LunchTime.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/sampling/test_ozone_with_sampling.log logs/sampling_test_ozone_with_sampling.log  >  logs/sampling_test_ozone_with_sampling.log.diff
+tail -10  logs/sampling_test_ozone_with_sampling.log.diff 
+timeout 480 python  tests/WeekOfMonth/test_Business_WeekOfMonth.py  >  logs/WeekOfMonth_test_Business_WeekOfMonth.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/sampling/test_ozone_with_no_sampling.log logs/sampling_test_ozone_with_no_sampling.log  >  logs/sampling_test_ozone_with_no_sampling.log.diff
+tail -10  logs/sampling_test_ozone_with_no_sampling.log.diff 
+timeout 480 python  tests/WeekOfMonth/test_Business_DayOfNthWeek.py  >  logs/WeekOfMonth_test_Business_DayOfNthWeek.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/xgb/test_air_passengers_xgb.log logs/xgb_test_air_passengers_xgb.log  >  logs/xgb_test_air_passengers_xgb.log.diff
+tail -10  logs/xgb_test_air_passengers_xgb.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_generic.py  >  logs/missing_data_test_missing_data_ozone_generic.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_generic.log logs/missing_data_test_missing_data_ozone_generic.log  >  logs/missing_data_test_missing_data_ozone_generic.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_generic.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_None_PreviousValue.py  >  logs/missing_data_test_missing_data_ozone_None_PreviousValue.log  2>&1
+make: [tests/Makefile:795: func/test_cycles_full.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/func/test_cycles_full.log logs/func_test_cycles_full.log  >  logs/func_test_cycles_full.log.diff
+tail -10  logs/func_test_cycles_full.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 718 249
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 718 249
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 469
+EXEC_THIS=1 cp  logs/func_test_cycles_full.log tests/references/func/test_cycles_full.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/missing_data/test_missing_data_ozone_None_None.py  >  logs/missing_data_test_missing_data_ozone_None_None.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_None_PreviousValue.log logs/missing_data_test_missing_data_ozone_None_PreviousValue.log  >  logs/missing_data_test_missing_data_ozone_None_PreviousValue.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_None_PreviousValue.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_None_Median.py  >  logs/missing_data_test_missing_data_ozone_None_Median.log  2>&1
+make: [tests/Makefile:1915: real-life/test_sof_example2.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/real-life/test_sof_example2.log logs/real-life_test_sof_example2.log  >  logs/real-life_test_sof_example2.log.diff
+tail -10  logs/real-life_test_sof_example2.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 274 6
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 274 6
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 268
+EXEC_THIS=1 cp  logs/real-life_test_sof_example2.log tests/references/real-life/test_sof_example2.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/missing_data/test_missing_data_ozone_None_Mean.py  >  logs/missing_data_test_missing_data_ozone_None_Mean.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_None_None.log logs/missing_data_test_missing_data_ozone_None_None.log  >  logs/missing_data_test_missing_data_ozone_None_None.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_None_None.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_None_Interpolate.py  >  logs/missing_data_test_missing_data_ozone_None_Interpolate.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_None_Median.log logs/missing_data_test_missing_data_ozone_None_Median.log  >  logs/missing_data_test_missing_data_ozone_None_Median.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_None_Median.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_None_DiscardRow.py  >  logs/missing_data_test_missing_data_ozone_None_DiscardRow.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/HourOfWeek/test_Business_Hourly_LunchTime.log logs/HourOfWeek_test_Business_Hourly_LunchTime.log  >  logs/HourOfWeek_test_Business_Hourly_LunchTime.log.diff
+tail -10  logs/HourOfWeek_test_Business_Hourly_LunchTime.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_None_Constant.py  >  logs/missing_data_test_missing_data_ozone_None_Constant.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/WeekOfMonth/test_Business_WeekOfMonth.log logs/WeekOfMonth_test_Business_WeekOfMonth.log  >  logs/WeekOfMonth_test_Business_WeekOfMonth.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/HourOfWeek/test_Business_Hourly_MondayMorning.log logs/HourOfWeek_test_Business_Hourly_MondayMorning.log  >  logs/HourOfWeek_test_Business_Hourly_MondayMorning.log.diff
+tail -10  logs/WeekOfMonth_test_Business_WeekOfMonth.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_Interpolate_PreviousValue.py  >  logs/missing_data_test_missing_data_ozone_Interpolate_PreviousValue.log  2>&1
+tail -10  logs/HourOfWeek_test_Business_Hourly_MondayMorning.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_Interpolate_None.py  >  logs/missing_data_test_missing_data_ozone_Interpolate_None.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/HourOfWeek/test_Business_Hourly_WeekEnd.log logs/HourOfWeek_test_Business_Hourly_WeekEnd.log  >  logs/HourOfWeek_test_Business_Hourly_WeekEnd.log.diff
+tail -10  logs/HourOfWeek_test_Business_Hourly_WeekEnd.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_Interpolate_Median.py  >  logs/missing_data_test_missing_data_ozone_Interpolate_Median.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_None_Interpolate.log logs/missing_data_test_missing_data_ozone_None_Interpolate.log  >  logs/missing_data_test_missing_data_ozone_None_Interpolate.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_None_Interpolate.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_Interpolate_Mean.py  >  logs/missing_data_test_missing_data_ozone_Interpolate_Mean.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_None_DiscardRow.log logs/missing_data_test_missing_data_ozone_None_DiscardRow.log  >  logs/missing_data_test_missing_data_ozone_None_DiscardRow.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_None_Mean.log logs/missing_data_test_missing_data_ozone_None_Mean.log  >  logs/missing_data_test_missing_data_ozone_None_Mean.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_None_DiscardRow.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_Interpolate_Interpolate.py  >  logs/missing_data_test_missing_data_ozone_Interpolate_Interpolate.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/WeekOfMonth/test_Business_DayOfNthWeek.log logs/WeekOfMonth_test_Business_DayOfNthWeek.log  >  logs/WeekOfMonth_test_Business_DayOfNthWeek.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_None_Mean.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_Interpolate_DiscardRow.py  >  logs/missing_data_test_missing_data_ozone_Interpolate_DiscardRow.log  2>&1
+tail -10  logs/WeekOfMonth_test_Business_DayOfNthWeek.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_Interpolate_Constant.py  >  logs/missing_data_test_missing_data_ozone_Interpolate_Constant.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_None_Constant.log logs/missing_data_test_missing_data_ozone_None_Constant.log  >  logs/missing_data_test_missing_data_ozone_None_Constant.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_None_Constant.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_DiscardRow_PreviousValue.py  >  logs/missing_data_test_missing_data_ozone_DiscardRow_PreviousValue.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_Interpolate_DiscardRow.log logs/missing_data_test_missing_data_ozone_Interpolate_DiscardRow.log  >  logs/missing_data_test_missing_data_ozone_Interpolate_DiscardRow.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_Interpolate_DiscardRow.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_DiscardRow_None.py  >  logs/missing_data_test_missing_data_ozone_DiscardRow_None.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_DiscardRow_PreviousValue.log logs/missing_data_test_missing_data_ozone_DiscardRow_PreviousValue.log  >  logs/missing_data_test_missing_data_ozone_DiscardRow_PreviousValue.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_Interpolate_None.log logs/missing_data_test_missing_data_ozone_Interpolate_None.log  >  logs/missing_data_test_missing_data_ozone_Interpolate_None.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_DiscardRow_PreviousValue.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_DiscardRow_Median.py  >  logs/missing_data_test_missing_data_ozone_DiscardRow_Median.log  2>&1
+tail -10  logs/missing_data_test_missing_data_ozone_Interpolate_None.log.diff 
+FIRST_DIFFERENCE_ORIG 2  None         _Ozone             T+S+R  ...  0.1747       0.1499   0.2387
+
+FIRST_DIFFERENCE_NEW 2  None         _Ozone             T+S+R  ...  0.1735       0.1492   0.1871
+
+LAST_DIFFERENCE_ORIG 3  None         _Ozone             T+S+R  ...  0.1717       0.1518   0.1843
+
+LAST_DIFFERENCE_NEW 3  None         _Ozone             T+S+R  ...  0.1747       0.1499   0.2387
+
+EXEC_THIS=1 cp  logs/missing_data_test_missing_data_ozone_Interpolate_None.log tests/references/missing_data/test_missing_data_ozone_Interpolate_None.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/missing_data/test_missing_data_ozone_DiscardRow_Mean.py  >  logs/missing_data_test_missing_data_ozone_DiscardRow_Mean.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_Interpolate_Constant.log logs/missing_data_test_missing_data_ozone_Interpolate_Constant.log  >  logs/missing_data_test_missing_data_ozone_Interpolate_Constant.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_Interpolate_Mean.log logs/missing_data_test_missing_data_ozone_Interpolate_Mean.log  >  logs/missing_data_test_missing_data_ozone_Interpolate_Mean.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_Interpolate_Constant.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_DiscardRow_Interpolate.py  >  logs/missing_data_test_missing_data_ozone_DiscardRow_Interpolate.log  2>&1
+tail -10  logs/missing_data_test_missing_data_ozone_Interpolate_Mean.log.diff 
+FIRST_DIFFERENCE_ORIG 2  None         _Ozone             T+S+R  ...  0.1877       0.2186   0.2538
+
+FIRST_DIFFERENCE_NEW 2  None         _Ozone             T+S+R  ...  0.1871       0.2187   0.2538
+
+LAST_DIFFERENCE_ORIG 2  None         _Ozone             T+S+R  ...  0.1877       0.2186   0.2538
+
+LAST_DIFFERENCE_NEW 2  None         _Ozone             T+S+R  ...  0.1871       0.2187   0.2538
+
+EXEC_THIS=1 cp  logs/missing_data_test_missing_data_ozone_Interpolate_Mean.log tests/references/missing_data/test_missing_data_ozone_Interpolate_Mean.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/missing_data/test_missing_data_ozone_DiscardRow_DiscardRow.py  >  logs/missing_data_test_missing_data_ozone_DiscardRow_DiscardRow.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_DiscardRow_None.log logs/missing_data_test_missing_data_ozone_DiscardRow_None.log  >  logs/missing_data_test_missing_data_ozone_DiscardRow_None.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_DiscardRow_None.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_ozone_DiscardRow_Constant.py  >  logs/missing_data_test_missing_data_ozone_DiscardRow_Constant.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_DiscardRow_Mean.log logs/missing_data_test_missing_data_ozone_DiscardRow_Mean.log  >  logs/missing_data_test_missing_data_ozone_DiscardRow_Mean.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_DiscardRow_Mean.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_generic.py  >  logs/missing_data_test_missing_data_air_passengers_generic.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_generic.log logs/missing_data_test_missing_data_air_passengers_generic.log  >  logs/missing_data_test_missing_data_air_passengers_generic.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_generic.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_None_PreviousValue.py  >  logs/missing_data_test_missing_data_air_passengers_None_PreviousValue.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_DiscardRow_Median.log logs/missing_data_test_missing_data_ozone_DiscardRow_Median.log  >  logs/missing_data_test_missing_data_ozone_DiscardRow_Median.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_DiscardRow_Median.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_None_None.py  >  logs/missing_data_test_missing_data_air_passengers_None_None.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_DiscardRow_DiscardRow.log logs/missing_data_test_missing_data_ozone_DiscardRow_DiscardRow.log  >  logs/missing_data_test_missing_data_ozone_DiscardRow_DiscardRow.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_DiscardRow_DiscardRow.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_None_Median.py  >  logs/missing_data_test_missing_data_air_passengers_None_Median.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_DiscardRow_Interpolate.log logs/missing_data_test_missing_data_ozone_DiscardRow_Interpolate.log  >  logs/missing_data_test_missing_data_ozone_DiscardRow_Interpolate.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_DiscardRow_Interpolate.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_None_Mean.py  >  logs/missing_data_test_missing_data_air_passengers_None_Mean.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_None_PreviousValue.log logs/missing_data_test_missing_data_air_passengers_None_PreviousValue.log  >  logs/missing_data_test_missing_data_air_passengers_None_PreviousValue.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_DiscardRow_Constant.log logs/missing_data_test_missing_data_ozone_DiscardRow_Constant.log  >  logs/missing_data_test_missing_data_ozone_DiscardRow_Constant.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_None_PreviousValue.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_None_Interpolate.py  >  logs/missing_data_test_missing_data_air_passengers_None_Interpolate.log  2>&1
+tail -10  logs/missing_data_test_missing_data_ozone_DiscardRow_Constant.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_None_DiscardRow.py  >  logs/missing_data_test_missing_data_air_passengers_None_DiscardRow.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_None_None.log logs/missing_data_test_missing_data_air_passengers_None_None.log  >  logs/missing_data_test_missing_data_air_passengers_None_None.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_None_None.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_None_Constant.py  >  logs/missing_data_test_missing_data_air_passengers_None_Constant.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_None_Median.log logs/missing_data_test_missing_data_air_passengers_None_Median.log  >  logs/missing_data_test_missing_data_air_passengers_None_Median.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_None_Median.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_Interpolate_PreviousValue.py  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_PreviousValue.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_None_Mean.log logs/missing_data_test_missing_data_air_passengers_None_Mean.log  >  logs/missing_data_test_missing_data_air_passengers_None_Mean.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_None_Mean.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_Interpolate_None.py  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_None.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_None_Interpolate.log logs/missing_data_test_missing_data_air_passengers_None_Interpolate.log  >  logs/missing_data_test_missing_data_air_passengers_None_Interpolate.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_None_DiscardRow.log logs/missing_data_test_missing_data_air_passengers_None_DiscardRow.log  >  logs/missing_data_test_missing_data_air_passengers_None_DiscardRow.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_None_Interpolate.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_Interpolate_Median.py  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_Median.log  2>&1
+tail -10  logs/missing_data_test_missing_data_air_passengers_None_DiscardRow.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_Interpolate_Mean.py  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_Mean.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_None_Constant.log logs/missing_data_test_missing_data_air_passengers_None_Constant.log  >  logs/missing_data_test_missing_data_air_passengers_None_Constant.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_None_Constant.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_Interpolate_Interpolate.py  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_Interpolate.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_Interpolate_PreviousValue.log logs/missing_data_test_missing_data_air_passengers_Interpolate_PreviousValue.log  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_PreviousValue.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_Interpolate_PreviousValue.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_Interpolate_DiscardRow.py  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_DiscardRow.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_Interpolate_None.log logs/missing_data_test_missing_data_air_passengers_Interpolate_None.log  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_None.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_Interpolate_None.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_Interpolate_Constant.py  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_Constant.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_Interpolate_Mean.log logs/missing_data_test_missing_data_air_passengers_Interpolate_Mean.log  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_Mean.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_Interpolate_Median.log logs/missing_data_test_missing_data_air_passengers_Interpolate_Median.log  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_Median.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_Interpolate_Mean.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_DiscardRow_PreviousValue.py  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_PreviousValue.log  2>&1
+tail -10  logs/missing_data_test_missing_data_air_passengers_Interpolate_Median.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_DiscardRow_None.py  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_None.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_Interpolate_Interpolate.log logs/missing_data_test_missing_data_air_passengers_Interpolate_Interpolate.log  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_Interpolate.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_Interpolate_Interpolate.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_DiscardRow_Median.py  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Median.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_Interpolate_DiscardRow.log logs/missing_data_test_missing_data_air_passengers_Interpolate_DiscardRow.log  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_DiscardRow.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_Interpolate_DiscardRow.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_DiscardRow_Mean.py  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Mean.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_Interpolate_Constant.log logs/missing_data_test_missing_data_air_passengers_Interpolate_Constant.log  >  logs/missing_data_test_missing_data_air_passengers_Interpolate_Constant.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_DiscardRow_None.log logs/missing_data_test_missing_data_air_passengers_DiscardRow_None.log  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_None.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_Interpolate_Constant.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_DiscardRow_Interpolate.py  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Interpolate.log  2>&1
+tail -10  logs/missing_data_test_missing_data_air_passengers_DiscardRow_None.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_DiscardRow_DiscardRow.py  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_DiscardRow.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_DiscardRow_PreviousValue.log logs/missing_data_test_missing_data_air_passengers_DiscardRow_PreviousValue.log  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_PreviousValue.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_DiscardRow_PreviousValue.log.diff 
+timeout 480 python  tests/missing_data/test_missing_data_air_passengers_DiscardRow_Constant.py  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Constant.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_DiscardRow_Median.log logs/missing_data_test_missing_data_air_passengers_DiscardRow_Median.log  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Median.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_DiscardRow_Mean.log logs/missing_data_test_missing_data_air_passengers_DiscardRow_Mean.log  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Mean.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Median.log.diff 
+timeout 480 python  tests/missing_data/gen_ozone_tests.py  >  logs/missing_data_gen_ozone_tests.log  2>&1
+tail -10  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Mean.log.diff 
+timeout 480 python  tests/missing_data/gen_air_passengers_tests.py  >  logs/missing_data_gen_air_passengers_tests.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/gen_ozone_tests.log logs/missing_data_gen_ozone_tests.log  >  logs/missing_data_gen_ozone_tests.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/gen_air_passengers_tests.log logs/missing_data_gen_air_passengers_tests.log  >  logs/missing_data_gen_air_passengers_tests.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_DiscardRow_Constant.log logs/missing_data_test_missing_data_air_passengers_DiscardRow_Constant.log  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Constant.log.diff
+tail -10  logs/missing_data_gen_ozone_tests.log.diff 
+timeout 480 python  tests/lgbm/test_ozone_lgbx_exogenous.py  >  logs/lgbm_test_ozone_lgbx_exogenous.log  2>&1
+tail -10  logs/missing_data_gen_air_passengers_tests.log.diff 
+timeout 480 python  tests/lgbm/test_ozone_lgb_only.py  >  logs/lgbm_test_ozone_lgb_only.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_DiscardRow_DiscardRow.log logs/missing_data_test_missing_data_air_passengers_DiscardRow_DiscardRow.log  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_DiscardRow.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Constant.log.diff 
+timeout 480 python  tests/lgbm/test_ozone_lgb_exogenous.py  >  logs/lgbm_test_ozone_lgb_exogenous.log  2>&1
+tail -10  logs/missing_data_test_missing_data_air_passengers_DiscardRow_DiscardRow.log.diff 
+timeout 480 python  tests/lgbm/test_ozone_lgb.py  >  logs/lgbm_test_ozone_lgb.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_air_passengers_DiscardRow_Interpolate.log logs/missing_data_test_missing_data_air_passengers_DiscardRow_Interpolate.log  >  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Interpolate.log.diff
+tail -10  logs/missing_data_test_missing_data_air_passengers_DiscardRow_Interpolate.log.diff 
+timeout 480 python  tests/lgbm/test_air_passengers_lgb_only_with_custom_options.py  >  logs/lgbm_test_air_passengers_lgb_only_with_custom_options.log  2>&1
+make: [tests/Makefile:1175: missing_data/test_missing_data_ozone_Interpolate_PreviousValue.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_Interpolate_PreviousValue.log logs/missing_data_test_missing_data_ozone_Interpolate_PreviousValue.log  >  logs/missing_data_test_missing_data_ozone_Interpolate_PreviousValue.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_Interpolate_PreviousValue.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 141 6
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 141 6
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 135
+EXEC_THIS=1 cp  logs/missing_data_test_missing_data_ozone_Interpolate_PreviousValue.log tests/references/missing_data/test_missing_data_ozone_Interpolate_PreviousValue.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/lgbm/test_air_passengers_lgb_only.py  >  logs/lgbm_test_air_passengers_lgb_only.log  2>&1
+make: [tests/Makefile:1165: missing_data/test_missing_data_ozone_Interpolate_Median.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_Interpolate_Median.log logs/missing_data_test_missing_data_ozone_Interpolate_Median.log  >  logs/missing_data_test_missing_data_ozone_Interpolate_Median.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_Interpolate_Median.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 131 6
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 131 6
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 125
+EXEC_THIS=1 cp  logs/missing_data_test_missing_data_ozone_Interpolate_Median.log tests/references/missing_data/test_missing_data_ozone_Interpolate_Median.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/lgbm/test_air_passengers_lgb.py  >  logs/lgbm_test_air_passengers_lgb.log  2>&1
+make: [tests/Makefile:1155: missing_data/test_missing_data_ozone_Interpolate_Interpolate.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/missing_data/test_missing_data_ozone_Interpolate_Interpolate.log logs/missing_data_test_missing_data_ozone_Interpolate_Interpolate.log  >  logs/missing_data_test_missing_data_ozone_Interpolate_Interpolate.log.diff
+tail -10  logs/missing_data_test_missing_data_ozone_Interpolate_Interpolate.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 131 6
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 131 6
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 125
+EXEC_THIS=1 cp  logs/missing_data_test_missing_data_ozone_Interpolate_Interpolate.log tests/references/missing_data/test_missing_data_ozone_Interpolate_Interpolate.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/perf_MedAE/test_ozone_MedAE.py  >  logs/perf_MedAE_test_ozone_MedAE.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/lgbm/test_ozone_lgbx_exogenous.log logs/lgbm_test_ozone_lgbx_exogenous.log  >  logs/lgbm_test_ozone_lgbx_exogenous.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/lgbm/test_ozone_lgb.log logs/lgbm_test_ozone_lgb.log  >  logs/lgbm_test_ozone_lgb.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/lgbm/test_ozone_lgb_exogenous.log logs/lgbm_test_ozone_lgb_exogenous.log  >  logs/lgbm_test_ozone_lgb_exogenous.log.diff
+tail -10  logs/lgbm_test_ozone_lgb.log.diff 
+timeout 480 python  tests/perf_MedAE/test_air_passengers_MedAE.py  >  logs/perf_MedAE_test_air_passengers_MedAE.log  2>&1
+tail -10  logs/lgbm_test_ozone_lgbx_exogenous.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:EXOGENOUS_DATA ['Exog2', 'Exog3', 'Exog4']
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:DECOMPOSITION_TYPE 'T+S+R'
+
+LAST_DIFFERENCE_ORIG {"Time":{"192":"1971-01-01T00:00:00.000Z","193":"1971-02-01T00:00:00.000Z","194":"1971-03-01T00:00:00.000Z","195":"1971-04-01T00:00:00.000Z","196":"1971-05-01T00:00:00.000Z","197":"1971-06-01T00:00:00.000Z","198":"1971-07-01T00:00:00.000Z","199":"1971-08-01T00:00:00.000Z","200":"1971-09-01T00:00:00.000Z","201":"1971-10-01T00:00:00.000Z","202":"1971-11-01T00:00:00.000Z","203":"1971-12-01T00:00:00.000Z","204":"1972-01-01T00:00:00.000Z","205":"1972-02-01T00:00:00.000Z","206":"1972-03-01T00:00:00.000Z","207":"1972-04-01T00:00:00.000Z","208":"1972-05-01T00:00:00.000Z","209":"1972-06-01T00:00:00.000Z","210":"1972-07-01T00:00:00.000Z","211":"1972-08-01T00:00:00.000Z","212":"1972-09-01T00:00:00.000Z","213":"1972-10-01T00:00:00.000Z","214":"1972-11-01T00:00:00.000Z","215":"1972-12-01T00:00:00.000Z"},"Ozone":{"192":1.8,"193":2.0,"194":2.2,"195":3.0,"196":2.4,"197":3.5,"198":3.5,"199":3.3,"200":2.7,"201":2.5,"202":1.6,"203":1.2,"204":null,"205":null,"206":null,"207":null,"208":null,"209":null,"210":null,"211":null,"212":null,"213":null,"214":null,"215":null},"Ozone_Forecast":{"192":2.0942270525,"193":2.326703045,"194":2.8563621794,"195":3.6165329388,"196":3.2088988861,"197":3.5822377958,"198":4.2875259824,"199":4.1022667392,"200":3.515765374,"201":3.5928223447,"202":2.0959904783,"203":2.0942270525,"204":2.0942270525,"205":2.2601124536,"206":2.7883763261,"207":3.5169235084,"208":3.7253192623,"209":4.5037696443,"210":4.9826513957,"211":4.8315123038,"212":4.5804256919,"213":4.3854860386,"214":3.1255424367,"215":2.0638733435}}
+
+LAST_DIFFERENCE_NEW 
+
+EXEC_THIS=1 cp  logs/lgbm_test_ozone_lgbx_exogenous.log tests/references/lgbm/test_ozone_lgbx_exogenous.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/perf_LnQ/test_ozone_LnQ.py  >  logs/perf_LnQ_test_ozone_LnQ.log  2>&1
+tail -10  logs/lgbm_test_ozone_lgb_exogenous.log.diff 
+FIRST_DIFFERENCE_ORIG INFO:pyaf.std:BEST_DECOMPOSITION  '_Ozone_ConstantTrend_residue_zeroCycle[0.0]_residue_LGB(51)' [ConstantTrend + NoCycle + LGB]
+
+FIRST_DIFFERENCE_NEW INFO:pyaf.std:BEST_DECOMPOSITION  '_Ozone_LinearTrend_residue_Seasonal_MonthOfYear_residue_NoAR' [LinearTrend + Seasonal_MonthOfYear + NoAR]
+
+LAST_DIFFERENCE_ORIG {"Time":{"192":"1971-01-01T00:00:00.000Z","193":"1971-02-01T00:00:00.000Z","194":"1971-03-01T00:00:00.000Z","195":"1971-04-01T00:00:00.000Z","196":"1971-05-01T00:00:00.000Z","197":"1971-06-01T00:00:00.000Z","198":"1971-07-01T00:00:00.000Z","199":"1971-08-01T00:00:00.000Z","200":"1971-09-01T00:00:00.000Z","201":"1971-10-01T00:00:00.000Z","202":"1971-11-01T00:00:00.000Z","203":"1971-12-01T00:00:00.000Z","204":"1972-01-01T00:00:00.000Z","205":"1972-02-01T00:00:00.000Z","206":"1972-03-01T00:00:00.000Z","207":"1972-04-01T00:00:00.000Z","208":"1972-05-01T00:00:00.000Z","209":"1972-06-01T00:00:00.000Z","210":"1972-07-01T00:00:00.000Z","211":"1972-08-01T00:00:00.000Z","212":"1972-09-01T00:00:00.000Z","213":"1972-10-01T00:00:00.000Z","214":"1972-11-01T00:00:00.000Z","215":"1972-12-01T00:00:00.000Z"},"Ozone":{"192":1.8,"193":2.0,"194":2.2,"195":3.0,"196":2.4,"197":3.5,"198":3.5,"199":3.3,"200":2.7,"201":2.5,"202":1.6,"203":1.2,"204":null,"205":null,"206":null,"207":null,"208":null,"209":null,"210":null,"211":null,"212":null,"213":null,"214":null,"215":null},"Ozone_Forecast":{"192":2.045288241,"193":2.4531137574,"194":2.7233876786,"195":3.1850822982,"196":3.0100039198,"197":3.5632947587,"198":4.2352131796,"199":4.0646231389,"200":3.1715049323,"201":2.5464238829,"202":2.5078090077,"203":2.2487211792,"204":2.0449186936,"205":2.4212694654,"206":2.789915559,"207":2.8581602511,"208":3.3124875559,"209":3.3384415788,"210":3.5283711661,"211":3.6296738922,"212":3.9195386712,"213":3.8319462537,"214":3.1095718494,"215":2.3594508861}}
+
+LAST_DIFFERENCE_NEW {"Time":{"192":"1971-01-01T00:00:00.000Z","193":"1971-02-01T00:00:00.000Z","194":"1971-03-01T00:00:00.000Z","195":"1971-04-01T00:00:00.000Z","196":"1971-05-01T00:00:00.000Z","197":"1971-06-01T00:00:00.000Z","198":"1971-07-01T00:00:00.000Z","199":"1971-08-01T00:00:00.000Z","200":"1971-09-01T00:00:00.000Z","201":"1971-10-01T00:00:00.000Z","202":"1971-11-01T00:00:00.000Z","203":"1971-12-01T00:00:00.000Z","204":"1972-01-01T00:00:00.000Z","205":"1972-02-01T00:00:00.000Z","206":"1972-03-01T00:00:00.000Z","207":"1972-04-01T00:00:00.000Z","208":"1972-05-01T00:00:00.000Z","209":"1972-06-01T00:00:00.000Z","210":"1972-07-01T00:00:00.000Z","211":"1972-08-01T00:00:00.000Z","212":"1972-09-01T00:00:00.000Z","213":"1972-10-01T00:00:00.000Z","214":"1972-11-01T00:00:00.000Z","215":"1972-12-01T00:00:00.000Z"},"Ozone":{"192":1.8,"193":2.0,"194":2.2,"195":3.0,"196":2.4,"197":3.5,"198":3.5,"199":3.3,"200":2.7,"201":2.5,"202":1.6,"203":1.2,"204":null,"205":null,"206":null,"207":null,"208":null,"209":null,"210":null,"211":null,"212":null,"213":null,"214":null,"215":null},"Ozone_Forecast":{"192":1.0787855545,"193":1.2246844538,"194":1.8134072137,"195":2.4134072137,"196":2.4904577641,"197":3.4134072137,"198":3.9134072137,"199":3.9904577641,"200":3.5904577641,"201":3.4411277814,"202":2.1517350041,"203":1.1402602793,"204":0.9346216593,"205":1.0805205586,"206":1.668848349,"207":2.268848349,"208":2.3458988993,"209":3.268848349,"210":3.768848349,"211":3.8458988993,"212":3.4458988993,"213":3.2965689166,"214":2.0071761394,"215":0.9957014145}}
+
+EXEC_THIS=1 cp  logs/lgbm_test_ozone_lgb_exogenous.log tests/references/lgbm/test_ozone_lgb_exogenous.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/perf_LnQ/test_air_passengers_LnQ.py  >  logs/perf_LnQ_test_air_passengers_LnQ.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/lgbm/test_ozone_lgb_only.log logs/lgbm_test_ozone_lgb_only.log  >  logs/lgbm_test_ozone_lgb_only.log.diff
+tail -10  logs/lgbm_test_ozone_lgb_only.log.diff 
+FIRST_DIFFERENCE_ORIG         "Category": "NoTransf_LinearTrend_Cycle_None_LGB",
+
+FIRST_DIFFERENCE_NEW         "Category": "NoTransf_LinearTrend_Seasonal_MonthOfYear_NoAR",
+
+LAST_DIFFERENCE_ORIG {"Time":{"204":"1972-01-01T00:00:00.000Z","205":"1972-02-01T00:00:00.000Z","206":"1972-03-01T00:00:00.000Z","207":"1972-04-01T00:00:00.000Z","208":"1972-05-01T00:00:00.000Z","209":"1972-06-01T00:00:00.000Z","210":"1972-07-01T00:00:00.000Z","211":"1972-08-01T00:00:00.000Z","212":"1972-09-01T00:00:00.000Z","213":"1972-10-01T00:00:00.000Z","214":"1972-11-01T00:00:00.000Z","215":"1972-12-01T00:00:00.000Z"},"Ozone":{"204":null,"205":null,"206":null,"207":null,"208":null,"209":null,"210":null,"211":null,"212":null,"213":null,"214":null,"215":null},"Ozone_Forecast":{"204":2.0449186936,"205":2.4212694654,"206":2.789915559,"207":2.8581602511,"208":3.3124875559,"209":3.3384415788,"210":3.5283711661,"211":3.6296738922,"212":3.9195386712,"213":3.8319462537,"214":3.1095718494,"215":2.3594508861}}
+
+LAST_DIFFERENCE_NEW {"Time":{"204":"1972-01-01T00:00:00.000Z","205":"1972-02-01T00:00:00.000Z","206":"1972-03-01T00:00:00.000Z","207":"1972-04-01T00:00:00.000Z","208":"1972-05-01T00:00:00.000Z","209":"1972-06-01T00:00:00.000Z","210":"1972-07-01T00:00:00.000Z","211":"1972-08-01T00:00:00.000Z","212":"1972-09-01T00:00:00.000Z","213":"1972-10-01T00:00:00.000Z","214":"1972-11-01T00:00:00.000Z","215":"1972-12-01T00:00:00.000Z"},"Ozone":{"204":null,"205":null,"206":null,"207":null,"208":null,"209":null,"210":null,"211":null,"212":null,"213":null,"214":null,"215":null},"Ozone_Forecast":{"204":0.9346216593,"205":1.0805205586,"206":1.668848349,"207":2.268848349,"208":2.3458988993,"209":3.268848349,"210":3.768848349,"211":3.8458988993,"212":3.4458988993,"213":3.2965689166,"214":2.0071761394,"215":0.9957014145}}
+
+EXEC_THIS=1 cp  logs/lgbm_test_ozone_lgb_only.log tests/references/lgbm/test_ozone_lgb_only.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/multiplicative_seasonal/test_ozone_multiplicative_seasonal_ssslow_mode.py  >  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_ssslow_mode.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/lgbm/test_air_passengers_lgb_only_with_custom_options.log logs/lgbm_test_air_passengers_lgb_only_with_custom_options.log  >  logs/lgbm_test_air_passengers_lgb_only_with_custom_options.log.diff
+tail -10  logs/lgbm_test_air_passengers_lgb_only_with_custom_options.log.diff 
+FIRST_DIFFERENCE_ORIG         "Category": "NoTransf_Lag1Trend_NoCycle_LGB",
+
+FIRST_DIFFERENCE_NEW         "Category": "NoTransf_Lag1Trend_Cycle_5_NoAR",
+
+LAST_DIFFERENCE_ORIG {"time":{"120":1959.0,"121":1959.0833333333,"122":1959.1666666667,"123":1959.25,"124":1959.3333333333,"125":1959.4166666667,"126":1959.5,"127":1959.5833333333,"128":1959.6666666667,"129":1959.75,"130":1959.8333333333,"131":1959.9166666667,"132":1960.0,"133":1960.0833333333,"134":1960.1666666667,"135":1960.25,"136":1960.3333333333,"137":1960.4166666667,"138":1960.5,"139":1960.5833333333,"140":1960.6666666667,"141":1960.75,"142":1960.8333333333,"143":1960.9166666667},"AirPassengers":{"120":360.0,"121":342.0,"122":406.0,"123":396.0,"124":420.0,"125":472.0,"126":548.0,"127":559.0,"128":463.0,"129":407.0,"130":362.0,"131":405.0,"132":null,"133":null,"134":null,"135":null,"136":null,"137":null,"138":null,"139":null,"140":null,"141":null,"142":null,"143":null},"AirPassengers_Forecast":{"120":343.536935434,"121":338.7182813768,"122":370.1091973637,"123":387.6464711937,"124":414.9645514008,"125":451.320442293,"126":501.0391891379,"127":563.1616627486,"128":529.6162033474,"129":433.34173668,"130":381.0700284981,"131":388.9344436036,"132":423.2194605808,"133":401.9377419577,"134":430.6517715914,"135":420.8690746074,"136":447.6981230839,"137":479.018565377,"138":509.3610980253,"139":527.856690933,"140":498.4728942803,"141":468.257001342,"142":442.3270298402,"143":470.139240565},"AirPassengers_Forecast_Lower_Bound":{"120":null,"121":null,"122":null,"123":null,"124":null,"125":null,"126":null,"127":null,"128":null,"129":null,"130":null,"131":null,"132":376.1857325808,"133":328.0465259577,"134":339.0096195914,"135":322.3496746074,"136":342.0827390839,"137":347.867125377,"138":350.2724060253,"139":354.795746933,"140":308.2188302803,"141":263.060289342,"142":213.0660258402,"143":214.434308565},"AirPassengers_Forecast_Upper_Bound":{"120":null,"121":null,"122":null,"123":null,"124":null,"125":null,"126":null,"127":null,"128":null,"129":null,"130":null,"131":null,"132":470.2531885808,"133":475.8289579577,"134":522.2939235914,"135":519.3884746074,"136":553.3135070839,"137":610.170005377,"138":668.4497900253,"139":700.917634933,"140":688.7269582803,"141":673.453713342,"142":671.5880338402,"143":725.844172565}}
+
+LAST_DIFFERENCE_NEW {"time":{"120":1959.0,"121":1959.0833333333,"122":1959.1666666667,"123":1959.25,"124":1959.3333333333,"125":1959.4166666667,"126":1959.5,"127":1959.5833333333,"128":1959.6666666667,"129":1959.75,"130":1959.8333333333,"131":1959.9166666667,"132":1960.0,"133":1960.0833333333,"134":1960.1666666667,"135":1960.25,"136":1960.3333333333,"137":1960.4166666667,"138":1960.5,"139":1960.5833333333,"140":1960.6666666667,"141":1960.75,"142":1960.8333333333,"143":1960.9166666667},"AirPassengers":{"120":360.0,"121":342.0,"122":406.0,"123":396.0,"124":420.0,"125":472.0,"126":548.0,"127":559.0,"128":463.0,"129":407.0,"130":362.0,"131":405.0,"132":null,"133":null,"134":null,"135":null,"136":null,"137":null,"138":null,"139":null,"140":null,"141":null,"142":null,"143":null},"AirPassengers_Forecast":{"120":337.0,"121":360.0,"122":342.0,"123":406.0,"124":396.0,"125":420.0,"126":472.0,"127":548.0,"128":559.0,"129":463.0,"130":407.0,"131":362.0,"132":405.0,"133":405.0,"134":405.0,"135":405.0,"136":405.0,"137":405.0,"138":405.0,"139":405.0,"140":405.0,"141":405.0,"142":405.0,"143":405.0},"AirPassengers_Forecast_Lower_Bound":{"120":null,"121":null,"122":null,"123":null,"124":null,"125":null,"126":null,"127":null,"128":null,"129":null,"130":null,"131":null,"132":318.792536,"133":264.40724,"134":229.229552,"135":210.655024,"136":211.355528,"137":213.219488,"138":215.060712,"139":217.931132,"140":233.625636,"141":262.495064,"142":305.319888,"143":342.871136},"AirPassengers_Forecast_Upper_Bound":{"120":null,"121":null,"122":null,"123":null,"124":null,"125":null,"126":null,"127":null,"128":null,"129":null,"130":null,"131":null,"132":491.207464,"133":545.59276,"134":580.770448,"135":599.344976,"136":598.644472,"137":596.780512,"138":594.939288,"139":592.068868,"140":576.374364,"141":547.504936,"142":504.680112,"143":467.128864}}
+
+EXEC_THIS=1 cp  logs/lgbm_test_air_passengers_lgb_only_with_custom_options.log tests/references/lgbm/test_air_passengers_lgb_only_with_custom_options.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/multiplicative_seasonal/test_ozone_multiplicative_seasonal_TSR.py  >  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_TSR.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/lgbm/test_air_passengers_lgb_only.log logs/lgbm_test_air_passengers_lgb_only.log  >  logs/lgbm_test_air_passengers_lgb_only.log.diff
+tail -10  logs/lgbm_test_air_passengers_lgb_only.log.diff 
+FIRST_DIFFERENCE_ORIG         "Category": "NoTransf_Lag1Trend_NoCycle_LGB",
+
+FIRST_DIFFERENCE_NEW         "Category": "NoTransf_Lag1Trend_Cycle_5_NoAR",
+
+LAST_DIFFERENCE_ORIG {"time":{"120":1959.0,"121":1959.0833333333,"122":1959.1666666667,"123":1959.25,"124":1959.3333333333,"125":1959.4166666667,"126":1959.5,"127":1959.5833333333,"128":1959.6666666667,"129":1959.75,"130":1959.8333333333,"131":1959.9166666667,"132":1960.0,"133":1960.0833333333,"134":1960.1666666667,"135":1960.25,"136":1960.3333333333,"137":1960.4166666667,"138":1960.5,"139":1960.5833333333,"140":1960.6666666667,"141":1960.75,"142":1960.8333333333,"143":1960.9166666667},"AirPassengers":{"120":360.0,"121":342.0,"122":406.0,"123":396.0,"124":420.0,"125":472.0,"126":548.0,"127":559.0,"128":463.0,"129":407.0,"130":362.0,"131":405.0,"132":null,"133":null,"134":null,"135":null,"136":null,"137":null,"138":null,"139":null,"140":null,"141":null,"142":null,"143":null},"AirPassengers_Forecast":{"120":343.536935434,"121":338.7182813768,"122":370.1091973637,"123":387.6464711937,"124":414.9645514008,"125":451.320442293,"126":501.0391891379,"127":563.1616627486,"128":529.6162033474,"129":433.34173668,"130":381.0700284981,"131":388.9344436036,"132":423.2194605808,"133":401.9377419577,"134":430.6517715914,"135":420.8690746074,"136":447.6981230839,"137":479.018565377,"138":509.3610980253,"139":527.856690933,"140":498.4728942803,"141":468.257001342,"142":442.3270298402,"143":470.139240565},"AirPassengers_Forecast_Lower_Bound":{"120":null,"121":null,"122":null,"123":null,"124":null,"125":null,"126":null,"127":null,"128":null,"129":null,"130":null,"131":null,"132":376.1857325808,"133":328.0465259577,"134":339.0096195914,"135":322.3496746074,"136":342.0827390839,"137":347.867125377,"138":350.2724060253,"139":354.795746933,"140":308.2188302803,"141":263.060289342,"142":213.0660258402,"143":214.434308565},"AirPassengers_Forecast_Upper_Bound":{"120":null,"121":null,"122":null,"123":null,"124":null,"125":null,"126":null,"127":null,"128":null,"129":null,"130":null,"131":null,"132":470.2531885808,"133":475.8289579577,"134":522.2939235914,"135":519.3884746074,"136":553.3135070839,"137":610.170005377,"138":668.4497900253,"139":700.917634933,"140":688.7269582803,"141":673.453713342,"142":671.5880338402,"143":725.844172565}}
+
+LAST_DIFFERENCE_NEW {"time":{"120":1959.0,"121":1959.0833333333,"122":1959.1666666667,"123":1959.25,"124":1959.3333333333,"125":1959.4166666667,"126":1959.5,"127":1959.5833333333,"128":1959.6666666667,"129":1959.75,"130":1959.8333333333,"131":1959.9166666667,"132":1960.0,"133":1960.0833333333,"134":1960.1666666667,"135":1960.25,"136":1960.3333333333,"137":1960.4166666667,"138":1960.5,"139":1960.5833333333,"140":1960.6666666667,"141":1960.75,"142":1960.8333333333,"143":1960.9166666667},"AirPassengers":{"120":360.0,"121":342.0,"122":406.0,"123":396.0,"124":420.0,"125":472.0,"126":548.0,"127":559.0,"128":463.0,"129":407.0,"130":362.0,"131":405.0,"132":null,"133":null,"134":null,"135":null,"136":null,"137":null,"138":null,"139":null,"140":null,"141":null,"142":null,"143":null},"AirPassengers_Forecast":{"120":337.0,"121":360.0,"122":342.0,"123":406.0,"124":396.0,"125":420.0,"126":472.0,"127":548.0,"128":559.0,"129":463.0,"130":407.0,"131":362.0,"132":405.0,"133":405.0,"134":405.0,"135":405.0,"136":405.0,"137":405.0,"138":405.0,"139":405.0,"140":405.0,"141":405.0,"142":405.0,"143":405.0},"AirPassengers_Forecast_Lower_Bound":{"120":null,"121":null,"122":null,"123":null,"124":null,"125":null,"126":null,"127":null,"128":null,"129":null,"130":null,"131":null,"132":318.792536,"133":264.40724,"134":229.229552,"135":210.655024,"136":211.355528,"137":213.219488,"138":215.060712,"139":217.931132,"140":233.625636,"141":262.495064,"142":305.319888,"143":342.871136},"AirPassengers_Forecast_Upper_Bound":{"120":null,"121":null,"122":null,"123":null,"124":null,"125":null,"126":null,"127":null,"128":null,"129":null,"130":null,"131":null,"132":491.207464,"133":545.59276,"134":580.770448,"135":599.344976,"136":598.644472,"137":596.780512,"138":594.939288,"139":592.068868,"140":576.374364,"141":547.504936,"142":504.680112,"143":467.128864}}
+
+EXEC_THIS=1 cp  logs/lgbm_test_air_passengers_lgb_only.log tests/references/lgbm/test_air_passengers_lgb_only.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python  tests/multiplicative_seasonal/test_ozone_multiplicative_seasonal_TS+R.py  >  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_TS+R.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/perf_MedAE/test_air_passengers_MedAE.log logs/perf_MedAE_test_air_passengers_MedAE.log  >  logs/perf_MedAE_test_air_passengers_MedAE.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/perf_LnQ/test_ozone_LnQ.log logs/perf_LnQ_test_ozone_LnQ.log  >  logs/perf_LnQ_test_ozone_LnQ.log.diff
+tail -10  logs/perf_MedAE_test_air_passengers_MedAE.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/test_ozone_multiplicative_seasonal_T+S+R.py  >  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_T+S+R.log  2>&1
+tail -10  logs/perf_LnQ_test_ozone_LnQ.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/test_air_passengers_multiplicative_seasonal_ssslow_mode.py  >  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_ssslow_mode.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/perf_LnQ/test_air_passengers_LnQ.log logs/perf_LnQ_test_air_passengers_LnQ.log  >  logs/perf_LnQ_test_air_passengers_LnQ.log.diff
+tail -10  logs/perf_LnQ_test_air_passengers_LnQ.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/test_air_passengers_multiplicative_seasonal_TSR.py  >  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_TSR.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/test_ozone_multiplicative_seasonal_ssslow_mode.log logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_ssslow_mode.log  >  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_ssslow_mode.log.diff
+tail -10  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_ssslow_mode.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/test_air_passengers_multiplicative_seasonal_TS+R.py  >  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_TS+R.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/test_ozone_multiplicative_seasonal_TSR.log logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_TSR.log  >  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_TSR.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/test_ozone_multiplicative_seasonal_TS+R.log logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_TS+R.log  >  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_TS+R.log.diff
+tail -10  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_TSR.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/test_air_passengers_multiplicative_seasonal_T+S+R.py  >  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_T+S+R.log  2>&1
+tail -10  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_TS+R.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/artificial_model_Zero.py  >  logs/multiplicative_seasonal_artificial_model_Zero.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/test_air_passengers_multiplicative_seasonal_TSR.log logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_TSR.log  >  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_TSR.log.diff
+tail -10  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_TSR.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/artificial_model_TSR.py  >  logs/multiplicative_seasonal_artificial_model_TSR.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/test_air_passengers_multiplicative_seasonal_ssslow_mode.log logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_ssslow_mode.log  >  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_ssslow_mode.log.diff
+tail -10  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_ssslow_mode.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/artificial_model_TS+R.py  >  logs/multiplicative_seasonal_artificial_model_TS+R.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/test_ozone_multiplicative_seasonal_T+S+R.log logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_T+S+R.log  >  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_T+S+R.log.diff
+tail -10  logs/multiplicative_seasonal_test_ozone_multiplicative_seasonal_T+S+R.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/artificial_model_T+S+R.py  >  logs/multiplicative_seasonal_artificial_model_T+S+R.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/test_air_passengers_multiplicative_seasonal_TS+R.log logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_TS+R.log  >  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_TS+R.log.diff
+tail -10  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_TS+R.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/artificial_model_One.py  >  logs/multiplicative_seasonal_artificial_model_One.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/test_air_passengers_multiplicative_seasonal_T+S+R.log logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_T+S+R.log  >  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_T+S+R.log.diff
+tail -10  logs/multiplicative_seasonal_test_air_passengers_multiplicative_seasonal_T+S+R.log.diff 
+timeout 480 python  tests/multiplicative_seasonal/artificial_model_Constant.py  >  logs/multiplicative_seasonal_artificial_model_Constant.log  2>&1
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/artificial_model_Zero.log logs/multiplicative_seasonal_artificial_model_Zero.log  >  logs/multiplicative_seasonal_artificial_model_Zero.log.diff
+tail -10  logs/multiplicative_seasonal_artificial_model_Zero.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 278 230
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 278 230
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 48
+EXEC_THIS=1 cp  logs/multiplicative_seasonal_artificial_model_Zero.log tests/references/multiplicative_seasonal/artificial_model_Zero.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/artificial_model_TS+R.log logs/multiplicative_seasonal_artificial_model_TS+R.log  >  logs/multiplicative_seasonal_artificial_model_TS+R.log.diff
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/artificial_model_T+S+R.log logs/multiplicative_seasonal_artificial_model_T+S+R.log  >  logs/multiplicative_seasonal_artificial_model_T+S+R.log.diff
+tail -10  logs/multiplicative_seasonal_artificial_model_TS+R.log.diff 
+tail -10  logs/multiplicative_seasonal_artificial_model_T+S+R.log.diff 
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/artificial_model_One.log logs/multiplicative_seasonal_artificial_model_One.log  >  logs/multiplicative_seasonal_artificial_model_One.log.diff
+tail -10  logs/multiplicative_seasonal_artificial_model_One.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 278 230
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 278 230
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 48
+EXEC_THIS=1 cp  logs/multiplicative_seasonal_artificial_model_One.log tests/references/multiplicative_seasonal/artificial_model_One.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+make: [tests/Makefile:950: lgbm/test_air_passengers_lgb.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/lgbm/test_air_passengers_lgb.log logs/lgbm_test_air_passengers_lgb.log  >  logs/lgbm_test_air_passengers_lgb.log.diff
+tail -10  logs/lgbm_test_air_passengers_lgb.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 153 0
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 153 0
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 153
+EXEC_THIS=1 cp  logs/lgbm_test_air_passengers_lgb.log tests/references/lgbm/test_air_passengers_lgb.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/artificial_model_Constant.log logs/multiplicative_seasonal_artificial_model_Constant.log  >  logs/multiplicative_seasonal_artificial_model_Constant.log.diff
+tail -10  logs/multiplicative_seasonal_artificial_model_Constant.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 285 237
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 285 237
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 48
+EXEC_THIS=1 cp  logs/multiplicative_seasonal_artificial_model_Constant.log tests/references/multiplicative_seasonal/artificial_model_Constant.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+make: [tests/Makefile:1790: perf_MedAE/test_ozone_MedAE.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/perf_MedAE/test_ozone_MedAE.log logs/perf_MedAE_test_ozone_MedAE.log  >  logs/perf_MedAE_test_ozone_MedAE.log.diff
+tail -10  logs/perf_MedAE_test_ozone_MedAE.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 142 6
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 142 6
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 136
+EXEC_THIS=1 cp  logs/perf_MedAE_test_ozone_MedAE.log tests/references/perf_MedAE/test_ozone_MedAE.log
+NUM_DIFF_FILES_ARE_DIFFERENT
+make: [tests/Makefile:1265: multiplicative_seasonal/artificial_model_TSR.py] Error 124 (ignored)
+timeout 480 python scripts/num_diff.py  tests/references/multiplicative_seasonal/artificial_model_TSR.log logs/multiplicative_seasonal_artificial_model_TSR.log  >  logs/multiplicative_seasonal_artificial_model_TSR.log.diff
+tail -10  logs/multiplicative_seasonal_artificial_model_TSR.log.diff 
+NUM_DIFF_FILES_WITH_DIFFERENT_NUMBER_OF_LINES 221 27
+NUM_DIFF_FILES_WITH_TOO_MUCH_DIFF 221 27
+NUM_DIFF_NUMBER_OF_DIFFERENT_LINES_AT_LEAST 194
+EXEC_THIS=1 cp  logs/multiplicative_seasonal_artificial_model_TSR.log tests/references/multiplicative_seasonal/artificial_model_TSR.log
+NUM_DIFF_FILES_ARE_DIFFERENT
