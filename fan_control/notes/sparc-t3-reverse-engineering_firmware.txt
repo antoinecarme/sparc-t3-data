@@ -1,0 +1,36 @@
+antoine@z600:~/dev/other/firmware$ binwalk Sun_System_Firmware-8_3_40_a-SPARC_T3-1.pkg 
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+199352        0x30AB8         U-Boot version string, "U-Boot 1.1.4"
+199381        0x30AD5         U-Boot version string, "U-Boot 3.0 (Feb 15 2018 - 10:30:36) r123567"
+205632        0x32340         CRC32 polynomial table, little endian
+206656        0x32740         CRC32 polynomial table, little endian
+396272        0x60BF0         uImage header, header size: 64 bytes, header CRC: 0x9BFA0636, created: 2018-02-15 18:26:57, image size: 1406884 bytes, Data Address: 0x8000, Entry Point: 0x8000, data CRC: 0x6ED38252, OS: Linux, CPU: ARM, image type: OS Kernel Image, compression type: none, image name: "Linux-2.6.27.43"
+396336        0x60C30         Linux kernel ARM boot executable zImage (little-endian)
+409453        0x63F6D         gzip compressed data, maximum compression, from Unix, last modified: 2018-02-15 18:26:54
+1803232       0x1B83E0        uImage header, header size: 64 bytes, header CRC: 0x8F128A45, created: 2018-02-15 19:00:02, image size: 352256 bytes, Data Address: 0x0, Entry Point: 0x0, data CRC: 0xBFD5F6F4, OS: Linux, CPU: ARM, image type: RAMDisk Image, compression type: none, image name: ""
+1803296       0x1B8420        Squashfs filesystem, little endian, version 3.0, size: 349908 bytes, 75 inodes, blocksize: 65536 bytes, created: 2018-02-15 19:00:02
+2155552       0x20E420        Squashfs filesystem, little endian, version 3.0, size: 13880013 bytes, 3060 inodes, blocksize: 65536 bytes, created: 2018-02-15 19:00:07
+16036896      0xF4B420        Squashfs filesystem, little endian, version 3.0, size: 139379 bytes, 4 inodes, blocksize: 65536 bytes, created: 2018-02-15 19:00:08
+16180256      0xF6E420        gzip compressed data, has original file name: "serpa-prom.bin", from Unix, last modified: 2018-02-15 18:25:51
+17409280      0x109A500       Executable script, shebang: "/bin/sh"
+17409294      0x109A50E       Copyright string: "Copyright (c) 2007, 2014, Oracle and/or its affiliates. All rights reserved."
+17409505      0x109A5E1       Unix path: /dev/shm/tpm_disabled
+17409542      0x109A606       Unix path: /dev/shm/force_host_off
+17409645      0x109A66D       Unix path: /usr/local/bin/capi
+17412064      0x109AFE0       Unix path: /usr/local/bin/fw_setenv preferred 0
+17412183      0x109B057       Unix path: /usr/local/bin/fw_setenv preferred 1
+
+antoine@z600:~/dev/other/firmware$ apt-get install squashfuse squashfs-tools
+....
+
+# seul loop0 is intere4sting (highest partition size)
+
+sudo losetup -o 2155552 /dev/loop0 ../Sun_System_Firmware-8_3_40_a-SPARC_T3-1.pkg
+# losetup -o 1803296 /dev/loop1 ../Sun_System_Firmware-8_3_40_a-SPARC_T3-1.pkg
+# losetup -o 16036896 /dev/loop2 ../Sun_System_Firmware-8_3_40_a-SPARC_T3-1.pkg
+
+sudo unsquashfs /dev/loop0 
+# sudo unsquashfs /dev/loop1 
+# sudo unsquashfs /dev/loop2 
