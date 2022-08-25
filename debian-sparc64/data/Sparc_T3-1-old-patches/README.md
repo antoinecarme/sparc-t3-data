@@ -19,3 +19,19 @@ Boot PROM information
 145665-03 Obsoleted by: 145665-04 FIRMWARE: SPARC T3-1 - Sun System Firmware 8.0.4.c
 145665-01 Obsoleted by: 145665-03 Hardware PROM: SPARC T3-1 Sun System Firmware
 ```
+
+https://www.oracle.com/servers/technologies/firmware/release-history-jsp.html
+
+```
+SPARC T3-1 Server
+	
+SysFW 8.3.40.a(based on ILOM 3.2.6.5.a) 152738-02
+SysFW 8.3.40 (based on ILOM 3.2.6.5) 152738-01
+SysFW 8.3.20 (based on ILOM 3.2.5) 152400-01
+SysFW 8.3.11 (based on ILOM 3.2.4) 151689-03
+SysFW 8.3.2 (based on ILOM 3.2.1) 150407-06
+SysFW 8.2.2.b (based on ILOM 3.0) 148816-03
+SysFW 8.1.5 (based on ILOM 3.0) 147315-06
+SysFW 8.0.5.d(based on ILOM 3.0) 145665-05
+
+```
