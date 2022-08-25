@@ -1,7 +1,7 @@
 These are some old pacthes for sparc T3-1. Useful for downgrading the firmware.
 
 https://dogemicrosystems.ca/pub/Sun/System_Handbook/Sun_syshbk_V4.1/General/sparc_patch.html
-
+```
 SPARC T3-1 (Patch links require an active MOS session. )
 Boot PROM information
 148816-02 FIRMWARE: SPARC T3-1 - Sun System Firmware 8.2.1.b
@@ -18,3 +18,4 @@ Boot PROM information
 145665-04 Obsoleted by: 145665-05 FIRMWARE: SPARC T3-1 - Sun System Firmware 8.0.5.c
 145665-03 Obsoleted by: 145665-04 FIRMWARE: SPARC T3-1 - Sun System Firmware 8.0.4.c
 145665-01 Obsoleted by: 145665-03 Hardware PROM: SPARC T3-1 Sun System Firmware
+```
